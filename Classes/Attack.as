@@ -25,7 +25,7 @@
 			
 			if (nextIndex != timings.length)
 			{
-				attackTimer = new Timer(timings[nextIndex]);
+				attackTimer = new Timer( timings[nextIndex] );
 				attackTimer.addEventListener( TimerEvent.TIMER, loadNextAction );
 				attackTimer.start();
 				

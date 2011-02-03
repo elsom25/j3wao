@@ -7,22 +7,20 @@
 	{
 		public function Fireball()
 		{
-			super()
+			super();
 			buildAttack();
-			addChild(super.actions[0]);
-			super.actions[0].beginDrawing()
+			addChild( super.actions[0] );
+			super.actions[0].beginDrawing();
 		}
 		
 		private function buildAttack():void
 		{
-			var a1:Action = new TapAction(100, 100, 800);
-			var a2:Action = new TapAction(300, 300, 300);
-			super.actions.push(a1);
-			super.actions.push(a2);
+			super.actions.push( new TapAction(100, 100, 800) );
 			
-			super.timings.push(1000);
+			super.timings.push( 1000 );
+			super.actions.push( new TapAction(300, 300, 300) );
 			
-			super.attackTimer = new Timer(super.timings[0]);
+			super.attackTimer = new Timer( super.timings[0] );
 			attackTimer.addEventListener( TimerEvent.TIMER, loadNextAction );
 			super.attackTimer.start();
 		}
