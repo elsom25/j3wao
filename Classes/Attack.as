@@ -18,12 +18,18 @@
 			nextIndex = 0;
 		}
 		
+		public startAttack()
+		{
+			addChild( super.actions[0] );
+			super.actions[0].beginDrawing();
+		}
+		
 		public function loadNextAction(timerEvent:TimerEvent):void
 		{
 			trace("Loading next action");
 			attackTimer.stop();
 			
-			if (nextIndex != timings.length)
+			if (!isLastAction())
 			{
 				attackTimer = new Timer( timings[nextIndex] );
 				attackTimer.addEventListener( TimerEvent.TIMER, loadNextAction );
@@ -34,6 +40,11 @@
 				
 				nextIndex++;
 			}
+		}
+		
+		private function isLastAction():Boolean
+		{
+			return nextIndex == timings.length;
 		}
 	}
 }

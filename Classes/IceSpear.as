@@ -9,8 +9,7 @@
 		{
 			super();
 			buildAttack();
-			addChild(super.actions[0]);
-			super.actions[0].beginDrawing();
+			startAttack();
 		}
 		
 		private function buildAttack():void
