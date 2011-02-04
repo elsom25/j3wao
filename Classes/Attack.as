@@ -18,10 +18,15 @@
 			nextIndex = 0;
 		}
 		
-		public startAttack()
+		public function startAttack()
 		{
-			addChild( super.actions[0] );
-			super.actions[0].beginDrawing();
+			if (actions.length > 0)
+			{
+				addChild( actions[0] );
+				actions[0].beginDrawing();
+			}
+			else
+				trace("[ERROR] 0 length action array in Attack detected!");
 		}
 		
 		public function loadNextAction(timerEvent:TimerEvent):void
