@@ -26,7 +26,9 @@
 				actions[0].beginDrawing();
 			}
 			else
+			{
 				trace("[ERROR] 0 length action array in Attack detected!");
+			}
 		}
 		
 		public function loadNextAction(timerEvent:TimerEvent):void
