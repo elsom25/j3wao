@@ -20,6 +20,10 @@
 		public function beginDrawing():void
 		{
 			actionTimer.start();
+			this.graphics.beginFill(0xFFFFFF);
+			this.graphics.lineStyle(5);
+			this.graphics.drawCircle(0, 0, 100);
+			this.graphics.endFill();
 		}
 		
 		public function remove(timerEvent:TimerEvent):void
