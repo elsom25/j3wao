@@ -43,7 +43,7 @@
 				attackTimer.start();
 				
 				addChild(actions[nextIndex+1]);
-				actions[nextIndex+1].beginDrawing()
+				actions[nextIndex+1].beginDrawing();
 				
 				nextIndex++;
 			}
