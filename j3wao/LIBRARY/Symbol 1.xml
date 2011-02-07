@@ -1,0 +1,24 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Symbol 1" itemID="4d4640a4-0000021f" sourceLibraryItemHRef="Symbol 1" symbolType="button" lastModified="1297053774">
+  <timeline>
+    <DOMTimeline name="Symbol 1">
+      <layers>
+        <DOMLayer name="Layer 1" color="#4FFF4F" locked="true" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Background" name="" selected="true" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix tx="48.05" ty="80"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>
