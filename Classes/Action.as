@@ -24,13 +24,16 @@
 
 		public function beginDrawing():void
 		{
-			actionTimer.start();
 			drawApproachCircle();
+			actionTimer.start();
 		}
 
 		private function drawApproachCircle():void
 		{
-			var circle:Shape = new Shape( );
+			trace("Entering Action.drawApproachCircle");
+			const APPROACH_TIME:Number = 0.5;
+			
+			var circle:Shape = new Shape();
 			
 			circle.graphics.beginFill(0xFFFFFF, 0);
 			circle.graphics.lineStyle(2);
@@ -38,9 +41,8 @@
 			circle.graphics.endFill();
 			addChild(circle);
 			
-			
-			var heightTween:Tween = new Tween(circle,"scaleX", None.easeIn, 1, 0.5, 1, true);
-			var widthTween:Tween = new Tween(circle,"scaleY", None.easeIn, 1, 0.5, 1, true);
+			var heightTween:Tween = new Tween(circle, "scaleX", None.easeIn, 1, 0.5, APPROACH_TIME, true);
+			var widthTween:Tween = new Tween(circle, "scaleY", None.easeIn, 1, 0.5, APPROACH_TIME, true);
 			heightTween.start();
 			widthTween.start();
 		}
