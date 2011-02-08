@@ -13,16 +13,16 @@
 		}
 		
 		private function buildAttack():void
-		{			
-			super.actions.push( new TapAction(100, 100, 1000) );
-			super.timings.push( 900 );			
-			super.actions.push( new TapAction(180, 200, 1000) );
-			super.timings.push( 900 );			
-			super.actions.push( new TapAction(260, 300, 1000) );
-			super.timings.push( 900 );			
-			super.actions.push( new TapAction(340, 400, 1000) );
-			super.timings.push( 900 );			
-			super.actions.push( new TapAction(440, 500, 1000) );
+		{
+			super.actions.push( new TapAction(100, 100, 400, 500, 300) );
+			super.timings.push( 500 );			
+			super.actions.push( new TapAction(180, 200, 400, 500, 300) );
+			super.timings.push( 500 );			
+			super.actions.push( new TapAction(260, 300, 400, 500, 300) );
+			super.timings.push( 500 );			
+			super.actions.push( new TapAction(340, 400, 400, 500, 300) );
+			super.timings.push( 500 );			
+			super.actions.push( new TapAction(440, 500, 400, 500, 300) );
 		}
 	}
 }
