@@ -35,12 +35,12 @@
     <VersionInfo>10,1,52,0;9,0,124,0;8,0,24,0;7,0,14,0;6,0,79,0;5,0,58,0;4,0,32,0;3,0,8,0;2,0,1,12;1,0,0,1;</VersionInfo>
     <UsingDefaultContentFilename>1</UsingDefaultContentFilename>
     <UsingDefaultAlternateFilename>1</UsingDefaultAlternateFilename>
-    <ContentFilename>j3wao_content.html</ContentFilename>
-    <AlternateFilename>j3wao_alternate.html</AlternateFilename>
+    <ContentFilename>j3wao.xfl_content.html</ContentFilename>
+    <AlternateFilename>j3wao.xfl_alternate.html</AlternateFilename>
     <UsingOwnAlternateFile>0</UsingOwnAlternateFile>
     <OwnAlternateFilename></OwnAlternateFilename>
-    <Width>480</Width>
-    <Height>800</Height>
+    <Width>1600</Width>
+    <Height>960</Height>
     <Align>0</Align>
     <Units>0</Units>
     <Loop>1</Loop>
@@ -123,8 +123,8 @@
     </LibraryVersions>
   </PublishFlashProperties>
   <PublishJpegProperties enabled="true">
-    <Width>480</Width>
-    <Height>800</Height>
+    <Width>1600</Width>
+    <Height>960</Height>
     <Progressive>0</Progressive>
     <DPI>4718592</DPI>
     <Size>0</Size>
@@ -149,8 +149,8 @@
     <exportSMIL>1</exportSMIL>
   </PublishRNWKProperties>
   <PublishGifProperties enabled="true">
-    <Width>480</Width>
-    <Height>800</Height>
+    <Width>1600</Width>
+    <Height>960</Height>
     <Animated>0</Animated>
     <MatchMovieDim>1</MatchMovieDim>
     <Loop>1</Loop>
@@ -168,8 +168,8 @@
     <PaletteName></PaletteName>
   </PublishGifProperties>
   <PublishPNGProperties enabled="true">
-    <Width>480</Width>
-    <Height>800</Height>
+    <Width>1600</Width>
+    <Height>960</Height>
     <OptimizeColors>1</OptimizeColors>
     <Interlace>0</Interlace>
     <Transparent>0</Transparent>
@@ -185,8 +185,8 @@
     <PaletteName></PaletteName>
   </PublishPNGProperties>
   <PublishQTProperties enabled="true">
-    <Width>480</Width>
-    <Height>800</Height>
+    <Width>1600</Width>
+    <Height>960</Height>
     <MatchMovieDim>1</MatchMovieDim>
     <UseQTSoundCompression>0</UseQTSoundCompression>
     <AlphaOption></AlphaOption>

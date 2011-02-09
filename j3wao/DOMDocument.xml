@@ -1,13 +1,14 @@
-<DOMDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" width="480" height="800" currentTimeline="1" xflVersion="2.0" creatorInfo="Adobe Flash Professional CS5" platform="Windows" versionInfo="Saved by Adobe Flash Windows 11.0 build 485" majorVersion="11" buildNumber="485" viewAngle3D="48.8658374504694" nextSceneIdentifier="2" playOptionsPlayLoop="false" playOptionsPlayPages="false" playOptionsPlayFrameActions="false">
+<DOMDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" width="1600" height="960" currentTimeline="1" xflVersion="2.0" creatorInfo="Adobe Flash Professional CS5" platform="Windows" versionInfo="Saved by Adobe Flash Windows 11.0 build 489" majorVersion="11" buildNumber="489" viewAngle3D="113.123432202458" nextSceneIdentifier="2" playOptionsPlayLoop="false" playOptionsPlayPages="false" playOptionsPlayFrameActions="false">
      <media>
           <DOMBitmapItem name="Bitmap 2" itemID="4d4638c3-000001f5" sourceExternalFilepath=".\LIBRARY\Bitmap 2" sourceLastImported="1296447683" originalCompressionType="lossless" quality="50" href="Bitmap 2.\LIBRARY\Bitmap 2" bitmapDataHRef="M 2 1296447683.dat" frameRight="1920" frameBottom="3200"/>
+          <DOMBitmapItem name="title-screen.jpg" itemID="4d52d733-0000001c" sourceExternalFilepath=".\LIBRARY\title-screen.jpg" sourceLastImported="1297274019" externalFileSize="144227" quality="50" href="title-screen.jpg" bitmapDataHRef="M 2 1297274633.dat" frameRight="16000" frameBottom="9600" isJPEG="true"/>
      </media>
      <symbols>
           <Include href="Attack1.xml" itemIcon="0" loadImmediate="false"/>
           <Include href="Background.xml" itemIcon="1" loadImmediate="false"/>
           <Include href="MenuBackground.xml" itemIcon="1" loadImmediate="false"/>
-          <Include href="Symbol 1.xml" itemIcon="0" loadImmediate="false"/>
           <Include href="TapAction.xml"/>
+          <Include href="Title Screen.xml" itemIcon="0" loadImmediate="false"/>
      </symbols>
      <timelines>
           <DOMTimeline name="Scene 1" currentFrame="1">
@@ -29,12 +30,12 @@ function rClick(event:MouseEvent):void
 }]]></script>
                                    </Actionscript>
                                    <elements>
-                                        <DOMSymbolInstance libraryItemName="Symbol 1" name="NewGame" symbolType="button">
+                                        <DOMSymbolInstance libraryItemName="Title Screen" name="NewGame" symbolType="button">
                                              <matrix>
-                                                  <Matrix a="5" d="5"/>
+                                                  <Matrix a="1.99996948242188" d="2.00003051757813"/>
                                              </matrix>
                                              <transformationPoint>
-                                                  <Point x="48" y="80"/>
+                                                  <Point x="5.75" y="80"/>
                                              </transformationPoint>
                                         </DOMSymbolInstance>
                                    </elements>
@@ -80,45 +81,45 @@ function A4Click(event:MouseEvent):void{
                                                   </StrokeStyle>
                                              </strokes>
                                              <edges>
-                                                  <Edge strokeStyle="1" edges="!1381 12740|1332 12740"/>
-                                                  <Edge cubics="!1332 12740(;1332,12740 1381,12740 1381,12740q1332 12740 1381 12740);"/>
+                                                  <Edge strokeStyle="1" edges="!1857 15424|1808 15424"/>
+                                                  <Edge cubics="!1808 15424(;1808,15424 1857,15424 1857,15424q1808 15424 1857 15424);"/>
                                              </edges>
                                         </DOMShape>
                                         <DOMSymbolInstance libraryItemName="MenuBackground" name="" symbolType="graphic" loop="loop">
                                              <matrix>
-                                                  <Matrix tx="2" ty="637"/>
+                                                  <Matrix a="1.00003051757813" d="1.00006103515625" tx="25.95" ty="771.05"/>
                                              </matrix>
                                              <transformationPoint>
-                                                  <Point x="228" y="79.45"/>
+                                                  <Point x="227.85" y="79.6"/>
                                              </transformationPoint>
                                         </DOMSymbolInstance>
                                         <DOMSymbolInstance libraryItemName="Attack1" name="Attack1" symbolType="button">
                                              <matrix>
-                                                  <Matrix tx="30" ty="668"/>
+                                                  <Matrix a="1.00003051757813" d="1.00006103515625" tx="53.85" ty="802.25"/>
                                              </matrix>
                                              <transformationPoint>
-                                                  <Point x="93" y="25"/>
+                                                  <Point x="92.95" y="24.95"/>
                                              </transformationPoint>
                                         </DOMSymbolInstance>
                                         <DOMSymbolInstance libraryItemName="Attack1" name="Attack2" symbolType="button">
                                              <matrix>
-                                                  <Matrix tx="238.5" ty="669.45"/>
+                                                  <Matrix a="1.00003051757813" d="1.00006103515625" tx="262.3" ty="803.85"/>
                                              </matrix>
                                              <transformationPoint>
-                                                  <Point x="93" y="25"/>
+                                                  <Point x="93" y="24.8"/>
                                              </transformationPoint>
                                         </DOMSymbolInstance>
                                         <DOMSymbolInstance libraryItemName="Attack1" name="Attack3" symbolType="button">
                                              <matrix>
-                                                  <Matrix tx="30.5" ty="736.4"/>
+                                                  <Matrix a="1.00003051757813" d="1.00006103515625" tx="54.35" ty="870.6"/>
                                              </matrix>
                                              <transformationPoint>
-                                                  <Point x="93" y="25"/>
+                                                  <Point x="92.95" y="25"/>
                                              </transformationPoint>
                                         </DOMSymbolInstance>
                                         <DOMSymbolInstance libraryItemName="Attack1" name="Attack4" symbolType="button">
                                              <matrix>
-                                                  <Matrix tx="238.5" ty="736.4"/>
+                                                  <Matrix a="1.00003051757813" d="1.00006103515625" tx="262.3" ty="870.6"/>
                                              </matrix>
                                              <transformationPoint>
                                                   <Point x="93" y="25"/>
@@ -126,7 +127,7 @@ function A4Click(event:MouseEvent):void{
                                         </DOMSymbolInstance>
                                         <DOMTLFText name="Attack1Name" top="-440" right="2720" bottom="298">
                                              <matrix>
-                                                  <Matrix tx="65.5" ty="703.1"/>
+                                                  <Matrix tx="89.3" ty="837.3"/>
                                              </matrix>
                                              <tlfFonts>
                                                   <TLFFont platformName="Times New Roman" psName="TimesNewRomanPSMT"/>
@@ -135,7 +136,7 @@ function A4Click(event:MouseEvent):void{
                                         </DOMTLFText>
                                         <DOMTLFText name="Attack2Name" top="-440" right="2720" bottom="298">
                                              <matrix>
-                                                  <Matrix tx="263.5" ty="698"/>
+                                                  <Matrix tx="287.3" ty="832.2"/>
                                              </matrix>
                                              <tlfFonts>
                                                   <TLFFont platformName="Times New Roman" psName="TimesNewRomanPSMT"/>
@@ -144,7 +145,7 @@ function A4Click(event:MouseEvent):void{
                                         </DOMTLFText>
                                         <DOMTLFText name="Attack3Name" top="-440" right="2720" bottom="298">
                                              <matrix>
-                                                  <Matrix tx="62.5" ty="771.5"/>
+                                                  <Matrix tx="86.3" ty="905.7"/>
                                              </matrix>
                                              <tlfFonts>
                                                   <TLFFont platformName="Times New Roman" psName="TimesNewRomanPSMT"/>
@@ -153,7 +154,7 @@ function A4Click(event:MouseEvent):void{
                                         </DOMTLFText>
                                         <DOMTLFText name="Attack4Name" top="-440" right="2720" bottom="298">
                                              <matrix>
-                                                  <Matrix tx="263.5" ty="771.5"/>
+                                                  <Matrix tx="287.3" ty="905.7"/>
                                              </matrix>
                                              <tlfFonts>
                                                   <TLFFont platformName="Times New Roman" psName="TimesNewRomanPSMT"/>
@@ -162,7 +163,7 @@ function A4Click(event:MouseEvent):void{
                                         </DOMTLFText>
                                         <DOMTLFText name="" right="2378" bottom="443">
                                              <matrix>
-                                                  <Matrix tx="37" ty="644"/>
+                                                  <Matrix tx="60.8" ty="778.2"/>
                                              </matrix>
                                              <tlfFonts>
                                                   <TLFFont platformName="Times New Roman" psName="TimesNewRomanPSMT"/>
@@ -482,6 +483,7 @@ function A4Click(event:MouseEvent):void{
      </persistentData>
      <PrinterSettings/>
      <publishHistory>
+          <PublishItem publishSize="194552" publishTime="1297274837"/>
           <PublishItem publishSize="77356" publishTime="1297057168"/>
           <PublishItem publishSize="8130" publishTime="1297057135"/>
           <PublishItem publishSize="8129" publishTime="1297057120"/>
@@ -501,6 +503,5 @@ function A4Click(event:MouseEvent):void{
           <PublishItem publishSize="77208" publishTime="1297056373"/>
           <PublishItem publishSize="77200" publishTime="1297056338"/>
           <PublishItem publishSize="77209" publishTime="1297056310"/>
-          <PublishItem publishSize="77150" publishTime="1297054567"/>
      </publishHistory>
 </DOMDocument>
