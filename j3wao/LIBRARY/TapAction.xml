@@ -1,0 +1,39 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="TapAction" itemID="4d4a212d-000001d3" linkageExportForAS="true" linkageClassName="TapAction" sourceLibraryItemHRef="Symbol 1" lastModified="1297033500">
+  <timeline>
+    <DOMTimeline name="TapAction">
+      <layers>
+        <DOMLayer name="Layer 1" color="#4FFF4F" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMGroup selected="true">
+                  <members>
+                    <DOMShape selected="true">
+                      <fills>
+                        <FillStyle index="1">
+                          <SolidColor color="#CC99CC"/>
+                        </FillStyle>
+                      </fills>
+                      <strokes>
+                        <StrokeStyle index="1">
+                          <SolidStroke scaleMode="normal">
+                            <fill>
+                              <SolidColor/>
+                            </fill>
+                          </SolidStroke>
+                        </StrokeStyle>
+                      </strokes>
+                      <edges>
+                        <Edge fillStyle1="1" strokeStyle="1" edges="!727 -687S6[1020 -395 1020 20!1020 20[1020 435 727 727!727 727[434 1020 20 1020!20 1020[-395 1020 -687 727!-687 727[-980 435 -980 20!-980 20[-980 -395 -687 -687!-687 -687[-395 -980 20 -980!20 -980[434 -980 727 -687"/>
+                      </edges>
+                    </DOMShape>
+                  </members>
+                </DOMGroup>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

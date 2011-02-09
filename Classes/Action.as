@@ -9,19 +9,30 @@
 	import fl.transitions.TweenEvent;
 	import flash.display.Sprite;
 	import flash.display.Shape;
+	import flashx.textLayout.formats.Float;
 
 	public class Action extends MovieClip
 	{
-		public var actionTimer:Timer;
+		protected var actionTimer:Timer;
+		protected var approachTime:Number;
+		protected var hitTime:Number;
+		protected var bufferTime:Number;
 
-		public function Action(millisecondsUntilCompletion:Number)
+
+		/*hitTime represents the perfect moment to touch. bufferTime allows a small grace window before and after the hitTime*/
+		public function Action(approachTime:Number, hitTime:Number, bufferTime:Number)
 		{
+			const MILLISECONDS_IN_A_SECOND:Number = 1000;
+			this.approachTime = approachTime / MILLISECONDS_IN_A_SECOND;
+			this.hitTime = hitTime;
+			this.bufferTime = bufferTime;
+			
+			var millisecondsUntilCompletion:Number = approachTime + bufferTime;
 			actionTimer = new Timer(millisecondsUntilCompletion);
 			actionTimer.addEventListener( TimerEvent.TIMER, remove );
+			
 			addEventListener(MouseEvent.CLICK, handleClick);
-			super.addEventListener(MouseEvent.MOUSE_DOWN, handleClick);
 		}
-
 		public function beginDrawing():void
 		{
 			drawApproachCircle();
@@ -31,18 +42,17 @@
 		private function drawApproachCircle():void
 		{
 			trace("Entering Action.drawApproachCircle");
-			const APPROACH_TIME:Number = 0.5;
-			
+
 			var circle:Shape = new Shape();
-			
+
 			circle.graphics.beginFill(0xFFFFFF, 0);
 			circle.graphics.lineStyle(2);
 			circle.graphics.drawCircle(0,0,100);
 			circle.graphics.endFill();
 			addChild(circle);
-			
-			var heightTween:Tween = new Tween(circle, "scaleX", None.easeIn, 1, 0.5, APPROACH_TIME, true);
-			var widthTween:Tween = new Tween(circle, "scaleY", None.easeIn, 1, 0.5, APPROACH_TIME, true);
+
+			var heightTween:Tween = new Tween(circle,"scaleX",None.easeIn,1,0.5,approachTime,true);
+			var widthTween:Tween = new Tween(circle,"scaleY",None.easeIn,1,0.5,approachTime,true);
 			heightTween.start();
 			widthTween.start();
 		}

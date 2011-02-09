@@ -2,9 +2,9 @@
 {
 	public class TapAction extends Action
 	{
-		public function TapAction(initX:Number, initY:Number, millisecondsUntilCompletion:Number) 
+		public function TapAction(initX:Number, initY:Number, approachTime:Number, hitTime:Number, bufferTime:Number) 
 		{
-			super(millisecondsUntilCompletion);
+			super(approachTime, hitTime, bufferTime);
 			x = initX;
 			y = initY;
 		}

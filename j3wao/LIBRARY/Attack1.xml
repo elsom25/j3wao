@@ -1,0 +1,39 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Attack1" itemID="4d4da823-000002fa" sourceLibraryItemHRef="Symbol 2" symbolType="button" lastModified="1296934947">
+  <timeline>
+    <DOMTimeline name="Attack1">
+      <layers>
+        <DOMLayer name="Layer 1" color="#4FFF4F" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#FF6600"/>
+                    </FillStyle>
+                  </fills>
+                  <strokes>
+                    <StrokeStyle index="1">
+                      <SolidStroke scaleMode="normal">
+                        <fill>
+                          <SolidColor/>
+                        </fill>
+                      </SolidStroke>
+                    </StrokeStyle>
+                  </strokes>
+                  <edges>
+                    <Edge fillStyle1="1" strokeStyle="1" edges="!3720 1000|0 1000!0 1000|0 0!0 0|3720 0!3720 0|3720 1000"/>
+                    <Edge cubics="!0 1000(;0,1000 0,0 0,0q0 1000 0 0);"/>
+                    <Edge cubics="!3720 0(;3720,0 3720,1000 3720,1000q3720 0 3720 1000);"/>
+                    <Edge cubics="!3720 1000(;3720,1000 0,1000 0,1000q3720 1000 0 1000);"/>
+                    <Edge cubics="!0 0(;0,0 3720,0 3720,0q0 0 3720 0);"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>
