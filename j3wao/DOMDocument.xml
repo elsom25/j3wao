@@ -2,14 +2,11 @@
      <media>
           <DOMBitmapItem name="battle attack menu.jpg" itemID="4d538f3f-000001f7" sourceExternalFilepath=".\LIBRARY\battle attack menu.jpg" sourceLastImported="1297321348" externalFileSize="115074" quality="50" href="battle attack menu.jpg" bitmapDataHRef="M 5 1297321639.dat" frameRight="16000" frameBottom="9200" isJPEG="true"/>
           <DOMBitmapItem name="battle screen mock.jpg" itemID="4d538f3f-000001f8" sourceExternalFilepath=".\LIBRARY\battle screen mock.jpg" sourceLastImported="1297321348" externalFileSize="787490" quality="50" href="battle screen mock.jpg" bitmapDataHRef="M 4 1297321616.dat" frameRight="32000" frameBottom="19200" isJPEG="true"/>
-          <DOMBitmapItem name="Bitmap 2" itemID="4d4638c3-000001f5" sourceExternalFilepath=".\LIBRARY\Bitmap 2" sourceLastImported="1296447683" originalCompressionType="lossless" quality="50" href="Bitmap 2.\LIBRARY\Bitmap 2" bitmapDataHRef="M 2 1296447683.dat" frameRight="1920" frameBottom="3200"/>
           <DOMBitmapItem name="title-screen.jpg" itemID="4d52d733-0000001c" sourceExternalFilepath=".\LIBRARY\title-screen.jpg" sourceLastImported="1297274019" externalFileSize="144227" quality="50" href="title-screen.jpg" bitmapDataHRef="M 2 1297274633.dat" frameRight="16000" frameBottom="9600" isJPEG="true"/>
      </media>
      <symbols>
           <Include href="Attack1.xml" itemIcon="0" loadImmediate="false"/>
           <Include href="Attack2.xml" itemIcon="0" loadImmediate="false"/>
-          <Include href="Background.xml" itemIcon="1" loadImmediate="false"/>
-          <Include href="MenuBackground.xml" itemIcon="1" loadImmediate="false"/>
           <Include href="TapAction.xml"/>
           <Include href="Title Screen.xml" itemIcon="0" loadImmediate="false"/>
      </symbols>
