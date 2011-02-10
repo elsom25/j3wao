@@ -28,8 +28,8 @@
 			this.bufferTime = bufferTime;
 			
 			var millisecondsUntilCompletion:Number = approachTime + bufferTime;
-			actionTimer = new Timer(millisecondsUntilCompletion);
-			actionTimer.addEventListener( TimerEvent.TIMER, remove );
+			actionTimer = new Timer(millisecondsUntilCompletion, 1);
+			actionTimer.addEventListener( TimerEvent.TIMER_COMPLETE, remove );
 			
 			addEventListener(MouseEvent.CLICK, handleClick);
 		}
@@ -66,7 +66,8 @@
 
 		public function handleClick(mouseEvent:MouseEvent):void
 		{
-			trace("Click detected!");
+			
+			trace("Click detected at t=" + actionTimer.currentCount + "!");
 		}
 	}
 }

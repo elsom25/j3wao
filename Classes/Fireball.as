@@ -14,9 +14,9 @@
 		
 		private function buildAttack():void
 		{
-			super.actions.push( new TapAction(100, 100, 500, 1000, 500)  );
+			super.actions.push( new TapAction(300, 300, 500, 1000, 200)  );
 			super.timings.push( 1000 );
-			super.actions.push( new TapAction(200, 200, 500, 1000, 500) );
+			super.actions.push( new TapAction(400, 300, 500, 1000, 200) );
 		}
 	}
 }
