@@ -14,15 +14,15 @@
 		
 		private function buildAttack():void
 		{
-			super.actions.push( new TapAction(100, 300, 400, 100) );
-			super.timings.push( 500 );			
-			super.actions.push( new TapAction(180, 400, 400, 100) );
-			super.timings.push( 500 );			
-			super.actions.push( new TapAction(260, 500, 400, 100) );
-			super.timings.push( 500 );			
-			super.actions.push( new TapAction(340, 600, 400, 100) );
-			super.timings.push( 500 );			
-			super.actions.push( new TapAction(440, 700, 400, 100) );
+			super.actions.push( new TapAction(100, 300, 800, 200) );
+			super.timings.push( 1000 );			
+			super.actions.push( new TapAction(180, 400, 800, 200) );
+			super.timings.push( 1000 );			
+			super.actions.push( new TapAction(260, 500, 800, 200) );
+			super.timings.push( 1000 );			
+			super.actions.push( new TapAction(340, 600, 800, 200) );
+			super.timings.push( 1000 );			
+			super.actions.push( new TapAction(440, 700, 800, 200) );
 		}
 	}
 }

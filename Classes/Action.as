@@ -15,7 +15,7 @@
 	public class Action extends MovieClip
 	{
 		public const MILLISECONDS_IN_A_SECOND:Number = 1000;
-		
+
 		protected var actionTimer:Timer;
 		protected var approachTime:Number;
 		protected var bufferTime:Number;
@@ -33,21 +33,21 @@
 
 			initializeActionTimer();
 			initializeBufferRegions();
-			
+
 			addEventListener(MouseEvent.CLICK, handleClick);
 		}
-		
+
 		private function initializeActionTimer():void
 		{
 			var millisecondsUntilCompletion:Number = approachTime * MILLISECONDS_IN_A_SECOND + bufferTime;
-			actionTimer = new Timer(millisecondsUntilCompletion, 1);
+			actionTimer = new Timer(millisecondsUntilCompletion,1);
 			actionTimer.addEventListener( TimerEvent.TIMER_COMPLETE, remove );
 		}
-		
+
 		private function initializeBufferRegions():void
 		{
 			const startOfClickableRegion = (approachTime * MILLISECONDS_IN_A_SECOND) - bufferTime;
-			
+
 			bufferRegions = new Array();
 			bufferRegions.push(new ActionRegion("Miss", startOfClickableRegion, 0));
 			bufferRegions.push(new ActionRegion("Bad", bufferTime / 3, 0.3));
@@ -57,12 +57,12 @@
 			bufferRegions.push(new ActionRegion("Good", bufferTime / 3, 0.6));
 			bufferRegions.push(new ActionRegion("Bad", bufferTime / 3, 0.3));
 			bufferRegions.push(new ActionRegion("Miss", 0, 0));
-			
+
 			activeRegionIndex = 0;
-			bufferTimer = new Timer(bufferRegions[activeRegionIndex].getTimeBeforeNext(), 1);
+			bufferTimer = new Timer(bufferRegions[activeRegionIndex].getTimeBeforeNext(),1);
 			bufferTimer.addEventListener( TimerEvent.TIMER_COMPLETE, updateBufferRegion);
 		}
-		
+
 		public function beginDrawing():void
 		{
 			drawApproachCircle();
@@ -88,17 +88,22 @@
 
 		public function remove(timerEvent:TimerEvent):void
 		{
+			undraw();
+		}
+
+		private function undraw():void
+		{
 			super.visible = false;
 			actionTimer.stop();
 		}
-
+		
 		public function updateBufferRegion(timerEvent:TimerEvent):void
 		{
 			if (activeRegionIndex < bufferRegions.length - 1)
 			{
 				activeRegionIndex++;
 				bufferTimer.stop();
-				bufferTimer = new Timer(bufferRegions[activeRegionIndex].getTimeBeforeNext(), 1);
+				bufferTimer = new Timer(bufferRegions[activeRegionIndex].getTimeBeforeNext(),1);
 				bufferTimer.addEventListener( TimerEvent.TIMER_COMPLETE, updateBufferRegion);
 				bufferTimer.start();
 			}
@@ -107,6 +112,8 @@
 		public function handleClick(mouseEvent:MouseEvent):void
 		{
 			modifier = bufferRegions[activeRegionIndex].getModifier();
+			trace( bufferRegions[activeRegionIndex].getName() + " (modifier: " + modifier + ")");
+			undraw();
 		}
 	}
 }
