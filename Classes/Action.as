@@ -10,39 +10,68 @@
 	import flash.display.Sprite;
 	import flash.display.Shape;
 	import flashx.textLayout.formats.Float;
+	import flash.net.dns.ARecord;
 
 	public class Action extends MovieClip
 	{
+		public const MILLISECONDS_IN_A_SECOND:Number = 1000;
+		
 		protected var actionTimer:Timer;
 		protected var approachTime:Number;
-		protected var hitTime:Number;
 		protected var bufferTime:Number;
 
+		protected var bufferRegions:Array;
+		protected var activeRegionIndex:Number;
+		protected var bufferTimer:Timer;
 
-		/*hitTime represents the perfect moment to touch. bufferTime allows a small grace window before and after the hitTime*/
-		public function Action(approachTime:Number, hitTime:Number, bufferTime:Number)
+		private var modifier:Number;
+
+		public function Action(approachTime:Number, bufferTime:Number)
 		{
-			const MILLISECONDS_IN_A_SECOND:Number = 1000;
 			this.approachTime = approachTime / MILLISECONDS_IN_A_SECOND;
-			this.hitTime = hitTime;
 			this.bufferTime = bufferTime;
-			
-			var millisecondsUntilCompletion:Number = approachTime + bufferTime;
-			actionTimer = new Timer(millisecondsUntilCompletion, 1);
-			actionTimer.addEventListener( TimerEvent.TIMER_COMPLETE, remove );
+
+			initializeActionTimer();
+			initializeBufferRegions();
 			
 			addEventListener(MouseEvent.CLICK, handleClick);
 		}
+		
+		private function initializeActionTimer():void
+		{
+			var millisecondsUntilCompletion:Number = approachTime * MILLISECONDS_IN_A_SECOND + bufferTime;
+			actionTimer = new Timer(millisecondsUntilCompletion, 1);
+			actionTimer.addEventListener( TimerEvent.TIMER_COMPLETE, remove );
+		}
+		
+		private function initializeBufferRegions():void
+		{
+			const startOfClickableRegion = (approachTime * MILLISECONDS_IN_A_SECOND) - bufferTime;
+			
+			bufferRegions = new Array();
+			bufferRegions.push(new ActionRegion("Miss", startOfClickableRegion, 0));
+			bufferRegions.push(new ActionRegion("Bad", bufferTime / 3, 0.3));
+			bufferRegions.push(new ActionRegion("Good", bufferTime / 3, 0.6));
+			bufferRegions.push(new ActionRegion("Excellent", bufferTime / 3, 1));
+			bufferRegions.push(new ActionRegion("Excellent", bufferTime / 3, 1));
+			bufferRegions.push(new ActionRegion("Good", bufferTime / 3, 0.6));
+			bufferRegions.push(new ActionRegion("Bad", bufferTime / 3, 0.3));
+			bufferRegions.push(new ActionRegion("Miss", 0, 0));
+			
+			activeRegionIndex = 0;
+			bufferTimer = new Timer(bufferRegions[activeRegionIndex].getTimeBeforeNext(), 1);
+			bufferTimer.addEventListener( TimerEvent.TIMER_COMPLETE, updateBufferRegion);
+		}
+		
 		public function beginDrawing():void
 		{
 			drawApproachCircle();
 			actionTimer.start();
+			bufferTimer.start();
 		}
 
 		private function drawApproachCircle():void
 		{
-			trace("Entering Action.drawApproachCircle");
-
 			var circle:Shape = new Shape();
 
 			circle.graphics.beginFill(0xFFFFFF, 0);
@@ -59,15 +88,25 @@
 
 		public function remove(timerEvent:TimerEvent):void
 		{
-			trace("Removing action");
 			super.visible = false;
 			actionTimer.stop();
 		}
 
+		public function updateBufferRegion(timerEvent:TimerEvent):void
+		{
+			if (activeRegionIndex < bufferRegions.length - 1)
+			{
+				activeRegionIndex++;
+				bufferTimer.stop();
+				bufferTimer = new Timer(bufferRegions[activeRegionIndex].getTimeBeforeNext(), 1);
+				bufferTimer.addEventListener( TimerEvent.TIMER_COMPLETE, updateBufferRegion);
+				bufferTimer.start();
+			}
+		}
+
 		public function handleClick(mouseEvent:MouseEvent):void
 		{
-			
-			trace("Click detected at t=" + actionTimer.currentCount + "!");
+			modifier = bufferRegions[activeRegionIndex].getModifier();
 		}
 	}
 }

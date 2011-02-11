@@ -6,7 +6,6 @@
 	{
 		public function BattleController()
 		{
-
 		}
 
 		public function launchFireball():void

@@ -21,7 +21,6 @@
 		{
 			if (actions.length > 0)
 			{
-				trace("Starting Attack.");
 				attackTimer = new Timer(timings[0]);
 				attackTimer.addEventListener( TimerEvent.TIMER, loadNextAction );
 				attackTimer.start();
@@ -39,7 +38,6 @@
 
 		public function loadNextAction(timerEvent:TimerEvent):void
 		{
-			trace("Loading next action");
 			attackTimer.stop();
 
 			if (! isLastAction())
