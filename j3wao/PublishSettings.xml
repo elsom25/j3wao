@@ -39,21 +39,21 @@
     <AlternateFilename>j3wao.xfl_alternate.html</AlternateFilename>
     <UsingOwnAlternateFile>0</UsingOwnAlternateFile>
     <OwnAlternateFilename></OwnAlternateFilename>
-    <Width>1600</Width>
-    <Height>960</Height>
+    <Width>50</Width>
+    <Height>50</Height>
     <Align>0</Align>
-    <Units>0</Units>
+    <Units>2</Units>
     <Loop>1</Loop>
     <StartPaused>0</StartPaused>
     <Scale>0</Scale>
     <HorizontalAlignment>1</HorizontalAlignment>
     <VerticalAlignment>1</VerticalAlignment>
-    <Quality>4</Quality>
+    <Quality>5</Quality>
     <DeblockingFilter>0</DeblockingFilter>
     <WindowMode>0</WindowMode>
     <DisplayMenu>1</DisplayMenu>
     <DeviceFont>0</DeviceFont>
-    <TemplateFileName>C:\Users\Oleksi\AppData\Local\Adobe\Flash CS5\en_US\Configuration\HTML\Default.html</TemplateFileName>
+    <TemplateFileName>C:\Users\Jesse McGinnis\AppData\Local\Adobe\Flash CS5\en_US\Configuration\HTML\Default.html</TemplateFileName>
     <showTagWarnMsg>1</showTagWarnMsg>
   </PublishHtmlProperties>
   <PublishFlashProperties enabled="true">
@@ -62,7 +62,7 @@
     <Report>0</Report>
     <Protect>0</Protect>
     <OmitTraceActions>0</OmitTraceActions>
-    <Quality>80</Quality>
+    <Quality>100</Quality>
     <DeblockingFilter>0</DeblockingFilter>
     <StreamFormat>0</StreamFormat>
     <StreamCompress>7</StreamCompress>
@@ -70,7 +70,7 @@
     <EventCompress>7</EventCompress>
     <OverrideSounds>0</OverrideSounds>
     <Version>10</Version>
-    <ExternalPlayer>AdobeAIR2_0</ExternalPlayer>
+    <ExternalPlayer>AdobeAIR2_5</ExternalPlayer>
     <ActionScriptVersion>3</ActionScriptVersion>
     <PackageExportFrame>1</PackageExportFrame>
     <PackagePaths></PackagePaths>
@@ -94,7 +94,7 @@
     <ExportSwc>0</ExportSwc>
     <ScriptStuckDelay>15</ScriptStuckDelay>
     <IncludeXMP>1</IncludeXMP>
-    <HardwareAcceleration>0</HardwareAcceleration>
+    <HardwareAcceleration>1</HardwareAcceleration>
     <AS3Flags>4102</AS3Flags>
     <DefaultLibraryLinkage>rsl</DefaultLibraryLinkage>
     <RSLPreloaderMethod>wrap</RSLPreloaderMethod>

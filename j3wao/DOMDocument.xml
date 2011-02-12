@@ -1,8 +1,8 @@
-<DOMDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" width="1600" height="960" currentTimeline="1" xflVersion="2.0" creatorInfo="Adobe Flash Professional CS5" platform="Windows" versionInfo="Saved by Adobe Flash Windows 11.0 build 485" majorVersion="11" buildNumber="485" viewAngle3D="113.123432202458" nextSceneIdentifier="2" playOptionsPlayLoop="false" playOptionsPlayPages="false" playOptionsPlayFrameActions="false">
+<DOMDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" width="1600" height="960" currentTimeline="1" xflVersion="2.0" creatorInfo="Adobe Flash Professional CS5" platform="Windows" versionInfo="Saved by Adobe Flash Windows 11.0 build 489" majorVersion="11" buildNumber="489" viewAngle3D="113.123432202458" nextSceneIdentifier="2" playOptionsPlayLoop="false" playOptionsPlayPages="false" playOptionsPlayFrameActions="false">
      <media>
           <DOMBitmapItem name="battle attack menu.jpg" itemID="4d538f3f-000001f7" sourceExternalFilepath=".\LIBRARY\battle attack menu.jpg" sourceLastImported="1297321348" externalFileSize="115074" quality="50" href="battle attack menu.jpg" bitmapDataHRef="M 5 1297321639.dat" frameRight="16000" frameBottom="9200" isJPEG="true"/>
           <DOMBitmapItem name="battle screen mock.jpg" itemID="4d538f3f-000001f8" sourceExternalFilepath=".\LIBRARY\battle screen mock.jpg" sourceLastImported="1297321348" externalFileSize="787490" quality="50" href="battle screen mock.jpg" bitmapDataHRef="M 4 1297321616.dat" frameRight="32000" frameBottom="19200" isJPEG="true"/>
-          <DOMBitmapItem name="title-screen.jpg" itemID="4d52d733-0000001c" sourceExternalFilepath=".\LIBRARY\title-screen.jpg" sourceLastImported="1297274019" externalFileSize="144227" quality="50" href="title-screen.jpg" bitmapDataHRef="M 2 1297274633.dat" frameRight="16000" frameBottom="9600" isJPEG="true"/>
+          <DOMBitmapItem name="title-screen.jpg" itemID="4d52d733-0000001c" sourceExternalFilepath=".\LIBRARY\title-screen.jpg" sourceLastImported="1297274019" externalFileSize="144227" allowSmoothing="true" quality="50" href="title-screen.jpg" bitmapDataHRef="M 2 1297274633.dat" frameRight="16000" frameBottom="9600" isJPEG="true"/>
      </media>
      <symbols>
           <Include href="Attack1.xml" itemIcon="0" loadImmediate="false"/>
@@ -398,30 +398,39 @@ function A4Click(event:MouseEvent):void{
           </swatchList>
      </extendedSwatchLists>
      <persistentData>
-          <PD n="DebugMovieChecked" v="ADLMobile"/>
+          <PD n="com.air.artemis.ipadest" v="j3wao.ipa"/>
+          <PD n="com.air.artemis.airdest" v="j3wao.air"/>
+          <PD n="DebugMovieChecked" v="ADLDesktop"/>
           <PD n="TestMovieChecked" v="ADLDesktop"/>
+          <PD n="com.air.artemis.pubair" v="true"/>
+          <PD n="com.air.artemis.pubipa" v="false"/>
+          <PD n="com.air.artemis.ipacertpath" v="C:/Users/Jesse McGinnis/Documents/School/1111 c3 Winter/Arts 304/j3wao.p12"/>
+          <PD n="flash.swf.basename" v="j3wao"/>
+          <PD n="flash.fla.filepath" v="C:/Users/Jesse McGinnis/Documents/School/1111 c3 Winter/Arts 304/j3wao/j3wao/j3wao.xfl"/>
+          <PD n="swf.folder.path" v="C:/Users/Jesse McGinnis/Documents/School/1111 c3 Winter/Arts 304/j3wao/"/>
+          <PD n="com.air.artemis.pubexe" v="false"/>
      </persistentData>
      <PrinterSettings/>
      <publishHistory>
+          <PublishItem publishSize="929200" publishTime="1297485118"/>
+          <PublishItem publishSize="929150" publishTime="1297484827"/>
+          <PublishItem publishSize="929028" publishTime="1297484741"/>
+          <PublishItem publishSize="929023" publishTime="1297484542"/>
+          <PublishItem publishSize="915472" publishTime="1297484532"/>
+          <PublishItem publishSize="915564" publishTime="1297484399"/>
+          <PublishItem publishSize="915570" publishTime="1297484282"/>
+          <PublishItem publishSize="929179" publishTime="1297484229"/>
+          <PublishItem publishSize="929173" publishTime="1297484220"/>
+          <PublishItem publishSize="929185" publishTime="1297484150"/>
+          <PublishItem publishSize="915552" publishTime="1297484135"/>
+          <PublishItem publishSize="915503" publishTime="1297484110"/>
+          <PublishItem publishSize="915518" publishTime="1297484095"/>
+          <PublishItem publishSize="915542" publishTime="1297484079"/>
+          <PublishItem publishSize="1160709" publishTime="1297483974"/>
+          <PublishItem publishSize="1160705" publishTime="1297483906"/>
+          <PublishItem publishSize="1160704" publishTime="1297483842"/>
           <PublishItem publishSize="932159" publishTime="1297322428"/>
           <PublishItem publishSize="932168" publishTime="1297322215"/>
           <PublishItem publishSize="932157" publishTime="1297322174"/>
-          <PublishItem publishSize="861838" publishTime="1297322135"/>
-          <PublishItem publishSize="861836" publishTime="1297322083"/>
-          <PublishItem publishSize="194539" publishTime="1297297911" publishDebug="true"/>
-          <PublishItem publishSize="194542" publishTime="1297293097"/>
-          <PublishItem publishSize="194542" publishTime="1297293037" publishDebug="true"/>
-          <PublishItem publishSize="194542" publishTime="1297292964"/>
-          <PublishItem publishSize="194552" publishTime="1297274837"/>
-          <PublishItem publishSize="77356" publishTime="1297057168"/>
-          <PublishItem publishSize="8130" publishTime="1297057135"/>
-          <PublishItem publishSize="8129" publishTime="1297057120"/>
-          <PublishItem publishSize="8130" publishTime="1297057098"/>
-          <PublishItem publishSize="8128" publishTime="1297057023"/>
-          <PublishItem publishSize="8129" publishTime="1297057006"/>
-          <PublishItem publishSize="8126" publishTime="1297056932"/>
-          <PublishItem publishSize="8127" publishTime="1297056895"/>
-          <PublishItem publishSize="8127" publishTime="1297056857"/>
-          <PublishItem publishSize="8126" publishTime="1297056850"/>
      </publishHistory>
 </DOMDocument>
