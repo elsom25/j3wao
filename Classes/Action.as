@@ -94,6 +94,7 @@
 		private function undraw():void
 		{
 			super.visible = false;
+			trace( bufferRegions[activeRegionIndex].getName() + " (modifier: " + modifier + ")");
 			actionTimer.stop();
 		}
 		
@@ -112,7 +113,6 @@
 		public function handleClick(mouseEvent:MouseEvent):void
 		{
 			modifier = bufferRegions[activeRegionIndex].getModifier();
-			trace( bufferRegions[activeRegionIndex].getName() + " (modifier: " + modifier + ")");
 			undraw();
 		}
 	}
