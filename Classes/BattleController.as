@@ -2,6 +2,8 @@
 {
 	import flash.display.MovieClip;
 
+	/*The BattleController manages battles. It holds the player and enemy data, and provides a basic interface
+	for launching attacks.*/
 	public class BattleController extends MovieClip
 	{
 		public function BattleController()

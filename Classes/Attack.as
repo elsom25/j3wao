@@ -4,6 +4,14 @@
 	import flash.utils.Timer;
 	import flash.events.TimerEvent;
 
+	/*
+	Attack is an abstract class that presents an attack on screen and keeps track of things like damage.
+	An attack is defined by 
+	- a list of Actions (the actions array),
+	- the length of time between the start of two adjacent actions (the timings array),
+	- the nextIndex variable indicates the progress of this attack. It is needed to know which Action to start next.
+	- the attackTimer is the timer that indicates when to start drawing the next attack. It's length depends on the timings array.
+	*/
 	public class Attack extends MovieClip
 	{
 		protected var actions:Array;

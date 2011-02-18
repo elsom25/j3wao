@@ -2,6 +2,10 @@
 {	
 	import flash.sampler.StackFrame;
 
+	/*An ActionRegion is our representation of the timing regions of an Action. These ActionRegions surround the ideal moment to tap an action.
+	  We can have regions such as "Miss", "Bad", "Good", "Excellent" on either side of the ideal action moment. The modifier variable is used define
+	  how the damage of an Attack is effected by an Action that gets tapped while in this ActionRegion. For example, a "bad" would have a 
+	  lower modifier than "good". timeBeforeNext is used to determine when the next ActionRegion begins.*/
 	public class ActionRegion 
 	{
 		private var name:String;
