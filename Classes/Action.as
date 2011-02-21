@@ -33,8 +33,9 @@
 		/*We use bufferTimer to indicate when to transition into the next buffer.*/
 		protected var bufferTimer:Timer;
 
-		/*This modifier is set when the user interacts with the action. It is extracted from the currently active region.*/
-		private var modifier:Number;
+		/*This bufferToProcess is set when the user interacts with the action. It is the active region when the click was processed.
+		  It is set to "Miss" by default, so if no click occurs, this value will still hold "Miss"*/
+		private var bufferToProcess:ActionRegion;
 
 		/*NOTE: The ideal hit time is at the exact moment when the approach circles close. This means that the ideal hit moment is
 		equal to approachTime milliseconds after the start of the Action*/
@@ -69,9 +70,10 @@
 			bufferRegions.push(new ActionRegion("Excellent", bufferTime / 3, 1));
 			bufferRegions.push(new ActionRegion("Good", bufferTime / 3, 0.6));
 			bufferRegions.push(new ActionRegion("Bad", bufferTime / 3, 0.3));
-			bufferRegions.push(new ActionRegion("Miss", 0, 0));
 
 			activeRegionIndex = 0;
+			bufferToProcess = bufferRegions[activeRegionIndex];
+			
 			bufferTimer = new Timer(bufferRegions[activeRegionIndex].getTimeBeforeNext(),1);
 			bufferTimer.addEventListener( TimerEvent.TIMER_COMPLETE, updateBufferRegion);
 		}
@@ -107,7 +109,7 @@
 		private function undraw():void
 		{
 			super.visible = false;
-			trace( bufferRegions[activeRegionIndex].getName() + " (modifier: " + modifier + ")");
+			trace(bufferToProcess.getName() + " (modifier: " + bufferToProcess.getModifier() + ")");
 			actionTimer.stop();
 		}
 		
@@ -125,7 +127,7 @@
 
 		public function handleClick(mouseEvent:MouseEvent):void
 		{
-			modifier = bufferRegions[activeRegionIndex].getModifier();
+			bufferToProcess = bufferRegions[activeRegionIndex];
 			undraw();
 		}
 	}

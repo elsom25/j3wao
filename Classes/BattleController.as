@@ -12,12 +12,12 @@
 
 		public function launchFireball():void
 		{
-			var attack:Attack = new Fireball();
+			var attack:Attack = new Fireball(90);
 			addChild( attack );
 		}		
 		public function launchIceSpear():void
 		{
-			var attack:Attack = new IceSpear();
+			var attack:Attack = new IceSpear(90);
 			addChild( attack );
 		}
 	}

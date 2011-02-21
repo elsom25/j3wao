@@ -5,17 +5,17 @@
 
 	public class Fireball extends Attack
 	{
-		public function Fireball()
+		public function Fireball(bpm:Number)
 		{
 			super();
-			buildAttack();
+			buildAttack(bpm);
 			startAttack();
 		}
 		
-		private function buildAttack():void
+		private function buildAttack(bpm:Number):void
 		{
 			super.actions.push( new TapAction(300, 300, 1500, 500) );
-			super.timings.push( 3000 );
+			super.timings.push( beatsToMilliseconds(3, bpm) );
 			super.actions.push( new TapAction(400, 300, 1500, 500) );
 		}
 	}
