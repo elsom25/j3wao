@@ -71,5 +71,17 @@
 		{
 			return nextIndex == timings.length;
 		}
+		
+		public function beatsToMilliseconds(beats:Number, beatsPerMinute:Number):Number
+		{
+			const SECONDS_PER_MINUTE:Number = 60;
+			const MILLISECONDS_PER_SECOND = 1000;
+			
+			var minutes = beats / beatsPerMinute;
+			var seconds = minutes * SECONDS_PER_MINUTE;
+			var milliseconds = seconds * MILLISECONDS_PER_SECOND;
+			
+			return milliseconds;
+		}
 	}
 }

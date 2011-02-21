@@ -15,7 +15,7 @@
 	/*An Action is an abstract class representing a single interactive part of an attack (like a tap).*/
 	public class Action extends MovieClip
 	{
-		public const MILLISECONDS_IN_A_SECOND:Number = 1000;
+		public const MILLISECONDS_PER_SECOND:Number = 1000;
 
 		/*Used to determine long this action is on screen. When this time ticks, we undraw the action*/
 		protected var actionTimer:Timer; 
@@ -41,7 +41,7 @@
 
 		public function Action(approachTime:Number, bufferTime:Number)
 		{
-			this.approachTime = approachTime / MILLISECONDS_IN_A_SECOND;
+			this.approachTime = approachTime / MILLISECONDS_PER_SECOND;
 			this.bufferTime = bufferTime;
 
 			initializeActionTimer();
@@ -52,14 +52,14 @@
 
 		private function initializeActionTimer():void
 		{
-			var millisecondsUntilCompletion:Number = approachTime * MILLISECONDS_IN_A_SECOND + bufferTime;
+			var millisecondsUntilCompletion:Number = approachTime * MILLISECONDS_PER_SECOND + bufferTime;
 			actionTimer = new Timer(millisecondsUntilCompletion,1);
 			actionTimer.addEventListener( TimerEvent.TIMER_COMPLETE, remove );
 		}
 
 		private function initializeBufferRegions():void
 		{
-			const startOfClickableRegion = (approachTime * MILLISECONDS_IN_A_SECOND) - bufferTime;
+			const startOfClickableRegion = (approachTime * MILLISECONDS_PER_SECOND) - bufferTime;
 
 			bufferRegions = new Array();
 			bufferRegions.push(new ActionRegion("Miss", startOfClickableRegion, 0));
