@@ -90,13 +90,13 @@
 			var circle:Shape = new Shape();
 
 			circle.graphics.beginFill(0xFFFFFF, 0);
-			circle.graphics.lineStyle(2);
-			circle.graphics.drawCircle(0,0,100);
+			circle.graphics.lineStyle(5);
+			circle.graphics.drawCircle(0,0,260);
 			circle.graphics.endFill();
 			addChild(circle);
 
-			var heightTween:Tween = new Tween(circle,"scaleX",None.easeIn,1,0.5,approachTime,true);
-			var widthTween:Tween = new Tween(circle,"scaleY",None.easeIn,1,0.5,approachTime,true);
+			var heightTween:Tween = new Tween(circle, "scaleX", None.easeIn, 1, 0.5, approachTime, true);
+			var widthTween:Tween = new Tween(circle, "scaleY", None.easeIn, 1, 0.5, approachTime, true);
 			heightTween.start();
 			widthTween.start();
 		}
