@@ -4,7 +4,8 @@
 	import flash.events.TimerEvent;
 
 	public class IceSpear extends Attack
-	{
+	{		
+		
 		public function IceSpear(bpm:Number)
 		{
 			super();

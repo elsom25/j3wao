@@ -18,11 +18,13 @@
 		protected var timings:Array;
 		protected var nextIndex:Number;
 		protected var attackTimer:Timer;
+		protected var damage:Number;
 		public function Attack()
 		{
 			actions = new Array();
 			timings = new Array();
 			nextIndex = 0;
+			damage = 0;
 		}
 
 		public function startAttack()
@@ -82,6 +84,11 @@
 			var milliseconds = seconds * MILLISECONDS_PER_SECOND;
 			
 			return milliseconds;
+		}
+		
+		public function getDamage():Number
+		{
+			return damage;
 		}
 	}
 }
