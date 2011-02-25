@@ -1,10 +1,12 @@
 ﻿package {
 	import flash.display.MovieClip;
+	import flash.display.Sprite;
 	
 	//An Entity is something that has a presence during battle, such as the player and enemy
 	public class Entity extends MovieClip {
 		
 		//The set of sprites for animation for this entity
+		//Note - the last sprite in the array should be the entity-death sprite
 		protected var spriteSet:Array;
 		//Number to enumerate through the spriteSet
 		protected var curSprite:int;
@@ -23,6 +25,11 @@
 		//Function that does damage to the entity and returns the modified HP value
 		public function takeDamage(damage:int):int {
 			curHP = curHP - damage;
+			
+			//If dead, set the sprite to be the entity-death sprite
+			if (curHP <= 0) {
+				curSprite = spriteSet.length - 1;
+			}
 			return curHP;
 		}
 		
@@ -42,6 +49,20 @@
 			return false;
 		}
 		
+		//Returns the current sprite to show onscreen
+		//NOTE - This does NOT advance the sprite counter - that must be done with setNextSprite()
+		public function getSprite():Sprite {
+			return spriteSet.get(curSprite);
+		}
 		
+		//Advance the sprite counter in the animation
+		public function setNextSprite():void {
+			//If right before the death sprite, return to beginning of animation loop
+			if (curSprite == spriteSet.length - 2) {
+				curSprite = 0;
+			} else {
+				curSprite = curSprite + 1;
+			}
+		}
 	}
 }
