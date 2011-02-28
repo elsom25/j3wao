@@ -1,17 +1,49 @@
 <DOMDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" width="1600" height="960" currentTimeline="1" xflVersion="2.0" creatorInfo="Adobe Flash Professional CS5" platform="Windows" versionInfo="Saved by Adobe Flash Windows 11.0 build 485" majorVersion="11" buildNumber="485" viewAngle3D="113.123432202458" nextSceneIdentifier="2" playOptionsPlayLoop="false" playOptionsPlayPages="false" playOptionsPlayFrameActions="false">
+     <folders>
+          <DOMFolderItem name="Fireworks Objects" itemID="4d6b27bd-000001dc"/>
+          <DOMFolderItem name="Fireworks Objects/startbutton.png" itemID="4d6b27bd-000001dd"/>
+          <DOMFolderItem name="Fireworks Objects/startbutton.png/Page 1" itemID="4d6b27bd-000001de"/>
+          <DOMFolderItem name="Fireworks Objects/titlescreen.png" itemID="4d6b27be-000001e7"/>
+          <DOMFolderItem name="Fireworks Objects/titlescreen.png/Page 1" itemID="4d6b27be-000001e8"/>
+     </folders>
      <media>
-          <DOMBitmapItem name="battle attack menu.jpg" itemID="4d538f3f-000001f7" sourceExternalFilepath=".\LIBRARY\battle attack menu.jpg" sourceLastImported="1297321348" externalFileSize="115074" originalCompressionType="lossless" quality="50" href="battle attack menu.jpg" bitmapDataHRef="M 5 1297321639.dat" frameLeft="-115200" frameTop="-115200" frameRight="-115200" frameBottom="-115200"/>
+          <DOMBitmapItem name="battle attack menu.jpg" itemID="4d538f3f-000001f7" sourceExternalFilepath=".\LIBRARY\battle attack menu.jpg" sourceLastImported="1297321348" externalFileSize="115074" quality="50" href="battle attack menu.jpg" bitmapDataHRef="M 5 1297321639.dat" frameRight="16000" frameBottom="9200" isJPEG="true"/>
           <DOMBitmapItem name="battle screen mock.jpg" itemID="4d538f3f-000001f8" sourceExternalFilepath=".\LIBRARY\battle screen mock.jpg" sourceLastImported="1297321348" externalFileSize="787490" quality="50" href="battle screen mock.jpg" bitmapDataHRef="M 4 1297321616.dat" frameRight="32000" frameBottom="19200" isJPEG="true"/>
-          <DOMBitmapItem name="title-screen.jpg" itemID="4d52d733-0000001c" sourceExternalFilepath=".\LIBRARY\title-screen.jpg" sourceLastImported="1297274019" externalFileSize="144227" allowSmoothing="true" quality="50" href="title-screen.jpg" bitmapDataHRef="M 2 1297274633.dat" frameRight="16000" frameBottom="9600" isJPEG="true"/>
+          <DOMBitmapItem name="Fireworks Objects/titlescreen.png/Page 1/Bitmap 10" itemID="4d6b27bf-000001f6" sourceLastImported="1298868159" originalCompressionType="lossless" quality="50" href="Fireworks Objects\titlescreen.png\Page 1\Bitmap 10" bitmapDataHRef="M 10 1298868159.dat" frameRight="8280" frameBottom="9520"/>
+          <DOMBitmapItem name="Fireworks Objects/titlescreen.png/Page 1/Bitmap 11" itemID="4d6b27bf-000001f8" sourceLastImported="1298868159" originalCompressionType="lossless" quality="50" href="Fireworks Objects\titlescreen.png\Page 1\Bitmap 11" bitmapDataHRef="M 11 1298868159.dat" frameRight="5540" frameBottom="1940"/>
+          <DOMBitmapItem name="Fireworks Objects/titlescreen.png/Page 1/Bitmap 12" itemID="4d6b27bf-000001fa" sourceLastImported="1298868159" originalCompressionType="lossless" quality="50" href="Fireworks Objects\titlescreen.png\Page 1\Bitmap 12" bitmapDataHRef="M 12 1298868159.dat" frameRight="5540" frameBottom="1940"/>
+          <DOMBitmapItem name="Fireworks Objects/titlescreen.png/Page 1/Bitmap 13" itemID="4d6b27bf-000001fc" sourceLastImported="1298868159" originalCompressionType="lossless" quality="50" href="Fireworks Objects\titlescreen.png\Page 1\Bitmap 13" bitmapDataHRef="M 13 1298868159.dat" frameRight="5540" frameBottom="1940"/>
+          <DOMBitmapItem name="Fireworks Objects/titlescreen.png/Page 1/Bitmap 14" itemID="4d6b27bf-000001fe" sourceLastImported="1298868159" originalCompressionType="lossless" quality="50" href="Fireworks Objects\titlescreen.png\Page 1\Bitmap 14" bitmapDataHRef="M 14 1298868159.dat" frameRight="4600" frameBottom="2260"/>
+          <DOMBitmapItem name="Fireworks Objects/titlescreen.png/Page 1/Bitmap 15" itemID="4d6b27bf-00000200" sourceLastImported="1298868159" originalCompressionType="lossless" quality="50" href="Fireworks Objects\titlescreen.png\Page 1\Bitmap 15" bitmapDataHRef="M 15 1298868159.dat" frameRight="19420" frameBottom="460"/>
+          <DOMBitmapItem name="Fireworks Objects/titlescreen.png/Page 1/Bitmap 16" itemID="4d6b27bf-00000204" sourceLastImported="1298868159" originalCompressionType="lossless" quality="50" href="Fireworks Objects\titlescreen.png\Page 1\Bitmap 16" bitmapDataHRef="M 16 1298868159.dat" frameRight="2220" frameBottom="940"/>
+          <DOMBitmapItem name="Fireworks Objects/titlescreen.png/Page 1/Bitmap 17" itemID="4d6b27bf-00000208" sourceLastImported="1298868159" originalCompressionType="lossless" quality="50" href="Fireworks Objects\titlescreen.png\Page 1\Bitmap 17" bitmapDataHRef="M 17 1298868159.dat" frameRight="2220" frameBottom="940"/>
+          <DOMBitmapItem name="Fireworks Objects/titlescreen.png/Page 1/Bitmap 18" itemID="4d6b27bf-0000020a" sourceLastImported="1298868159" originalCompressionType="lossless" quality="50" href="Fireworks Objects\titlescreen.png\Page 1\Bitmap 18" bitmapDataHRef="M 18 1298868159.dat" frameRight="16040" frameBottom="6960"/>
+          <DOMBitmapItem name="Fireworks Objects/titlescreen.png/Page 1/Bitmap 19" itemID="4d6b27bf-0000020c" sourceLastImported="1298868159" originalCompressionType="lossless" quality="50" href="Fireworks Objects\titlescreen.png\Page 1\Bitmap 19" bitmapDataHRef="M 19 1298868159.dat" frameRight="9380" frameBottom="3380"/>
+          <DOMBitmapItem name="Fireworks Objects/titlescreen.png/Page 1/Bitmap 20" itemID="4d6b27bf-0000020e" sourceLastImported="1298868159" originalCompressionType="lossless" quality="50" href="Fireworks Objects\titlescreen.png\Page 1\Bitmap 20" bitmapDataHRef="M 20 1298868159.dat" frameRight="5600" frameBottom="2980"/>
+          <DOMBitmapItem name="Fireworks Objects/titlescreen.png/Page 1/Bitmap 21" itemID="4d6b27bf-00000210" sourceLastImported="1298868159" originalCompressionType="lossless" quality="50" href="Fireworks Objects\titlescreen.png\Page 1\Bitmap 21" bitmapDataHRef="M 21 1298868159.dat" frameRight="4480" frameBottom="5280"/>
+          <DOMBitmapItem name="Fireworks Objects/titlescreen.png/Page 1/Bitmap 22" itemID="4d6b27bf-00000212" sourceLastImported="1298868159" originalCompressionType="lossless" quality="50" href="Fireworks Objects\titlescreen.png\Page 1\Bitmap 22" bitmapDataHRef="M 22 1298868159.dat" frameRight="1920" frameBottom="4800"/>
+          <DOMBitmapItem name="Fireworks Objects/startbutton.png/Page 1/Bitmap 4" itemID="4d6b27be-000001e4" sourceLastImported="1298868158" originalCompressionType="lossless" quality="50" href="Fireworks Objects\startbutton.png\Page 1\Bitmap 4" bitmapDataHRef="M 4 1298868158.dat" frameRight="2220" frameBottom="940"/>
+          <DOMBitmapItem name="Fireworks Objects/titlescreen.png/Page 1/Bitmap 5" itemID="4d6b27be-000001ec" sourceLastImported="1298868158" originalCompressionType="lossless" quality="50" href="Fireworks Objects\titlescreen.png\Page 1\Bitmap 5" bitmapDataHRef="M 5 1298868158.dat" frameRight="16000" frameBottom="9600"/>
+          <DOMBitmapItem name="Fireworks Objects/titlescreen.png/Page 1/Bitmap 6" itemID="4d6b27bf-000001ee" sourceLastImported="1298868159" originalCompressionType="lossless" quality="50" href="Fireworks Objects\titlescreen.png\Page 1\Bitmap 6" bitmapDataHRef="M 6 1298868159.dat" frameRight="32000" frameBottom="19200"/>
+          <DOMBitmapItem name="Fireworks Objects/titlescreen.png/Page 1/Bitmap 7" itemID="4d6b27bf-000001f0" sourceLastImported="1298868159" originalCompressionType="lossless" quality="50" href="Fireworks Objects\titlescreen.png\Page 1\Bitmap 7" bitmapDataHRef="M 7 1298868159.dat" frameRight="7420" frameBottom="5880"/>
+          <DOMBitmapItem name="Fireworks Objects/titlescreen.png/Page 1/Bitmap 8" itemID="4d6b27bf-000001f2" sourceLastImported="1298868159" originalCompressionType="lossless" quality="50" href="Fireworks Objects\titlescreen.png\Page 1\Bitmap 8" bitmapDataHRef="M 8 1298868159.dat" frameRight="13420" frameBottom="8380"/>
+          <DOMBitmapItem name="Fireworks Objects/titlescreen.png/Page 1/Bitmap 9" itemID="4d6b27bf-000001f4" sourceLastImported="1298868159" originalCompressionType="lossless" quality="50" href="Fireworks Objects\titlescreen.png\Page 1\Bitmap 9" bitmapDataHRef="M 9 1298868159.dat" frameRight="3600" frameBottom="7840"/>
      </media>
      <symbols>
           <Include href="Attack1.xml" itemIcon="0" loadImmediate="false"/>
           <Include href="Attack2.xml" itemIcon="0" loadImmediate="false"/>
+          <Include href="Fireworks Objects/startbutton.png/Page 1/Page 1.xml" loadImmediate="false"/>
+          <Include href="Fireworks Objects/startbutton.png/Page 1/Shape 3.xml" itemIcon="1" loadImmediate="false"/>
+          <Include href="Fireworks Objects/titlescreen.png/Page 1/Page 1.xml" loadImmediate="false"/>
+          <Include href="Fireworks Objects/titlescreen.png/Page 1/Shape 3.xml" itemIcon="1" loadImmediate="false"/>
+          <Include href="Fireworks Objects/titlescreen.png/Page 1/Shape 3 1.xml" itemIcon="1" loadImmediate="false"/>
+          <Include href="StartButton.xml" itemIcon="0" loadImmediate="false"/>
+          <Include href="startbutton.png.xml" itemIcon="1" loadImmediate="false"/>
           <Include href="TapAction.xml"/>
-          <Include href="Title Screen.xml" itemIcon="0" loadImmediate="false"/>
+          <Include href="titlescreen.png.xml" itemIcon="1" loadImmediate="false"/>
      </symbols>
      <timelines>
-          <DOMTimeline name="Scene 1" currentFrame="1">
+          <DOMTimeline name="Scene 1">
                <layers>
                     <DOMLayer name="Layer 1" color="#4FFF4F" current="true" isSelected="true">
                          <frames>
@@ -22,20 +54,28 @@
 import flash.events.MouseEvent;
 // property change \\
 
-NewGame.addEventListener(MouseEvent.CLICK, rClick);
+StartButton.addEventListener(MouseEvent.CLICK, handleStartClick);
 
-function rClick(event:MouseEvent):void
+function handleStartClick(event:MouseEvent):void
 {
 	gotoAndStop("MainBattleFrame");
 }]]></script>
                                    </Actionscript>
                                    <elements>
-                                        <DOMSymbolInstance libraryItemName="Title Screen" name="NewGame" symbolType="button">
+                                        <DOMSymbolInstance libraryItemName="titlescreen.png" name="" symbolType="graphic" loop="loop">
                                              <matrix>
-                                                  <Matrix a="1.99996948242188" d="2.00003051757813" ty="-4"/>
+                                                  <Matrix tx="3.4" ty="-6.75"/>
                                              </matrix>
                                              <transformationPoint>
-                                                  <Point x="5.75" y="80"/>
+                                                  <Point x="800" y="480"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                        <DOMSymbolInstance libraryItemName="StartButton" name="StartButton" symbolType="button">
+                                             <matrix>
+                                                  <Matrix tx="762.65" ty="814.85"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point/>
                                              </transformationPoint>
                                         </DOMSymbolInstance>
                                    </elements>
@@ -51,8 +91,6 @@ addChild(battleController)
 
 Attack1.addEventListener(MouseEvent.CLICK, A1Click);
 Attack2.addEventListener(MouseEvent.CLICK, A2Click);
-//Attack3.addEventListener(MouseEvent.CLICK, A3Click);
-//Attack4.addEventListener(MouseEvent.CLICK, A4Click);
 
 function A1Click(event:MouseEvent):void{
 	battleController.launchFireball();
@@ -60,18 +98,10 @@ function A1Click(event:MouseEvent):void{
 
 function A2Click(event:MouseEvent):void{
 	battleController.launchIceSpear();
-}
-/*
-function A3Click(event:MouseEvent):void{
-	gotoAndStop("MainBattle");//Put Action Here
-}
-
-function A4Click(event:MouseEvent):void{
-	gotoAndStop("MainBattle");//Put Action Here
-}*/]]></script>
+}]]></script>
                                    </Actionscript>
                                    <elements>
-                                        <DOMBitmapInstance name="" referenceID="" selected="true" libraryItemName="battle screen mock.jpg"/>
+                                        <DOMBitmapInstance name="" referenceID="" libraryItemName="battle screen mock.jpg"/>
                                         <DOMSymbolInstance libraryItemName="Attack1" name="Attack1" symbolType="button">
                                              <matrix>
                                                   <Matrix tx="936" ty="726.1"/>
@@ -406,12 +436,14 @@ function A4Click(event:MouseEvent):void{
           <PD n="com.air.artemis.pubipa" v="false"/>
           <PD n="com.air.artemis.ipacertpath" v="C:/Users/Jesse McGinnis/Documents/School/1111 c3 Winter/Arts 304/j3wao.p12"/>
           <PD n="flash.swf.basename" v="j3wao"/>
-          <PD n="flash.fla.filepath" v="C:/Users/Oleksi/Documents/School/1111 - Winter 2011/ARTS 304/j3wao/j3wao/j3wao.xfl"/>
           <PD n="swf.folder.path" v="C:/Users/Oleksi/Documents/School/1111 - Winter 2011/ARTS 304/j3wao/"/>
+          <PD n="flash.fla.filepath" v="C:/Users/Oleksi/Documents/School/1111 - Winter 2011/ARTS 304/j3wao/j3wao/j3wao.xfl"/>
           <PD n="com.air.artemis.pubexe" v="false"/>
      </persistentData>
      <PrinterSettings/>
      <publishHistory>
+          <PublishItem publishSize="1219577" publishTime="1298868477"/>
+          <PublishItem publishSize="917711" publishTime="1298868287"/>
           <PublishItem publishSize="1160966" publishTime="1298346520"/>
           <PublishItem publishSize="1043516" publishTime="1298337828"/>
           <PublishItem publishSize="1160980" publishTime="1298325786" publishDebug="true"/>
@@ -430,7 +462,5 @@ function A4Click(event:MouseEvent):void{
           <PublishItem publishSize="1160973" publishTime="1298318945"/>
           <PublishItem publishSize="1160974" publishTime="1298318879"/>
           <PublishItem publishSize="1160972" publishTime="1298318819"/>
-          <PublishItem publishSize="1160939" publishTime="1298318509"/>
-          <PublishItem publishSize="1160958" publishTime="1298318338"/>
      </publishHistory>
 </DOMDocument>

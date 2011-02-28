@@ -1,0 +1,279 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Fireworks Objects/titlescreen.png/Page 1/Page 1" itemID="4d6b27be-000001ea" lastModified="1298868158">
+  <timeline>
+    <DOMTimeline name="Page 1">
+      <layers>
+        <DOMLayer name="Layer" color="#9933CC" autoNamed="false" layerType="folder">
+          <frames/>
+        </DOMLayer>
+        <DOMLayer name="sketch" color="#FF4F4F" parentLayerIndex="0" autoNamed="false" layerType="folder">
+          <frames/>
+        </DOMLayer>
+        <DOMLayer name="gurl" color="#9933CC" parentLayerIndex="1" current="true" isSelected="true" autoNamed="false" visible="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMBitmapInstance name="" referenceID="" selected="true" libraryItemName="Fireworks Objects/titlescreen.png/Page 1/Bitmap 22">
+                  <matrix>
+                    <Matrix tx="537" ty="274"/>
+                  </matrix>
+                </DOMBitmapInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="boi" color="#4FFF4F" parentLayerIndex="1" autoNamed="false" visible="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMBitmapInstance name="" referenceID="" selected="true" libraryItemName="Fireworks Objects/titlescreen.png/Page 1/Bitmap 21">
+                  <matrix>
+                    <Matrix tx="823" ty="247"/>
+                  </matrix>
+                </DOMBitmapInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="inal" color="#4F80FF" parentLayerIndex="0" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMBitmapInstance name="" referenceID="" selected="true" libraryItemName="Fireworks Objects/titlescreen.png/Page 1/Bitmap 20">
+                  <matrix>
+                    <Matrix tx="1008" ty="452"/>
+                  </matrix>
+                </DOMBitmapInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="antasy" color="#808080" parentLayerIndex="0" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMBitmapInstance name="" referenceID="" selected="true" libraryItemName="Fireworks Objects/titlescreen.png/Page 1/Bitmap 19">
+                  <matrix>
+                    <Matrix tx="389" ty="466"/>
+                  </matrix>
+                </DOMBitmapInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="F    F" color="#4FFFFF" parentLayerIndex="0" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMBitmapInstance name="" referenceID="" selected="true" libraryItemName="Fireworks Objects/titlescreen.png/Page 1/Bitmap 18">
+                  <matrix>
+                    <Matrix tx="249" ty="251"/>
+                  </matrix>
+                </DOMBitmapInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="buttons copy" color="#9933CC" parentLayerIndex="0" autoNamed="false" visible="false" layerType="folder">
+          <frames/>
+        </DOMLayer>
+        <DOMLayer name="Start" color="#FF4FFF" parentLayerIndex="7" autoNamed="false" visible="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMBitmapInstance name="" referenceID="" selected="true" libraryItemName="Fireworks Objects/titlescreen.png/Page 1/Bitmap 17">
+                  <matrix>
+                    <Matrix tx="726" ty="624"/>
+                  </matrix>
+                </DOMBitmapInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Shape 3" color="#FF800A" parentLayerIndex="7" autoNamed="false" visible="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Fireworks Objects/titlescreen.png/Page 1/Shape 3 1" name="" selected="true" symbolType="graphic" loop="loop">
+                  <color>
+                    <Color alphaMultiplier="0.12890625"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="buttons" color="#4F80FF" parentLayerIndex="0" autoNamed="false" visible="false" layerType="folder">
+          <frames/>
+        </DOMLayer>
+        <DOMLayer name="Start" color="#4FFF4F" parentLayerIndex="10" autoNamed="false" visible="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMBitmapInstance name="" referenceID="" selected="true" libraryItemName="Fireworks Objects/titlescreen.png/Page 1/Bitmap 16">
+                  <matrix>
+                    <Matrix tx="726" ty="624"/>
+                  </matrix>
+                </DOMBitmapInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Shape 3" color="#FF4F4F" parentLayerIndex="10" autoNamed="false" visible="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Fireworks Objects/titlescreen.png/Page 1/Shape 3" name="" selected="true" symbolType="graphic" loop="loop">
+                  <color>
+                    <Color alphaMultiplier="0.12890625"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Shape 2" color="#808080" parentLayerIndex="0" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMBitmapInstance name="" referenceID="" selected="true" libraryItemName="Fireworks Objects/titlescreen.png/Page 1/Bitmap 15">
+                  <matrix>
+                    <Matrix tx="297" ty="593"/>
+                  </matrix>
+                </DOMBitmapInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="hugebuttons" color="#4FFF4F" parentLayerIndex="0" autoNamed="false" visible="false" layerType="folder">
+          <frames/>
+        </DOMLayer>
+        <DOMLayer name="Shape 1 copy 3" color="#4FFFFF" parentLayerIndex="14" autoNamed="false" visible="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMBitmapInstance name="" referenceID="" selected="true" libraryItemName="Fireworks Objects/titlescreen.png/Page 1/Bitmap 14">
+                  <matrix>
+                    <Matrix tx="974" ty="608"/>
+                  </matrix>
+                </DOMBitmapInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Shape 1 copy 2" color="#FF4FFF" parentLayerIndex="14" autoNamed="false" visible="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMBitmapInstance name="" referenceID="" selected="true" libraryItemName="Fireworks Objects/titlescreen.png/Page 1/Bitmap 13">
+                  <matrix>
+                    <Matrix tx="924" ty="482"/>
+                  </matrix>
+                </DOMBitmapInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Shape 1 copy" color="#FF800A" parentLayerIndex="14" autoNamed="false" visible="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMBitmapInstance name="" referenceID="" selected="true" libraryItemName="Fireworks Objects/titlescreen.png/Page 1/Bitmap 12">
+                  <matrix>
+                    <Matrix tx="925" ty="353"/>
+                  </matrix>
+                </DOMBitmapInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Shape 1" color="#9933CC" parentLayerIndex="14" autoNamed="false" visible="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMBitmapInstance name="" referenceID="" selected="true" libraryItemName="Fireworks Objects/titlescreen.png/Page 1/Bitmap 11">
+                  <matrix>
+                    <Matrix tx="924" ty="239"/>
+                  </matrix>
+                </DOMBitmapInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="boy" color="#FF4F4F" parentLayerIndex="0" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMBitmapInstance name="" referenceID="" selected="true" libraryItemName="Fireworks Objects/titlescreen.png/Page 1/Bitmap 10">
+                  <matrix>
+                    <Matrix tx="856" ty="19"/>
+                  </matrix>
+                </DOMBitmapInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="girl" color="#4F80FF" parentLayerIndex="0" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMBitmapInstance name="" referenceID="" selected="true" libraryItemName="Fireworks Objects/titlescreen.png/Page 1/Bitmap 9">
+                  <matrix>
+                    <Matrix tx="284" ty="86"/>
+                  </matrix>
+                </DOMBitmapInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 2" color="#808080" parentLayerIndex="0" autoNamed="false" visible="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMBitmapInstance name="" referenceID="" selected="true" libraryItemName="Fireworks Objects/titlescreen.png/Page 1/Bitmap 8">
+                  <matrix>
+                    <Matrix tx="400" ty="240"/>
+                  </matrix>
+                </DOMBitmapInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 1" color="#4FFFFF" parentLayerIndex="0" autoNamed="false" visible="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMBitmapInstance name="" referenceID="" selected="true" libraryItemName="Fireworks Objects/titlescreen.png/Page 1/Bitmap 7">
+                  <matrix>
+                    <Matrix tx="559" ty="240"/>
+                  </matrix>
+                </DOMBitmapInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 0 copy" color="#FF4FFF" parentLayerIndex="0" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMBitmapInstance name="" referenceID="" selected="true" libraryItemName="Fireworks Objects/titlescreen.png/Page 1/Bitmap 6"/>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 0" color="#FF800A" parentLayerIndex="0" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMBitmapInstance name="" referenceID="" selected="true" libraryItemName="Fireworks Objects/titlescreen.png/Page 1/Bitmap 5">
+                  <matrix>
+                    <Matrix tx="400" ty="240"/>
+                  </matrix>
+                </DOMBitmapInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

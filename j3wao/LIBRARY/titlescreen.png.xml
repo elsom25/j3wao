@@ -1,0 +1,17 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="titlescreen.png" itemID="4d6b27bf-00000213" symbolType="graphic" lastModified="1298868159">
+  <timeline>
+    <DOMTimeline name="titlescreen.png">
+      <layers>
+        <DOMLayer name="Layer 1" color="#4FFF4F" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" name="titlescreen.pngPage 1" labelType="name" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Fireworks Objects/titlescreen.png/Page 1/Page 1" name="" selected="true"/>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

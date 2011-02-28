@@ -1,0 +1,43 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Fireworks Objects/startbutton.png/Page 1/Page 1" itemID="4d6b27bd-000001e0" lastModified="1298868157">
+  <timeline>
+    <DOMTimeline name="Page 1">
+      <layers>
+        <DOMLayer name="Layer" color="#9933CC" autoNamed="false" layerType="folder">
+          <frames/>
+        </DOMLayer>
+        <DOMLayer name="buttons copy" color="#FF800A" parentLayerIndex="0" autoNamed="false" layerType="folder">
+          <frames/>
+        </DOMLayer>
+        <DOMLayer name="Start" color="#4FFFFF" parentLayerIndex="1" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMBitmapInstance name="" referenceID="" libraryItemName="Fireworks Objects/startbutton.png/Page 1/Bitmap 4">
+                  <matrix>
+                    <Matrix tx="46" ty="19"/>
+                  </matrix>
+                </DOMBitmapInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Shape 3" color="#FF4FFF" parentLayerIndex="1" current="true" isSelected="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Fireworks Objects/startbutton.png/Page 1/Shape 3" name="" selected="true" symbolType="graphic" loop="loop">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0.25"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

@@ -1,0 +1,24 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="StartButton" itemID="4d6b2808-00000239" sourceLibraryItemHRef="Symbol 1" symbolType="button" lastModified="1298868247">
+  <timeline>
+    <DOMTimeline name="StartButton">
+      <layers>
+        <DOMLayer name="Layer 1" color="#4FFF4F" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="startbutton.png" name="" selected="true" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix tx="-106.2" ty="-43.4"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="107.2" y="42.4"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

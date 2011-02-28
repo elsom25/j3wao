@@ -1,0 +1,35 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Fireworks Objects/startbutton.png/Page 1/Shape 3" itemID="4d6b27bd-000001e2" symbolType="graphic" lastModified="1298868359">
+  <timeline>
+    <DOMTimeline name="Shape 3">
+      <layers>
+        <DOMLayer name="Layer 1" color="#4FFF4F" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape selected="true" isDrawingObject="true">
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#FFFFFF"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="!4286 246|4286 1451!4286 1451[4286 1549 4217 1619!4217 1619[4147 1689 4048 1689!4048 1689|240 1689!240 1689[142 1689 72 1619!72 1619[2 1549 2 1451!2 1451|2 246!2 246[2 148 72 78!72 78[142 8 240 8!240 8|4048 8!4048 8[4147 8 4217 78!4217
+ 78[4286 148 4286 246"/>
+                    <Edge cubics="!240 8(;240,8 4048,8 4048,8q240 8 4048 8);"/>
+                    <Edge cubics="!4048 8(;4180,8 4286,115 4286,246q4048 8Q4147 8q4217 78Q4286 148q4286 246);"/>
+                    <Edge cubics="!4286 246(;4286,246 4286,1451 4286,1451q4286 246 4286 1451);"/>
+                    <Edge cubics="!4286 1451(;4286,1582 4180,1689 4048,1689q4286 1451Q4286 1549q4217 1619Q4147 1689q4048 1689);"/>
+                    <Edge cubics="!4048 1689(;4048,1689 240,1689 240,1689q4048 1689 240 1689);"/>
+                    <Edge cubics="!240 1689(;109,1689 2,1582 2,1451q240 1689Q142 1689q72 1619Q2 1549q2 1451);"/>
+                    <Edge cubics="!2 1451(;2,1451 2,246 2,246q2 1451 2 246);"/>
+                    <Edge cubics="!2 246(;2,115 109,8 240,8q2 246Q2 148q72 78Q142 8q240 8);"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>
