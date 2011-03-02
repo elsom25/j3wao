@@ -27,7 +27,7 @@
 			super.actions.push( new TapAction(340, 600, 800, 200) );
 			super.timings.push(  beatsToMilliseconds(2, bpm) );			
 			
-			super.actions.push( new TapAction(440, 700, 800, 200) );
+			super.actions.push( new TapAction(440, 700, 1800, 200) );
 		}
 	}
 }

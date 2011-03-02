@@ -11,11 +11,17 @@
 	import flash.display.Shape;
 	import flashx.textLayout.formats.Float;
 	import flash.net.dns.ARecord;
+	import flash.media.Sound;
+	import flash.net.URLRequest;
+	import flash.events.IOErrorEvent;
+	import flash.events.Event;
 
 	/*An Action is an abstract class representing a single interactive part of an attack (like a tap).*/
 	public class Action extends MovieClip
 	{
-		public const MILLISECONDS_PER_SECOND:Number = 1000;
+		public static const MILLISECONDS_PER_SECOND:Number = 1000;
+		
+		public static const MISSED_ACTION:String = "missedaction";
 
 		/*Used to determine long this action is on screen. When this time ticks, we undraw the action*/
 		protected var actionTimer:Timer; 
@@ -55,7 +61,7 @@
 		{
 			var millisecondsUntilCompletion:Number = approachTime * MILLISECONDS_PER_SECOND + bufferTime;
 			actionTimer = new Timer(millisecondsUntilCompletion,1);
-			actionTimer.addEventListener( TimerEvent.TIMER_COMPLETE, remove );
+			actionTimer.addEventListener( TimerEvent.TIMER_COMPLETE, removeOnTimer );
 		}
 
 		private function initializeBufferRegions():void
@@ -100,17 +106,37 @@
 			heightTween.start();
 			widthTween.start();
 		}
-
-		public function remove(timerEvent:TimerEvent):void
+		
+		public function remove():void
 		{
 			undraw();
+		}
+		
+		/*
+		Removes this action as a result of its time running out.
+		*/
+		private function removeOnTimer(timerEvent:TimerEvent):void
+		{
+			processActiveBuffer();
 		}
 
 		private function undraw():void
 		{
 			super.visible = false;
-			trace(bufferToProcess.getName() + " (modifier: " + bufferToProcess.getModifier() + ")");
 			actionTimer.stop();
+		}
+		
+		/*
+		Called whenever the user clicks an action or misses their chance to do so, and fires an event to
+		cancel the attack if necessary.
+		*/
+		private function processActiveBuffer():void
+		{
+			if (bufferToProcess.getModifier() == 0) {
+				dispatchEvent(new Event(MISSED_ACTION));
+			}
+			trace(bufferToProcess.getName() + " (modifier: " + bufferToProcess.getModifier() + ")");
+			undraw();
 		}
 		
 		public function updateBufferRegion(timerEvent:TimerEvent):void
@@ -124,11 +150,13 @@
 				bufferTimer.start();
 			}
 		}
+		
+		
 
 		public function handleClick(mouseEvent:MouseEvent):void
 		{
 			bufferToProcess = bufferRegions[activeRegionIndex];
-			undraw();
+			processActiveBuffer();
 		}
 	}
 }

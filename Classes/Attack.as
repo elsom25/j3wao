@@ -3,6 +3,7 @@
 	import flash.display.MovieClip;
 	import flash.utils.Timer;
 	import flash.events.TimerEvent;
+	import flash.events.Event;
 
 	/*
 	Attack is an abstract class that presents an attack on screen and keeps track of things like damage.
@@ -26,6 +27,18 @@
 			nextIndex = 0;
 			damage = 0;
 		}
+		
+		/*
+		Sets up the next attack to draw to the screen. Pays no
+		attention to timing.
+		*/
+		public function initializeNextAction():void
+		{
+			addChild(actions[nextIndex]);
+			actions[nextIndex].beginDrawing();
+			actions[nextIndex].addEventListener(Action.MISSED_ACTION,cancelAttack);
+			nextIndex++;
+		}
 
 		public function startAttack()
 		{
@@ -34,18 +47,20 @@
 				attackTimer = new Timer(timings[0]);
 				attackTimer.addEventListener( TimerEvent.TIMER, loadNextAction );
 				attackTimer.start();
-
-				addChild(actions[0]);
-				actions[0].beginDrawing();
-
-				nextIndex++;
+				
+				initializeNextAction();
 			}
 			else
 			{
 				trace("[FATAL ERROR] 0 length action array in Attack detected!");
 			}
+			
 		}
-
+		
+		/*
+		Loads the next action, and sets up the attack timer to load the NEXT one in
+		the future if applicable.
+		*/
 		public function loadNextAction(timerEvent:TimerEvent):void
 		{
 			attackTimer.stop();
@@ -55,18 +70,8 @@
 				attackTimer = new Timer(timings[nextIndex]);
 				attackTimer.addEventListener( TimerEvent.TIMER, loadNextAction );
 				attackTimer.start();
-
-				addChild(actions[nextIndex]);
-				actions[nextIndex].beginDrawing();
-
-				nextIndex++;
 			}
-			else
-			{
-				addChild(actions[nextIndex]);
-				actions[nextIndex].beginDrawing();
-				nextIndex++;
-			}
+			initializeNextAction();
 		}
 
 		private function isLastAction():Boolean
@@ -90,5 +95,14 @@
 		{
 			return damage;
 		}
+		
+		public function cancelAttack(event:Event):void
+		{
+			for each (var act:Action in actions) {
+				act.remove();
+			}
+			attackTimer.stop();
+		}
+		
 	}
 }
