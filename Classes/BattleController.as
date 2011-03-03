@@ -9,7 +9,6 @@
 		protected var health:Number
 		protected var actionPoints:Number
 		
-		
 		public function BattleController()
 		{
 			health = 100;

@@ -84,6 +84,11 @@
 			bufferTimer.addEventListener( TimerEvent.TIMER_COMPLETE, updateBufferRegion);
 		}
 
+		public function getApproachTime():Number
+		{
+			return approachTime;
+		}
+
 		public function beginDrawing():void
 		{
 			drawApproachCircle();
@@ -151,8 +156,6 @@
 			}
 		}
 		
-		
-
 		public function handleClick(mouseEvent:MouseEvent):void
 		{
 			bufferToProcess = bufferRegions[activeRegionIndex];
