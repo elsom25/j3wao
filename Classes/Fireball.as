@@ -14,9 +14,9 @@
 		
 		private function buildAttack(bpm:Number):void
 		{
-			super.actions.push( new TapAction(300, 300, 500, 500) );
-			super.timings.push( beatsToMilliseconds(3, bpm) );
-			super.actions.push( new TapAction(400, 300, 500, 500) );
+			super.actions.push( new TapAction(300, 300, 1000, 500) );
+			super.timings.push( beatsToMilliseconds(2, bpm) );
+			super.actions.push( new TapAction(400, 300, 1000, 500) );
 		}
 	}
 }
