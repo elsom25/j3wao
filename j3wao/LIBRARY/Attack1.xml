@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Attack1" itemID="4d538ef6-000001f5" sourceLibraryItemHRef="Symbol 1" symbolType="button" lastModified="1297321982">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Attack1" itemID="4d538ef6-000001f5" sourceLibraryItemHRef="Symbol 1" symbolType="button" lastModified="1299128602">
   <timeline>
     <DOMTimeline name="Attack1">
       <layers>
@@ -22,10 +22,10 @@
                     </StrokeStyle>
                   </strokes>
                   <edges>
-                    <Edge fillStyle1="1" strokeStyle="1" edges="!3400 -980|3400 900!3400 900|-3160 900!-3160 900|-3160 -980!-3160 -980|3400 -980"/>
+                    <Edge fillStyle1="1" strokeStyle="1" edges="!3400 900|-3160 900!-3160 900|-3160 -980!-3160 -980|3400 -980!3400 -980|3400 900"/>
                   </edges>
                 </DOMShape>
-                <DOMTLFText name="" selected="true" right="4560" bottom="1389">
+                <DOMTLFText name="" right="4560" bottom="1389">
                   <matrix>
                     <Matrix tx="-114" ty="-34"/>
                   </matrix>

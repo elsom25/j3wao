@@ -71,7 +71,16 @@
 				attackTimer.addEventListener( TimerEvent.TIMER, loadNextAction );
 				attackTimer.start();
 			}
+			else
+			{
+				dispatchEvent(new Event("finish"));
+			}
+			
 			initializeNextAction();
+			
+			isLastAction();
+			
+		
 		}
 
 		private function isLastAction():Boolean
@@ -102,6 +111,7 @@
 				act.remove();
 			}
 			attackTimer.stop();
+			dispatchEvent(new Event("finish"));
 		}
 		
 	}

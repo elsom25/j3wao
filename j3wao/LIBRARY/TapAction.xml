@@ -6,9 +6,9 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMGroup>
+                <DOMGroup selected="true">
                   <members>
-                    <DOMShape>
+                    <DOMShape selected="true">
                       <fills>
                         <FillStyle index="1">
                           <SolidColor color="#FFCCFF"/>

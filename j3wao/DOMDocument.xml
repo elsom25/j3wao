@@ -7,7 +7,7 @@
           <DOMFolderItem name="Fireworks Objects/titlescreen.png/Page 1" itemID="4d6b27be-000001e8"/>
      </folders>
      <media>
-          <DOMBitmapItem name="battle attack menu.jpg" itemID="4d538f3f-000001f7" sourceExternalFilepath=".\LIBRARY\battle attack menu.jpg" sourceLastImported="1297321348" externalFileSize="115074" quality="50" href="battle attack menu.jpg" bitmapDataHRef="M 5 1297321639.dat" frameRight="16000" frameBottom="9200" isJPEG="true"/>
+          <DOMBitmapItem name="battle attack menu.jpg" itemID="4d538f3f-000001f7" sourceExternalFilepath=".\LIBRARY\battle attack menu.jpg" sourceLastImported="1297321348" externalFileSize="115074" originalCompressionType="lossless" quality="50" href="battle attack menu.jpg" bitmapDataHRef="M 5 1297321639.dat" frameLeft="-115200" frameTop="-115200" frameRight="-115200" frameBottom="-115200"/>
           <DOMBitmapItem name="battle screen mock.jpg" itemID="4d538f3f-000001f8" sourceExternalFilepath=".\LIBRARY\battle screen mock.jpg" sourceLastImported="1297321348" externalFileSize="787490" quality="50" href="battle screen mock.jpg" bitmapDataHRef="M 4 1297321616.dat" frameRight="32000" frameBottom="19200" isJPEG="true"/>
           <DOMBitmapItem name="Fireworks Objects/titlescreen.png/Page 1/Bitmap 10" itemID="4d6b27bf-000001f6" sourceLastImported="1298868159" originalCompressionType="lossless" quality="50" href="Fireworks Objects\titlescreen.png\Page 1\Bitmap 10" bitmapDataHRef="M 10 1298868159.dat" frameRight="8280" frameBottom="9520"/>
           <DOMBitmapItem name="Fireworks Objects/titlescreen.png/Page 1/Bitmap 11" itemID="4d6b27bf-000001f8" sourceLastImported="1298868159" originalCompressionType="lossless" quality="50" href="Fireworks Objects\titlescreen.png\Page 1\Bitmap 11" bitmapDataHRef="M 11 1298868159.dat" frameRight="5540" frameBottom="1940"/>
@@ -32,6 +32,7 @@
      <symbols>
           <Include href="Attack1.xml" itemIcon="0" loadImmediate="false"/>
           <Include href="Attack2.xml" itemIcon="0" loadImmediate="false"/>
+          <Include href="BattleMenu.xml"/>
           <Include href="Fireworks Objects/startbutton.png/Page 1/Page 1.xml" loadImmediate="false"/>
           <Include href="Fireworks Objects/startbutton.png/Page 1/Shape 3.xml" itemIcon="1" loadImmediate="false"/>
           <Include href="Fireworks Objects/titlescreen.png/Page 1/Page 1.xml" loadImmediate="false"/>
@@ -43,7 +44,7 @@
           <Include href="titlescreen.png.xml" itemIcon="1" loadImmediate="false"/>
      </symbols>
      <timelines>
-          <DOMTimeline name="Scene 1">
+          <DOMTimeline name="Scene 1" currentFrame="1">
                <layers>
                     <DOMLayer name="Layer 1" color="#4FFF4F" current="true" isSelected="true">
                          <frames>
@@ -89,7 +90,7 @@ import flash.events.MouseEvent;
 var battleController:BattleController = new BattleController();
 addChild(battleController)
 
-Attack1.addEventListener(MouseEvent.CLICK, A1Click);
+/*Attack1.addEventListener(MouseEvent.CLICK, A1Click);
 Attack2.addEventListener(MouseEvent.CLICK, A2Click);
 
 function A1Click(event:MouseEvent):void{
@@ -98,26 +99,10 @@ function A1Click(event:MouseEvent):void{
 
 function A2Click(event:MouseEvent):void{
 	battleController.launchIceSpear();
-}]]></script>
+}*/]]></script>
                                    </Actionscript>
                                    <elements>
-                                        <DOMBitmapInstance name="" referenceID="" libraryItemName="battle screen mock.jpg"/>
-                                        <DOMSymbolInstance libraryItemName="Attack1" name="Attack1" symbolType="button">
-                                             <matrix>
-                                                  <Matrix tx="936" ty="726.1"/>
-                                             </matrix>
-                                             <transformationPoint>
-                                                  <Point/>
-                                             </transformationPoint>
-                                        </DOMSymbolInstance>
-                                        <DOMSymbolInstance libraryItemName="Attack2" name="Attack2" symbolType="button">
-                                             <matrix>
-                                                  <Matrix tx="1373.85" ty="726.1"/>
-                                             </matrix>
-                                             <transformationPoint>
-                                                  <Point/>
-                                             </transformationPoint>
-                                        </DOMSymbolInstance>
+                                        <DOMBitmapInstance name="" referenceID="" selected="true" libraryItemName="battle screen mock.jpg"/>
                                    </elements>
                               </DOMFrame>
                          </frames>
@@ -436,31 +421,31 @@ function A2Click(event:MouseEvent):void{
           <PD n="com.air.artemis.pubipa" v="false"/>
           <PD n="com.air.artemis.ipacertpath" v="C:/Users/Jesse McGinnis/Documents/School/1111 c3 Winter/Arts 304/j3wao.p12"/>
           <PD n="flash.swf.basename" v="j3wao"/>
-          <PD n="swf.folder.path" v="C:/Users/Oleksi/Documents/School/1111 - Winter 2011/ARTS 304/j3wao/"/>
           <PD n="flash.fla.filepath" v="C:/Users/Oleksi/Documents/School/1111 - Winter 2011/ARTS 304/j3wao/j3wao/j3wao.xfl"/>
+          <PD n="swf.folder.path" v="C:/Users/Oleksi/Documents/School/1111 - Winter 2011/ARTS 304/j3wao/"/>
           <PD n="com.air.artemis.pubexe" v="false"/>
      </persistentData>
      <PrinterSettings/>
      <publishHistory>
-          <PublishItem publishSize="1219577" publishTime="1298868477"/>
-          <PublishItem publishSize="917711" publishTime="1298868287"/>
-          <PublishItem publishSize="1160966" publishTime="1298346520"/>
-          <PublishItem publishSize="1043516" publishTime="1298337828"/>
-          <PublishItem publishSize="1160980" publishTime="1298325786" publishDebug="true"/>
-          <PublishItem publishSize="1043518" publishTime="1298325781"/>
-          <PublishItem publishSize="1160976" publishTime="1298325729" publishDebug="true"/>
-          <PublishItem publishSize="1043524" publishTime="1298325677"/>
-          <PublishItem publishSize="1043515" publishTime="1298325582"/>
-          <PublishItem publishSize="1160967" publishTime="1298319627"/>
-          <PublishItem publishSize="1161026" publishTime="1298319430"/>
-          <PublishItem publishSize="1161027" publishTime="1298319410"/>
-          <PublishItem publishSize="1161026" publishTime="1298319332"/>
-          <PublishItem publishSize="858545" publishTime="1298319317"/>
-          <PublishItem publishSize="858544" publishTime="1298319300"/>
-          <PublishItem publishSize="1161023" publishTime="1298319183"/>
-          <PublishItem publishSize="1161025" publishTime="1298319157"/>
-          <PublishItem publishSize="1160973" publishTime="1298318945"/>
-          <PublishItem publishSize="1160974" publishTime="1298318879"/>
-          <PublishItem publishSize="1160972" publishTime="1298318819"/>
+          <PublishItem publishSize="1220127" publishTime="1299130243"/>
+          <PublishItem publishSize="1220131" publishTime="1299130222"/>
+          <PublishItem publishSize="1220127" publishTime="1299130209"/>
+          <PublishItem publishSize="1220132" publishTime="1299130192"/>
+          <PublishItem publishSize="1220127" publishTime="1299130179"/>
+          <PublishItem publishSize="1220146" publishTime="1299130164"/>
+          <PublishItem publishSize="1220143" publishTime="1299130155"/>
+          <PublishItem publishSize="1220145" publishTime="1299130146"/>
+          <PublishItem publishSize="1220151" publishTime="1299129838"/>
+          <PublishItem publishSize="1220154" publishTime="1299129825"/>
+          <PublishItem publishSize="1220142" publishTime="1299129806"/>
+          <PublishItem publishSize="1220148" publishTime="1299129771"/>
+          <PublishItem publishSize="1220128" publishTime="1299129726"/>
+          <PublishItem publishSize="1220052" publishTime="1299129585"/>
+          <PublishItem publishSize="917836" publishTime="1299129562"/>
+          <PublishItem publishSize="917837" publishTime="1299129426"/>
+          <PublishItem publishSize="917841" publishTime="1299129243"/>
+          <PublishItem publishSize="917844" publishTime="1299129115"/>
+          <PublishItem publishSize="917843" publishTime="1299129070"/>
+          <PublishItem publishSize="917843" publishTime="1299129046"/>
      </publishHistory>
 </DOMDocument>

@@ -155,6 +155,9 @@
 
 		public function handleClick(mouseEvent:MouseEvent):void
 		{
+			var mySound:Sound = new Sound();
+			mySound.load(new URLRequest("normal-hitnormal.mp3"));
+			mySound.play();
 			bufferToProcess = bufferRegions[activeRegionIndex];
 			processActiveBuffer();
 		}
