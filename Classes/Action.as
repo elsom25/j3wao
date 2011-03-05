@@ -22,6 +22,8 @@
 		public static const MILLISECONDS_PER_SECOND:Number = 1000;
 		
 		public static const MISSED_ACTION:String = "missedaction";
+		
+		public static const HIT_ACTION:String = "hitaction";
 
 		/*Used to determine long this action is on screen. When this time ticks, we undraw the action*/
 		protected var actionTimer:Timer; 
@@ -142,6 +144,10 @@
 		{
 			if (bufferToProcess.getModifier() == 0) {
 				dispatchEvent(new Event(MISSED_ACTION));
+			}
+			else
+			{
+				dispatchEvent(new Event(HIT_ACTION));
 			}
 			trace(bufferToProcess.getName() + " (modifier: " + bufferToProcess.getModifier() + ")");
 			undraw();

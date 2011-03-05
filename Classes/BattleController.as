@@ -19,8 +19,8 @@
 			menu = new BattleMenu();
 			addChild(menu);
 			menu.battleController = this;
-			menu.addEventListener("finish", showMenu);
-			menu.addEventListener("hide", hideMenu);
+			menu.addEventListener(BattleMenu.SHOW_EVENT, showMenu);
+			menu.addEventListener(BattleMenu.HIDE_EVENT, hideMenu);
 		}
 
 		public function launchFireball():void

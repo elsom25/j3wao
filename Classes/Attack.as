@@ -15,6 +15,7 @@
 	*/
 	public class Attack extends MovieClip
 	{
+		
 		protected var actions:Array;
 		protected var timings:Array;
 		protected var nextIndex:Number;
@@ -87,13 +88,11 @@
 			}
 			else
 			{
-				dispatchEvent(new Event("finish"));
+				// Sets up listener for successful completion of the last action
+				actions[actions.length-1].addEventListener(Action.HIT_ACTION, completeAttack);
 			}
 			
 			initializeNextAction();
-			
-			isLastAction();
-			
 		
 		}
 
@@ -119,13 +118,21 @@
 			return damage;
 		}
 		
+		/*
+		Should probably eventually handle damage things.
+		*/
+		private function completeAttack(event:Event):void
+		{
+			dispatchEvent(new Event(BattleMenu.SHOW_EVENT));
+		}
+		
 		public function cancelAttack(event:Event):void
 		{
 			for each (var act:Action in actions) {
 				act.remove();
 			}
 			attackTimer.stop();
-			dispatchEvent(new Event("finish"));
+			dispatchEvent(new Event(BattleMenu.SHOW_EVENT));
 		}
 		
 	}
