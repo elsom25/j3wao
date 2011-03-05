@@ -6,41 +6,60 @@
 	/*The BattleController manages battles. It holds the player and enemy data, and provides a basic interface
 	for launching attacks.*/
 	public class BattleController extends MovieClip
-	{
-		public var health:Number
-		public var actionPoints:Number
-		protected var menu:BattleMenu
-		protected var attack:Attack
+	{	
+		public var health:Number;
+		public var actionPoints:Number;
+		protected var menu:BattleMenu;
+		//CHANGE TO PROTECTED WHEN DONE DEBUGGING
+		public var player:Entity;
+		public var enemy:Array;
 		
 		public function BattleController()
 		{
-			health = 100;
-			actionPoints = 100;
+			player = new Entity(0,0,50, 100);
+			enemy = new Array();
+			enemy[0] = new Entity(0,0,100, 1000);
+			enemy[1] = new Entity(0,0,50, 1000);
 			menu = new BattleMenu();
 			addChild(menu);
 			menu.battleController = this;
 			menu.addEventListener("finish", showMenu);
 			menu.addEventListener("hide", hideMenu);
 		}
-
-		public function launchFireball():void
-		{
-			if ( actionPoints >= 2 )
+		
+		private function playerTurn(){
+			//menu and specify target and stuff			
+		}
+		
+		
+		//CHANGE TO PRIVATE WHEN DONE DEBUG
+		public function enemyTurn(){
+			if ( Enemy[1].isDead() )
 			{
-				actionPoints = actionPoints - 2;
-				attack = new Fireball(90);
+				gotoAndStop("TitleFrame");
+				
+			}
+			//launchFireball(Enemy[0], player);
+		}
+
+		public function launchFireball(attacker:Entity, target:Entity):void
+		{
+			if ( attacker.getMP() >= 2 )
+			{
+				var currentMP:int = attacker.spendMP(2);
+				var attack:Attack = new Fireball(90);
 				addChild( attack );
-				//attack.getDamage( );
+				target.takeDamage( attack.getDamage() );
 			}
 		}		
-		public function launchIceSpear():void
+		public function launchIceSpear(attacker:Entity, target:Entity):void
 		{
-			if(actionPoints >= 30)
+			if( attacker.getMP() >= 30)
 			{
-				actionPoints = actionPoints - 30;
-				attack = new IceSpear(90);
+				var currentMP:int = attacker.spendMP(30);
+				var attack:Attack = new IceSpear(90);
 				addChild( attack );
-				//attack.getDamage( );
+				target.takeDamage( attack.getDamage() );
 			}
 		}
 		
