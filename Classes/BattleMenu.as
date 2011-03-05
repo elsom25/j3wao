@@ -38,7 +38,6 @@
 			
 			function showMenu(event:Event):void
 			{
-				trace("wob");
 				dispatchEvent(new Event("finish"));
 			}
 
