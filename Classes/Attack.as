@@ -9,7 +9,7 @@
 	Attack is an abstract class that presents an attack on screen and keeps track of things like damage.
 	An attack is defined by 
 	- a list of Actions (the actions array),
-	- the length of time between the start of two adjacent actions (the timings array),
+	- the length of time between the ideal hit moment of one action and the start time of the next action (the timings array),
 	- the nextIndex variable indicates the progress of this attack. It is needed to know which Action to start next.
 	- the attackTimer is the timer that indicates when to start drawing the next attack. It's length depends on the timings array.
 	*/
@@ -36,7 +36,7 @@
 		{
 			addChild(actions[nextIndex]);
 			actions[nextIndex].beginDrawing();
-			actions[nextIndex].addEventListener(Action.MISSED_ACTION,cancelAttack);
+			actions[nextIndex].addEventListener(Action.MISSED_ACTION, cancelAttack);
 			nextIndex++;
 		}
 
@@ -44,6 +44,7 @@
 		{
 			if (actions.length > 0)
 			{
+				scaleTimingsForSystem();
 				attackTimer = new Timer(timings[0]);
 				attackTimer.addEventListener( TimerEvent.TIMER, loadNextAction );
 				attackTimer.start();
@@ -54,7 +55,19 @@
 			{
 				trace("[FATAL ERROR] 0 length action array in Attack detected!");
 			}
-			
+		}
+		
+		/*
+		When the content generation people specify the attack, it makes more sense to have 
+		the timings array specify the time between the ideal hit moments of two actions.
+		However, our system needs the timing entries to be the time when we start drawing the action.
+		Therefore, we preprocess the timings array to convert it to this form before we do anything with it.
+		Making this transformation is just a matter of subtracting the approach time of the next action from the timing array.
+		*/
+		private function scaleTimingsForSystem():void
+		{
+			for (var i:Number=0; i < timings.length; i++)
+				timings[i] = timings[i] - actions[i+1].getApproachTime() * Action.MILLISECONDS_PER_SECOND;
 		}
 		
 		/*

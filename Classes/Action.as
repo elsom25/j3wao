@@ -84,6 +84,11 @@
 			bufferTimer.addEventListener( TimerEvent.TIMER_COMPLETE, updateBufferRegion);
 		}
 
+		public function getApproachTime():Number
+		{
+			return approachTime;
+		}
+
 		public function beginDrawing():void
 		{
 			drawApproachCircle();
@@ -93,12 +98,15 @@
 
 		private function drawApproachCircle():void
 		{
-			var circle:Shape = new Shape();
+			var circle:Sprite = new Sprite();
 
 			circle.graphics.beginFill(0xFFFFFF, 0);
 			circle.graphics.lineStyle(5);
 			circle.graphics.drawCircle(0,0,260);
 			circle.graphics.endFill();
+			
+			circle.mouseEnabled = false;
+			
 			addChild(circle);
 
 			var heightTween:Tween = new Tween(circle, "scaleX", None.easeIn, 1, 0.5, approachTime, true);
@@ -151,8 +159,6 @@
 			}
 		}
 		
-		
-
 		public function handleClick(mouseEvent:MouseEvent):void
 		{
 			var mySound:Sound = new Sound();

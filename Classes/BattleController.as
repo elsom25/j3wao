@@ -12,7 +12,6 @@
 		protected var menu:BattleMenu
 		protected var attack:Attack
 		
-		
 		public function BattleController()
 		{
 			health = 100;
