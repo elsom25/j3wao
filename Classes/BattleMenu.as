@@ -6,6 +6,9 @@
 	
 	
 	public class BattleMenu extends MovieClip {
+		public static const SHOW_EVENT:String = "finish";
+		public static const HIDE_EVENT:String = "hide";
+		
 		protected var actionPoints:Number
 		public var battleController:BattleController
 		
@@ -20,8 +23,8 @@
 					battleController.actionPoints = battleController.actionPoints - 2;
 					var attack:Attack = new Fireball(90);
 					battleController.addChild( attack );
-					attack.addEventListener("finish",showMenu);
-					dispatchEvent(new Event("hide"));
+					attack.addEventListener(SHOW_EVENT,showMenu);
+					dispatchEvent(new Event(HIDE_EVENT));
 				}
 			}
 
@@ -31,8 +34,8 @@
 					battleController.actionPoints = battleController.actionPoints - 30;
 					var attack:Attack = new IceSpear(90);
 					battleController.addChild( attack );
-					attack.addEventListener("finish",showMenu);
-					dispatchEvent(new Event("hide"));
+					attack.addEventListener(SHOW_EVENT,showMenu);
+					dispatchEvent(new Event(HIDE_EVENT));
 				}
 			}
 			

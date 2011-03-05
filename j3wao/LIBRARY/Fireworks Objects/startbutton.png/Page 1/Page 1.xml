@@ -7,6 +7,9 @@
             <DOMFrame index="0" keyMode="9728">
               <elements/>
             </DOMFrame>
+            <DOMFrame index="0" keyMode="9728">
+              <elements/>
+            </DOMFrame>
           </frames>
         </DOMLayer>
         <DOMLayer name="buttons copy" color="#FF800A" parentLayerIndex="0" autoNamed="false" layerType="folder">
