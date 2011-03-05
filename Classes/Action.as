@@ -161,9 +161,15 @@
 		
 		public function handleClick(mouseEvent:MouseEvent):void
 		{
+			[Embed(source="../normal-hitnormal.mp3")]
+			var soundClass:Class;
+			var sound:Sound = new soundClass() as Sound;
+			sound.play();
+			/*
 			var mySound:Sound = new Sound();
 			mySound.load(new URLRequest("normal-hitnormal.mp3"));
 			mySound.play();
+			*/
 			bufferToProcess = bufferRegions[activeRegionIndex];
 			processActiveBuffer();
 		}
