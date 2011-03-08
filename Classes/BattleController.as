@@ -6,42 +6,80 @@
 	/*The BattleController manages battles. It holds the player and enemy data, and provides a basic interface
 	for launching attacks.*/
 	public class BattleController extends MovieClip
-	{
-		public var health:Number
-		public var actionPoints:Number
-		protected var menu:BattleMenu
-		protected var attack:Attack
+	{	
+		protected var target:int;
+		protected var menu:BattleMenu;
+		//CHANGE TO PROTECTED WHEN DONE DEBUGGING
+		public var player:Player;
+		public var enemy:Array;
 		
 		public function BattleController()
 		{
-			health = 100;
-			actionPoints = 100;
+			target = 0;
+			player = new Player(0,0,50, 100);
+			enemy = new Array();
+			//NEED TO CHANGE TO ENEMY WHEN SPRITES ARE DECIDED
+			enemy[0] = new Entity(0,0,100, 1000);
+			enemy[1] = new Entity(0,0,50, 1000);
+			//TODO: SPRITES FOR ENEMIES ABOVE
 			menu = new BattleMenu();
 			addChild(menu);
 			menu.battleController = this;
-			menu.addEventListener("finish", showMenu);
-			menu.addEventListener("hide", hideMenu);
+			menu.addEventListener(BattleMenu.SHOW_EVENT, showMenu);
+			menu.addEventListener(BattleMenu.HIDE_EVENT, hideMenu);
+		}
+		
+		private function playerTurn():void
+		{
+			if ( player.isDead() )
+			{
+				trace("Player is DEAD!");
+				gotoAndStop("TitleFrame");				
+			}		
+		}
+		
+		
+		//CHANGE TO PRIVATE WHEN DONE DEBUG
+		public function enemyTurn():void
+		{
+			if ( enemy[0].isDead() )
+			{
+				trace("Player is DEAD!");
+				gotoAndStop("TitleFrame");
+				
+			}
+			var damage = Math.round(Math.random()*10);
+			player.takeDamage( damage );
+			trace(damage + " damage was given to player");
+			//launchFireball(Enemy[0], player);
 		}
 
-		public function launchFireball():void
+		public function launchFireball():Attack
 		{
-			if ( actionPoints >= 2 )
+			var attack:Attack = new Fireball(90);
+			if ( player.getMP() >= 2 )
 			{
-				actionPoints = actionPoints - 2;
-				attack = new Fireball(90);
+				var currentMP:int = player.spendMP(2);
 				addChild( attack );
-				//attack.getDamage( );
+				enemy[target].takeDamage( attack.getDamage() );
 			}
-		}		
-		public function launchIceSpear():void
+			return attack;
+		}	
+		public function launchIceSpear():Attack
 		{
-			if(actionPoints >= 30)
+			var attack:Attack = new IceSpear(90);
+			if( player.getMP() >= 30)
 			{
-				actionPoints = actionPoints - 30;
-				attack = new IceSpear(90);
+				var currentMP:int = player.spendMP(30);
 				addChild( attack );
-				//attack.getDamage( );
+				enemy[target].takeDamage( attack.getDamage() );
 			}
+			return attack;
+		}
+		
+		public function chooseTarget(tar:int):void
+		{
+			target = tar;
 		}
 		
 		public function hideMenu(ev:Event):void

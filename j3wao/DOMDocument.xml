@@ -421,12 +421,19 @@ function A2Click(event:MouseEvent):void{
           <PD n="com.air.artemis.pubipa" v="false"/>
           <PD n="com.air.artemis.ipacertpath" v="C:/Users/Jesse McGinnis/Documents/School/1111 c3 Winter/Arts 304/j3wao.p12"/>
           <PD n="flash.swf.basename" v="j3wao"/>
-          <PD n="flash.fla.filepath" v="C:/Users/Oleksi/Documents/School/1111 - Winter 2011/ARTS 304/j3wao/j3wao/j3wao.xfl"/>
           <PD n="swf.folder.path" v="C:/Users/Oleksi/Documents/School/1111 - Winter 2011/ARTS 304/j3wao/"/>
+          <PD n="flash.fla.filepath" v="C:/Users/Oleksi/Documents/School/1111 - Winter 2011/ARTS 304/j3wao/j3wao/j3wao.xfl"/>
           <PD n="com.air.artemis.pubexe" v="false"/>
      </persistentData>
      <PrinterSettings/>
      <publishHistory>
+          <PublishItem publishSize="917830" publishTime="1299308192"/>
+          <PublishItem publishSize="917831" publishTime="1299308055"/>
+          <PublishItem publishSize="917827" publishTime="1299307933"/>
+          <PublishItem publishSize="917825" publishTime="1299307866"/>
+          <PublishItem publishSize="917830" publishTime="1299307848"/>
+          <PublishItem publishSize="917833" publishTime="1299298785"/>
+          <PublishItem publishSize="1220465" publishTime="1299296732"/>
           <PublishItem publishSize="1220127" publishTime="1299130243"/>
           <PublishItem publishSize="1220131" publishTime="1299130222"/>
           <PublishItem publishSize="1220127" publishTime="1299130209"/>
@@ -440,12 +447,5 @@ function A2Click(event:MouseEvent):void{
           <PublishItem publishSize="1220142" publishTime="1299129806"/>
           <PublishItem publishSize="1220148" publishTime="1299129771"/>
           <PublishItem publishSize="1220128" publishTime="1299129726"/>
-          <PublishItem publishSize="1220052" publishTime="1299129585"/>
-          <PublishItem publishSize="917836" publishTime="1299129562"/>
-          <PublishItem publishSize="917837" publishTime="1299129426"/>
-          <PublishItem publishSize="917841" publishTime="1299129243"/>
-          <PublishItem publishSize="917844" publishTime="1299129115"/>
-          <PublishItem publishSize="917843" publishTime="1299129070"/>
-          <PublishItem publishSize="917843" publishTime="1299129046"/>
      </publishHistory>
 </DOMDocument>
