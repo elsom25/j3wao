@@ -7,14 +7,12 @@
 		
 		//Initialize an enemy
 		public function Enemy(positionX:int, positionY:int, spriteSetToLoad:Array, HP:int) {
+			super(positionX, positionY, HP);
 			x = positionX;
 			y = positionY;
 			spriteSet = spriteSetToLoad;
 			maxHP = HP;
 			curHP = HP;
 		}
-		
-		
-		
 	}
 }

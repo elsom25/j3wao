@@ -10,7 +10,6 @@
 	import flash.display.Sprite;
 	import flash.display.Shape;
 	import flashx.textLayout.formats.Float;
-	import flash.net.dns.ARecord;
 	import flash.media.Sound;
 	import flash.net.URLRequest;
 	import flash.events.IOErrorEvent;
