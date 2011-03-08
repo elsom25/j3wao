@@ -6,7 +6,9 @@
 	public class Enemy extends Entity {	
 		
 		//Initialize an enemy
-		public function Enemy(positionX:int, positionY:int, spriteSetToLoad:Array, HP:int) {
+		public function Enemy(positionX:int, positionY:int, spriteSetToLoad:Array, HP:int, MP:int) {
+			super(positionX, positionY, HP, MP);
+			super.setSpriteArray(spriteSetToLoad);
 			x = positionX;
 			y = positionY;
 			spriteSet = spriteSetToLoad;

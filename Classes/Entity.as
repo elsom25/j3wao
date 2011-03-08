@@ -77,6 +77,11 @@
 			return false;
 		}
 		
+		public function setSpriteArray(spriteArray:Array):void
+		{
+			spriteSet = spriteArray;
+		}
+		
 		//Returns the current sprite to show onscreen
 		//NOTE - This does NOT advance the sprite counter - that must be done with setNextSprite()
 		public function getSprite():Sprite {

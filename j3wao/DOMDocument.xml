@@ -102,7 +102,7 @@ function A2Click(event:MouseEvent):void{
 }*/]]></script>
                                    </Actionscript>
                                    <elements>
-                                        <DOMBitmapInstance name="" referenceID="" libraryItemName="battle screen mock.jpg"/>
+                                        <DOMBitmapInstance name="" referenceID="" selected="true" libraryItemName="battle screen mock.jpg"/>
                                    </elements>
                               </DOMFrame>
                          </frames>
@@ -421,31 +421,31 @@ function A2Click(event:MouseEvent):void{
           <PD n="com.air.artemis.pubipa" v="false"/>
           <PD n="com.air.artemis.ipacertpath" v="C:/Users/Jesse McGinnis/Documents/School/1111 c3 Winter/Arts 304/j3wao.p12"/>
           <PD n="flash.swf.basename" v="j3wao"/>
-          <PD n="flash.fla.filepath" v="C:/Users/Oleksi/Documents/School/1111 - Winter 2011/ARTS 304/j3wao/j3wao/j3wao.xfl"/>
           <PD n="swf.folder.path" v="C:/Users/Oleksi/Documents/School/1111 - Winter 2011/ARTS 304/j3wao/"/>
+          <PD n="flash.fla.filepath" v="C:/Users/Oleksi/Documents/School/1111 - Winter 2011/ARTS 304/j3wao/j3wao/j3wao.xfl"/>
           <PD n="com.air.artemis.pubexe" v="false"/>
      </persistentData>
      <PrinterSettings/>
      <publishHistory>
-          <PublishItem publishSize="1251735" publishTime="1299306229"/>
-          <PublishItem publishSize="1251729" publishTime="1299306195"/>
-          <PublishItem publishSize="917734" publishTime="1299306173"/>
-          <PublishItem publishSize="917734" publishTime="1299306047"/>
-          <PublishItem publishSize="917734" publishTime="1299306042"/>
-          <PublishItem publishSize="917735" publishTime="1299306027"/>
-          <PublishItem publishSize="1220436" publishTime="1299305930"/>
-          <PublishItem publishSize="917737" publishTime="1299305908"/>
-          <PublishItem publishSize="917736" publishTime="1299305894"/>
-          <PublishItem publishSize="917737" publishTime="1299305872"/>
-          <PublishItem publishSize="917733" publishTime="1299305824"/>
-          <PublishItem publishSize="917739" publishTime="1299305817"/>
-          <PublishItem publishSize="917738" publishTime="1299305810"/>
-          <PublishItem publishSize="917739" publishTime="1299305788"/>
-          <PublishItem publishSize="917739" publishTime="1299305702"/>
-          <PublishItem publishSize="917739" publishTime="1299305647"/>
-          <PublishItem publishSize="1103187" publishTime="1299299512"/>
-          <PublishItem publishSize="1220423" publishTime="1299299436" publishDebug="true"/>
-          <PublishItem publishSize="1103194" publishTime="1299299430"/>
-          <PublishItem publishSize="1220422" publishTime="1299298663" publishDebug="true"/>
+          <PublishItem publishSize="917830" publishTime="1299308192"/>
+          <PublishItem publishSize="917831" publishTime="1299308055"/>
+          <PublishItem publishSize="917827" publishTime="1299307933"/>
+          <PublishItem publishSize="917825" publishTime="1299307866"/>
+          <PublishItem publishSize="917830" publishTime="1299307848"/>
+          <PublishItem publishSize="917833" publishTime="1299298785"/>
+          <PublishItem publishSize="1220465" publishTime="1299296732"/>
+          <PublishItem publishSize="1220127" publishTime="1299130243"/>
+          <PublishItem publishSize="1220131" publishTime="1299130222"/>
+          <PublishItem publishSize="1220127" publishTime="1299130209"/>
+          <PublishItem publishSize="1220132" publishTime="1299130192"/>
+          <PublishItem publishSize="1220127" publishTime="1299130179"/>
+          <PublishItem publishSize="1220146" publishTime="1299130164"/>
+          <PublishItem publishSize="1220143" publishTime="1299130155"/>
+          <PublishItem publishSize="1220145" publishTime="1299130146"/>
+          <PublishItem publishSize="1220151" publishTime="1299129838"/>
+          <PublishItem publishSize="1220154" publishTime="1299129825"/>
+          <PublishItem publishSize="1220142" publishTime="1299129806"/>
+          <PublishItem publishSize="1220148" publishTime="1299129771"/>
+          <PublishItem publishSize="1220128" publishTime="1299129726"/>
      </publishHistory>
 </DOMDocument>
