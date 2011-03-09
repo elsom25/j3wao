@@ -38,6 +38,7 @@
 			addChild(actions[nextIndex]);
 			actions[nextIndex].beginDrawing();
 			actions[nextIndex].addEventListener(Action.MISSED_ACTION, cancelAttack);
+			setChildIndex(actions[nextIndex],0);
 			nextIndex++;
 		}
 
