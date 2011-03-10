@@ -1,0 +1,118 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Fireworks Objects/sand dunes.png/Page 1/Page 1" itemID="4d785af6-0000024e" lastModified="1299733238">
+  <timeline>
+    <DOMTimeline name="Page 1">
+      <layers>
+        <DOMLayer name="Layer" color="#9933CC" autoNamed="false" layerType="folder">
+          <frames/>
+        </DOMLayer>
+        <DOMLayer name="monster" color="#FF800A" parentLayerIndex="0" autoNamed="false" visible="false" layerType="folder">
+          <frames/>
+        </DOMLayer>
+        <DOMLayer name="Layer 9" color="#FF4F4F" parentLayerIndex="1" current="true" isSelected="true" autoNamed="false" visible="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMBitmapInstance name="" referenceID="" selected="true" libraryItemName="Fireworks Objects/sand dunes.png/Page 1/Bitmap 30">
+                  <matrix>
+                    <Matrix tx="767" ty="238"/>
+                  </matrix>
+                </DOMBitmapInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 10" color="#4F80FF" parentLayerIndex="1" autoNamed="false" visible="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMBitmapInstance name="" referenceID="" selected="true" libraryItemName="Fireworks Objects/sand dunes.png/Page 1/Bitmap 29">
+                  <matrix>
+                    <Matrix tx="769" ty="218"/>
+                  </matrix>
+                </DOMBitmapInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 11" color="#4FFFFF" parentLayerIndex="1" autoNamed="false" visible="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMBitmapInstance name="" referenceID="" selected="true" libraryItemName="Fireworks Objects/sand dunes.png/Page 1/Bitmap 28">
+                  <matrix>
+                    <Matrix tx="325" ty="-131"/>
+                  </matrix>
+                </DOMBitmapInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 8" color="#FF4FFF" parentLayerIndex="1" autoNamed="false" visible="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMBitmapInstance name="" referenceID="" selected="true" libraryItemName="Fireworks Objects/sand dunes.png/Page 1/Bitmap 27">
+                  <matrix>
+                    <Matrix tx="329" ty="211"/>
+                  </matrix>
+                </DOMBitmapInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="bg" color="#FF4FFF" parentLayerIndex="0" autoNamed="false" layerType="folder">
+          <frames/>
+        </DOMLayer>
+        <DOMLayer name="Layer 2" color="#9933CC" parentLayerIndex="6" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Fireworks Objects/sand dunes.png/Page 1/Layer 2" name="" selected="true" blendMode="multiply"/>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 7" color="#FF4F4F" parentLayerIndex="6" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMBitmapInstance name="" referenceID="" selected="true" libraryItemName="Fireworks Objects/sand dunes.png/Page 1/Bitmap 25">
+                  <matrix>
+                    <Matrix ty="516"/>
+                  </matrix>
+                </DOMBitmapInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 3" color="#808080" parentLayerIndex="6" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMBitmapInstance name="" referenceID="" selected="true" libraryItemName="Fireworks Objects/sand dunes.png/Page 1/Bitmap 24"/>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 5" color="#4FFFFF" parentLayerIndex="6" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMBitmapInstance name="" referenceID="" selected="true" libraryItemName="Fireworks Objects/sand dunes.png/Page 1/Bitmap 23"/>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Background" color="#FF800A" parentLayerIndex="0" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMBitmapInstance name="" referenceID="" selected="true" libraryItemName="Fireworks Objects/sand dunes.png/Page 1/Bitmap 22"/>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

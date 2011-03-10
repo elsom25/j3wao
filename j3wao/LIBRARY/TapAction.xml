@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="TapAction" itemID="4d4a212d-000001d3" linkageExportForAS="true" linkageClassName="TapAction" sourceLibraryItemHRef="Symbol 1" lastModified="1298338424">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="TapAction" itemID="4d4a212d-000001d3" linkageExportForAS="true" linkageClassName="TapAction" sourceLibraryItemHRef="Symbol 1" lastModified="1299734326">
   <timeline>
     <DOMTimeline name="TapAction">
       <layers>
@@ -11,7 +11,7 @@
                     <DOMShape selected="true">
                       <fills>
                         <FillStyle index="1">
-                          <SolidColor color="#FFCCFF"/>
+                          <SolidColor color="#0099FF"/>
                         </FillStyle>
                       </fills>
                       <strokes>
@@ -24,7 +24,7 @@
                         </StrokeStyle>
                       </strokes>
                       <edges>
-                        <Edge fillStyle1="1" strokeStyle="1" edges="!1838 -1839S6[2600 -1077 2600 0!2600 0[2600 1077 1838 1838!1838 1838[1077 2600 0 2600!0 2600[-1077 2600 -1839 1838!-1839 1838[-2600 1077 -2600 0!-2600 0[-2600 -1077 -1839 -1839!-1839 -1839[-1077 -2600 0 -2600!0 -2600[1077 -2600 1838 -1839"/>
+                        <Edge fillStyle1="1" strokeStyle="1" edges="!1838 -1839[2600 -1077 2600 0!2600 0[2600 1077 1838 1838!1838 1838[1077 2600 0 2600!0 2600[-1077 2600 -1839 1838!-1839 1838[-2600 1077 -2600 0!-2600 0[-2600 -1077 -1839 -1839!-1839 -1839[-1077 -2600 0 -2600!0 -2600[1077 -2600 1838 -1839"/>
                       </edges>
                     </DOMShape>
                   </members>

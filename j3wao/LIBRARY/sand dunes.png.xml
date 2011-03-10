@@ -1,0 +1,17 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="sand dunes.png" itemID="4d785af6-00000263" symbolType="graphic" lastModified="1299733238">
+  <timeline>
+    <DOMTimeline name="sand dunes.png">
+      <layers>
+        <DOMLayer name="Layer 1" color="#4FFF4F" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Fireworks Objects/sand dunes.png/Page 1/Page 1" name="" selected="true"/>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

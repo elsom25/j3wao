@@ -1,0 +1,21 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Fireworks Objects/sand dunes.png/Page 1/Layer 2" itemID="4d785af6-00000258" lastModified="1299733238">
+  <timeline>
+    <DOMTimeline name="Layer 2">
+      <layers>
+        <DOMLayer name="Layer 1" color="#4FFF4F" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMBitmapInstance name="" referenceID="" selected="true" libraryItemName="Fireworks Objects/sand dunes.png/Page 1/Bitmap 26">
+                  <matrix>
+                    <Matrix tx="-47" ty="-136"/>
+                  </matrix>
+                </DOMBitmapInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

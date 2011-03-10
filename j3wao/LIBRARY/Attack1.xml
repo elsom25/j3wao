@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Attack1" itemID="4d538ef6-000001f5" sourceLibraryItemHRef="Symbol 1" symbolType="button" lastModified="1299128602">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Attack1" itemID="4d538ef6-000001f5" sourceLibraryItemHRef="Symbol 1" symbolType="button" lastModified="1299733665">
   <timeline>
     <DOMTimeline name="Attack1">
       <layers>
@@ -6,28 +6,14 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMShape>
-                  <fills>
-                    <FillStyle index="1">
-                      <SolidColor color="#D2DCDE"/>
-                    </FillStyle>
-                  </fills>
-                  <strokes>
-                    <StrokeStyle index="1">
-                      <SolidStroke scaleMode="normal">
-                        <fill>
-                          <SolidColor/>
-                        </fill>
-                      </SolidStroke>
-                    </StrokeStyle>
-                  </strokes>
-                  <edges>
-                    <Edge fillStyle1="1" strokeStyle="1" edges="!3400 -980|3400 900!3400 900|-3160 900!-3160 900|-3160 -980!-3160 -980|3400 -980"/>
-                  </edges>
-                </DOMShape>
-                <DOMTLFText name="" right="4560" bottom="1389">
+                <DOMBitmapInstance name="" referenceID="" libraryItemName="attack menu button.png">
                   <matrix>
-                    <Matrix tx="-114" ty="-34"/>
+                    <Matrix tx="-161.15" ty="-42.65"/>
+                  </matrix>
+                </DOMBitmapInstance>
+                <DOMTLFText name="" selected="true" right="4560" bottom="1389">
+                  <matrix>
+                    <Matrix tx="-114" ty="-20"/>
                   </matrix>
                   <tlfFonts>
                     <TLFFont platformName="Times New Roman" psName="TimesNewRomanPSMT"/>

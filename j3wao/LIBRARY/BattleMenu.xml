@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="BattleMenu" itemID="4d6f2203-000001f9" linkageExportForAS="true" linkageClassName="BattleMenu" sourceLibraryItemHRef="Symbol 1" lastModified="1299130261">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="BattleMenu" itemID="4d6f2203-000001f9" linkageExportForAS="true" linkageClassName="BattleMenu" sourceLibraryItemHRef="Symbol 1" lastModified="1299733584">
   <timeline>
     <DOMTimeline name="BattleMenu">
       <layers>
@@ -6,6 +6,11 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
+                <DOMBitmapInstance name="" referenceID="" libraryItemName="plain attack menu.png">
+                  <matrix>
+                    <Matrix tx="747.9" ty="598.2"/>
+                  </matrix>
+                </DOMBitmapInstance>
                 <DOMSymbolInstance libraryItemName="Attack1" name="Attack1" symbolType="button">
                   <matrix>
                     <Matrix tx="933.65" ty="722.8"/>
@@ -14,7 +19,7 @@
                     <Point/>
                   </transformationPoint>
                 </DOMSymbolInstance>
-                <DOMSymbolInstance libraryItemName="Attack2" name="Attack2" symbolType="button">
+                <DOMSymbolInstance libraryItemName="Attack2" name="Attack2" selected="true" symbolType="button">
                   <matrix>
                     <Matrix tx="1371.5" ty="722.8"/>
                   </matrix>
