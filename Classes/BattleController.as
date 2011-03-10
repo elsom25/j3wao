@@ -2,6 +2,7 @@
 {
 	import flash.display.MovieClip;
 	import flash.events.Event;
+	import flash.events.TimerEvent;
 
 	/*The BattleController manages battles. It holds the player and enemy data, and provides a basic interface
 	for launching attacks.*/
@@ -9,12 +10,17 @@
 	{	
 		protected var target:int;
 		protected var menu:BattleMenu;
+		protected var waitingAttack:Attack;
 		//CHANGE TO PROTECTED WHEN DONE DEBUGGING
 		public var player:Player;
 		public var enemy:Array;
+		public var soundController:SoundController;
 		
 		public function BattleController()
 		{
+			soundController = new SoundController(60);
+			soundController.beatTimer.addEventListener(TimerEvent.TIMER, launchWaitingAttack);
+			
 			target = 0;
 			player = new Player(0,0,50, 100);
 			enemy = new Array();
@@ -56,24 +62,26 @@
 
 		public function launchFireball():Attack
 		{
-			var attack:Attack = new Fireball(90);
+			var attack:Attack = new Fireball(60);
 			if ( player.getMP() >= 2 )
 			{
 				var currentMP:int = player.spendMP(2);
 				addChild( attack );
 				enemy[target].takeDamage( attack.getDamage() );
 			}
+			waitingAttack = attack;
 			return attack;
 		}	
 		public function launchIceSpear():Attack
 		{
-			var attack:Attack = new IceSpear(90);
+			var attack:Attack = new IceSpear(60);
 			if( player.getMP() >= 30)
 			{
 				var currentMP:int = player.spendMP(30);
 				addChild( attack );
 				enemy[target].takeDamage( attack.getDamage() );
 			}
+			waitingAttack = attack;
 			return attack;
 		}
 		
@@ -90,6 +98,15 @@
 		public function showMenu(ev:Event):void
 		{
 			menu.visible = true;
+		}
+		
+		public function launchWaitingAttack(ev:Event):void
+		{
+			if (waitingAttack != null)
+			{
+				waitingAttack.startAttack();
+				waitingAttack = null;
+			}
 		}
 	}
 }
