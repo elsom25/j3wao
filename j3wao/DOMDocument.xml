@@ -7,6 +7,7 @@
           <DOMFolderItem name="Fireworks Objects/startbutton.png/Page 1" itemID="4d6b27bd-000001de"/>
           <DOMFolderItem name="Fireworks Objects/titlescreen.png" itemID="4d6b27be-000001e7"/>
           <DOMFolderItem name="Fireworks Objects/titlescreen.png/Page 1" itemID="4d6b27be-000001e8"/>
+          <DOMFolderItem name="PlotItems" itemID="4d7e7ddb-0000021c" isExpanded="true"/>
      </folders>
      <media>
           <DOMBitmapItem name="attack menu button.png" itemID="4d785c53-00000288" sourceExternalFilepath=".\LIBRARY\attack menu button.png" sourceLastImported="1299732537" externalFileSize="54474" useImportedJPEGData="false" compressionType="lossless" originalCompressionType="lossless" quality="50" href="attack menu button.png" bitmapDataHRef="M 31 1299733470.dat" frameRight="6700" frameBottom="2120"/>
@@ -55,6 +56,7 @@
           <Include href="Fireworks Objects/titlescreen.png/Page 1/Page 1.xml" loadImmediate="false"/>
           <Include href="Fireworks Objects/titlescreen.png/Page 1/Shape 3.xml" itemIcon="1" loadImmediate="false"/>
           <Include href="Fireworks Objects/titlescreen.png/Page 1/Shape 3 1.xml" itemIcon="1" loadImmediate="false"/>
+          <Include href="PlotItems/SpeechBubble.xml" itemIcon="0"/>
           <Include href="sand dunes.png.xml" itemIcon="1" loadImmediate="false"/>
           <Include href="StartButton.xml" itemIcon="0" loadImmediate="false"/>
           <Include href="startbutton.png.xml" itemIcon="1" loadImmediate="false"/>
@@ -466,12 +468,14 @@ function A2Click(event:MouseEvent):void{
           <PD n="com.air.artemis.pubipa" v="false"/>
           <PD n="com.air.artemis.ipacertpath" v="C:/Users/Jesse McGinnis/Documents/School/1111 c3 Winter/Arts 304/j3wao.p12"/>
           <PD n="flash.swf.basename" v="j3wao"/>
-          <PD n="flash.fla.filepath" v="C:/Users/Oleksi/Documents/School/1111 - Winter 2011/ARTS 304/j3wao/j3wao/j3wao.xfl"/>
           <PD n="swf.folder.path" v="C:/Users/Oleksi/Documents/School/1111 - Winter 2011/ARTS 304/j3wao/"/>
+          <PD n="flash.fla.filepath" v="C:/Users/Oleksi/Documents/School/1111 - Winter 2011/ARTS 304/j3wao/j3wao/j3wao.xfl"/>
           <PD n="com.air.artemis.pubexe" v="false"/>
      </persistentData>
      <PrinterSettings/>
      <publishHistory>
+          <PublishItem publishSize="1232222" publishTime="1300146772" publishDebug="true"/>
+          <PublishItem publishSize="1232164" publishTime="1300146179" publishDebug="true"/>
           <PublishItem publishSize="1462725" publishTime="1299734238"/>
           <PublishItem publishSize="1462736" publishTime="1299734181"/>
           <PublishItem publishSize="1462731" publishTime="1299734125"/>
@@ -490,7 +494,5 @@ function A2Click(event:MouseEvent):void{
           <PublishItem publishSize="1254367" publishTime="1299732025"/>
           <PublishItem publishSize="1254373" publishTime="1299731987"/>
           <PublishItem publishSize="1254366" publishTime="1299731967"/>
-          <PublishItem publishSize="1254374" publishTime="1299731952"/>
-          <PublishItem publishSize="1254365" publishTime="1299731892"/>
      </publishHistory>
 </DOMDocument>
