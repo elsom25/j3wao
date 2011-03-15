@@ -18,7 +18,7 @@
 		
 		public function BattleController()
 		{
-			soundController = new SoundController(60);
+			soundController = new SoundController(90);
 			soundController.beatTimer.addEventListener(TimerEvent.TIMER, launchWaitingAttack);
 			
 			target = 0;
@@ -62,7 +62,7 @@
 
 		public function launchFireball():Attack
 		{
-			var attack:Attack = new Fireball(60);
+			var attack:Attack = new Fireball(soundController.BPM);
 			if ( player.getMP() >= 2 )
 			{
 				var currentMP:int = player.spendMP(2);
@@ -74,10 +74,10 @@
 		}	
 		public function launchIceSpear():Attack
 		{
-			var attack:Attack = new IceSpear(60);
-			if( player.getMP() >= 30)
+			var attack:Attack = new IceSpear(soundController.BPM);
+			if( player.getMP() >= 3)
 			{
-				var currentMP:int = player.spendMP(30);
+				var currentMP:int = player.spendMP(3);
 				addChild( attack );
 				enemy[target].takeDamage( attack.getDamage() );
 			}
