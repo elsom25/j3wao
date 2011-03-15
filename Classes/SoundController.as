@@ -9,11 +9,14 @@
 	
 	public class SoundController extends MovieClip {
 		public var beatTimer:Timer;
+		public var BPM:Number;
 		
 		public static const BPM_BEAT:String = "BPMBeat";
 		
 
 		public function SoundController(beatsPerMinute:Number) {
+			BPM = beatsPerMinute;
+			
 			const SECONDS_PER_MINUTE:Number = 60;
 			const MILLISECONDS_PER_SECOND = 1000;
 			
