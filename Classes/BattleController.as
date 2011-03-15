@@ -41,20 +41,24 @@
 			{
 				trace("Player is DEAD!");
 				gotoAndStop("TitleFrame");				
-			}		
+			}
 		}
 		
 		
 		//CHANGE TO PRIVATE WHEN DONE DEBUG
 		public function enemyTurn():void
 		{
-			if ( enemy[0].isDead() )
+			if ( player.isDead() )
 			{
 				trace("Player is DEAD!");
 				gotoAndStop("TitleFrame");
-				
 			}
-			var damage = Math.round(Math.random()*10);
+			else ( isEnemiesDead() )
+			{
+				trace("Enemies are DEAD!");
+				gotoAndStop("TitleFrame");				
+			}
+			var damage:int = int(Math.round(Math.random()*10));
 			player.takeDamage( damage );
 			trace(damage + " damage was given to player");
 			//launchFireball(Enemy[0], player);
@@ -66,8 +70,8 @@
 			if ( player.getMP() >= 2 )
 			{
 				var currentMP:int = player.spendMP(2);
+				attack.addEventListener(BattleMenu.SHOW_EVENT, updateDamage );
 				addChild( attack );
-				enemy[target].takeDamage( attack.getDamage() );
 			}
 			waitingAttack = attack;
 			return attack;
@@ -78,11 +82,19 @@
 			if( player.getMP() >= 30)
 			{
 				var currentMP:int = player.spendMP(30);
+				attack.addEventListener(BattleMenu.SHOW_EVENT, updateDamage );
 				addChild( attack );
-				enemy[target].takeDamage( attack.getDamage() );
 			}
 			waitingAttack = attack;
 			return attack;
+		}
+		
+		public function updateDamage(event:Event):void
+		{
+				var num:int = int(event.currentTarget.getDamage());
+				enemy[target].takeDamage( num );
+				trace("current target " + target + " is damaged " + num);
+				enemyTurn();
 		}
 		
 		public function chooseTarget(tar:int):void
@@ -107,6 +119,16 @@
 				waitingAttack.startAttack();
 				waitingAttack = null;
 			}
+		}
+		
+		private function isEnemiesDead():Boolean
+		{
+			for each (var villian:Entity in enemy) {
+				if (!villian.isDead()){
+					return false;
+				}
+			}
+			return true;			
 		}
 	}
 }

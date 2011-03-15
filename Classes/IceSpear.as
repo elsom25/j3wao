@@ -14,19 +14,19 @@
 		
 		private function buildAttack(bpm:Number):void
 		{
-			super.actions.push( new TapAction(300, 300, 1000, 200) );
+			super.actions.push( new TapAction(300, 300, 1000, 200, 10) );
 			super.timings.push(  beatsToMilliseconds(2, bpm) );			
 			
-			super.actions.push( new TapAction(1300, 300, 1000, 200) );
+			super.actions.push( new TapAction(1300, 300, 1000, 200, 10) );
 			super.timings.push(  beatsToMilliseconds(2, bpm) );			
 			
-			super.actions.push( new TapAction(300, 450, 1000, 200) );
+			super.actions.push( new TapAction(300, 450, 1000, 200, 10) );
 			super.timings.push(  beatsToMilliseconds(2, bpm) );			
 			
-			super.actions.push( new TapAction(1300, 450, 1000, 200) );
+			super.actions.push( new TapAction(1300, 450, 1000, 200, 20) );
 			super.timings.push(  beatsToMilliseconds(2, bpm) );			
 			
-			super.actions.push( new TapAction(800, 500, 2000, 200) );
+			super.actions.push( new TapAction(800, 500, 2000, 200, 30) );
 		}
 	}
 }

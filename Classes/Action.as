@@ -44,11 +44,15 @@
 		/*This bufferToProcess is set when the user interacts with the action. It is the active region when the click was processed.
 		  It is set to "Miss" by default, so if no click occurs, this value will still hold "Miss"*/
 		private var bufferToProcess:ActionRegion;
+		
+		/*This is to return the result of an action to the attack for damage calculation*/
+		private var damageAccuracy:Number;
+		private var damageAmount:Number;
 
 		/*NOTE: The ideal hit time is at the exact moment when the approach circles close. This means that the ideal hit moment is
 		equal to approachTime milliseconds after the start of the Action*/
 
-		public function Action(approachTime:Number, bufferTime:Number)
+		public function Action(approachTime:Number, bufferTime:Number, hitDamage:Number)
 		{
 			this.approachTime = approachTime / MILLISECONDS_PER_SECOND;
 			this.bufferTime = bufferTime;
@@ -57,6 +61,8 @@
 			initializeBufferRegions();
 
 			addEventListener(MouseEvent.CLICK, handleClick);
+			damageAccuracy = -1;
+			damageAmount = hitDamage;
 		}
 
 		private function initializeActionTimer():void
@@ -147,10 +153,21 @@
 			}
 			else
 			{
+				damageAccuracy = bufferToProcess.getModifier();
 				dispatchEvent(new Event(HIT_ACTION));
 			}
 			trace(bufferToProcess.getName() + " (modifier: " + bufferToProcess.getModifier() + ")");
 			undraw();
+		}
+		
+		public function returnHitDamage():Number
+		{
+			var answer:Number = -1;
+			if (damageAccuracy != -1){
+				answer = damageAccuracy * damageAmount;
+			}
+			trace ("Action damage is " + answer);
+			return answer;
 		}
 		
 		public function updateBufferRegion(timerEvent:TimerEvent):void

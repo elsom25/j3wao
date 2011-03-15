@@ -15,18 +15,18 @@
 	*/
 	public class Attack extends MovieClip
 	{
-		
+		public static const DONE_ATTACK:String = "finish";
 		protected var actions:Array;
 		protected var timings:Array;
-		protected var nextIndex:Number;
+		protected var nextIndex:int;
 		protected var attackTimer:Timer;
-		protected var damage:Number;
+		protected var totalDamage:Number;
 		public function Attack()
 		{
 			actions = new Array();
 			timings = new Array();
 			nextIndex = 0;
-			damage = 0;
+			totalDamage = 0;
 		}
 		
 		/*
@@ -38,6 +38,7 @@
 			addChild(actions[nextIndex]);
 			actions[nextIndex].beginDrawing();
 			actions[nextIndex].addEventListener(Action.MISSED_ACTION, cancelAttack);
+			actions[nextIndex].addEventListener(Action.HIT_ACTION, addDamage);
 			setChildIndex(actions[nextIndex],0);
 			nextIndex++;
 		}
@@ -68,7 +69,7 @@
 		*/
 		private function scaleTimingsForSystem():void
 		{
-			for (var i:Number=0; i < timings.length; i++)
+			for (var i:int=0; i < timings.length; i++)
 				timings[i] = timings[i] - actions[i+1].getApproachTime() * Action.MILLISECONDS_PER_SECOND;
 		}
 		
@@ -85,14 +86,15 @@
 				attackTimer = new Timer(timings[nextIndex]);
 				attackTimer.addEventListener( TimerEvent.TIMER, loadNextAction );
 				attackTimer.start();
+				initializeNextAction();
 			}
 			else
 			{
+				initializeNextAction();
 				// Sets up listener for successful completion of the last action
 				actions[actions.length-1].addEventListener(Action.HIT_ACTION, completeAttack);
 			}
 			
-			initializeNextAction();
 		
 		}
 
@@ -113,9 +115,18 @@
 			return milliseconds;
 		}
 		
+		public function addDamage(event:Event):void
+		{
+			var hitDamage:Number = event.currentTarget.returnHitDamage();
+			if ( hitDamage != -1){
+				totalDamage = totalDamage + hitDamage;
+			}
+		}
+		
 		public function getDamage():Number
 		{
-			return damage;
+			trace ("Damage in this attack: " + totalDamage)
+			return totalDamage;
 		}
 		
 		/*

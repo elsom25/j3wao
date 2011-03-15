@@ -34,7 +34,7 @@
 			
 			//If dead, set the sprite to be the entity-death sprite
 			if (curHP <= 0) {
-				curSprite = spriteSet.length - 1;
+				//curSprite = spriteSet.length - 1;
 			}
 			return curHP;
 		}
