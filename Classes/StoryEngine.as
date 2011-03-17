@@ -19,7 +19,7 @@
 			var dialog:SpeechBubble = new SpeechBubble();
 			dialog.setSpeechText("GAME TIME STARTED");
 			intro.addDialog(dialog);
-			intro.executePlot();
+			cutScenes[0] = intro;
 		}
 		
 		public function startCutscene(elementNumber:int):void {

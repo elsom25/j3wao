@@ -81,7 +81,6 @@ StartButton.addEventListener(MouseEvent.CLICK, handleStartClick);
 function handleStartClick(event:MouseEvent):void
 {
 	var gameController:GameController = new GameController();
-	gotoAndStop("MainBattleFrame");
 }]]></script>
                                    </Actionscript>
                                    <elements>
@@ -492,6 +491,8 @@ function A2Click(event:MouseEvent):void{
      </persistentData>
      <PrinterSettings/>
      <publishHistory>
+          <PublishItem publishSize="1236998" publishTime="1300397996" publishDebug="true"/>
+          <PublishItem publishSize="1236993" publishTime="1300397892" publishDebug="true"/>
           <PublishItem publishSize="1232222" publishTime="1300146772" publishDebug="true"/>
           <PublishItem publishSize="1232164" publishTime="1300146179" publishDebug="true"/>
           <PublishItem publishSize="1462725" publishTime="1299734238"/>
@@ -510,7 +511,5 @@ function A2Click(event:MouseEvent):void{
           <PublishItem publishSize="1254369" publishTime="1299732214"/>
           <PublishItem publishSize="1254370" publishTime="1299732059"/>
           <PublishItem publishSize="1254367" publishTime="1299732025"/>
-          <PublishItem publishSize="1254373" publishTime="1299731987"/>
-          <PublishItem publishSize="1254366" publishTime="1299731967"/>
      </publishHistory>
 </DOMDocument>
