@@ -48,6 +48,7 @@
      <symbols>
           <Include href="Attack1.xml" itemIcon="0" loadImmediate="false"/>
           <Include href="Attack2.xml" itemIcon="0" loadImmediate="false"/>
+          <Include href="Background.xml"/>
           <Include href="BattleMenu.xml"/>
           <Include href="Fireworks Objects/sand dunes.png/Page 1/Layer 2.xml" loadImmediate="false"/>
           <Include href="Fireworks Objects/sand dunes.png/Page 1/Page 1.xml" loadImmediate="false"/>
@@ -56,7 +57,7 @@
           <Include href="Fireworks Objects/titlescreen.png/Page 1/Page 1.xml" loadImmediate="false"/>
           <Include href="Fireworks Objects/titlescreen.png/Page 1/Shape 3.xml" itemIcon="1" loadImmediate="false"/>
           <Include href="Fireworks Objects/titlescreen.png/Page 1/Shape 3 1.xml" itemIcon="1" loadImmediate="false"/>
-          <Include href="PlotItems/SpeechBubble.xml" itemIcon="0"/>
+          <Include href="PlotItems/SpeechBubble.xml"/>
           <Include href="sand dunes.png.xml" itemIcon="1" loadImmediate="false"/>
           <Include href="StartButton.xml" itemIcon="0" loadImmediate="false"/>
           <Include href="startbutton.png.xml" itemIcon="1" loadImmediate="false"/>
@@ -64,7 +65,7 @@
           <Include href="titlescreen.png.xml" itemIcon="1" loadImmediate="false"/>
      </symbols>
      <timelines>
-          <DOMTimeline name="Scene 1" currentFrame="1">
+          <DOMTimeline name="Scene 1">
                <layers>
                     <DOMLayer name="Layer 1" color="#4FFF4F" current="true" isSelected="true">
                          <frames>
@@ -79,11 +80,12 @@ StartButton.addEventListener(MouseEvent.CLICK, handleStartClick);
 
 function handleStartClick(event:MouseEvent):void
 {
+	var gameController:GameController = GameController();
 	gotoAndStop("MainBattleFrame");
 }]]></script>
                                    </Actionscript>
                                    <elements>
-                                        <DOMSymbolInstance libraryItemName="titlescreen.png" name="" symbolType="graphic" loop="loop">
+                                        <DOMSymbolInstance libraryItemName="titlescreen.png" name="" selected="true" symbolType="graphic" loop="loop">
                                              <matrix>
                                                   <Matrix tx="3.4" ty="-6.75"/>
                                              </matrix>
@@ -91,7 +93,7 @@ function handleStartClick(event:MouseEvent):void
                                                   <Point x="800" y="480"/>
                                              </transformationPoint>
                                         </DOMSymbolInstance>
-                                        <DOMSymbolInstance libraryItemName="StartButton" name="StartButton" symbolType="button">
+                                        <DOMSymbolInstance libraryItemName="StartButton" name="StartButton" selected="true" symbolType="button">
                                              <matrix>
                                                   <Matrix tx="762.65" ty="814.85"/>
                                              </matrix>
@@ -150,6 +152,25 @@ function A2Click(event:MouseEvent):void{
                                                   <Matrix tx="189.95" ty="182.95"/>
                                              </matrix>
                                         </DOMBitmapInstance>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="2" name="StoryFrame" labelType="name" keyMode="9728">
+                                   <Actionscript>
+                                        <script><![CDATA[import flash.events.MouseEvent;
+// property change \\
+
+var storyEngine:StoryEngine = new StoryEngine();
+addChild(storyEngine)]]></script>
+                                   </Actionscript>
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="Background" name="">
+                                             <matrix>
+                                                  <Matrix tx="800" ty="480"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
                                    </elements>
                               </DOMFrame>
                          </frames>
@@ -468,8 +489,8 @@ function A2Click(event:MouseEvent):void{
           <PD n="com.air.artemis.pubipa" v="false"/>
           <PD n="com.air.artemis.ipacertpath" v="C:/Users/Jesse McGinnis/Documents/School/1111 c3 Winter/Arts 304/j3wao.p12"/>
           <PD n="flash.swf.basename" v="j3wao"/>
-          <PD n="swf.folder.path" v="C:/Users/Oleksi/Documents/School/1111 - Winter 2011/ARTS 304/j3wao/"/>
           <PD n="flash.fla.filepath" v="C:/Users/Oleksi/Documents/School/1111 - Winter 2011/ARTS 304/j3wao/j3wao/j3wao.xfl"/>
+          <PD n="swf.folder.path" v="C:/Users/Oleksi/Documents/School/1111 - Winter 2011/ARTS 304/j3wao/"/>
           <PD n="com.air.artemis.pubexe" v="false"/>
      </persistentData>
      <PrinterSettings/>

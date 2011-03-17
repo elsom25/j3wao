@@ -1,5 +1,6 @@
 ﻿package  
 {	
+	import flash.display.MovieClip;
 	/*GameController is the main driver of the game. */
 	public class GameController 
 	{
@@ -12,7 +13,7 @@
 			storyEngine.startCutscene(0);
 			
 			//Now wait for an event saying the cutscene is over and start up the battle sequence
-			//TODO
+			//TODO:
 			
 		}
 	}

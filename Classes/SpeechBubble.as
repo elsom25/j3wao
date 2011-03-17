@@ -2,8 +2,9 @@
 	
 	import flash.display.SimpleButton;
 	import flash.display.*;
+	import flash.events.*;
 	
-	public class SpeechBubble extends SimpleButton {
+	public class SpeechBubble extends MovieClip {
 		
 		var speechText:String;
 		var portrait:Sprite;
@@ -21,6 +22,7 @@
 		
 		public function setSpeechText(newText:String):void {
 			speechText = newText;
+			speechTextBox.text = speechText;
 		}
 	}
 	

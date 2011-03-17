@@ -21,5 +21,9 @@
 			intro.addDialog(dialog);
 			intro.executePlot();
 		}
+		
+		public function startCutscene(elementNumber:int):void {
+			PlotElement(cutScenes[elementNumber]).executePlot();
+		}
 	}
 }

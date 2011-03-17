@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="PlotItems/SpeechBubble" itemID="4d7e7ddb-0000021a" linkageExportForAS="true" linkageClassName="SpeechBubble" sourceLibraryItemHRef="Symbol 1" symbolType="button" lastModified="1300151156">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="PlotItems/SpeechBubble" itemID="4d7e7ddb-0000021a" linkageExportForAS="true" linkageClassName="SpeechBubble" sourceLibraryItemHRef="Symbol 1" lastModified="1300397377">
   <timeline>
     <DOMTimeline name="SpeechBubble">
       <layers>
@@ -22,10 +22,23 @@
                     </StrokeStyle>
                   </strokes>
                   <edges>
-                    <Edge fillStyle0="1" strokeStyle="1" edges="!14470 -3290S5|-13488 -3290!-13488 -3290[-13509 -3290 -13509 -3270!-13509 -3270|-13509 3270!-13509 3270[-13509 3290 -13488 3290!-13488 3290|14470 3290!14470 3290[14491 3290 14491 3270!14491 3270|14491 -3270!14491 -3270[14491 -3290 14470
+                    <Edge fillStyle0="1" strokeStyle="1" edges="!14470 -3290|-13488 -3290!-13488 -3290[-13509 -3290 -13509 -3270!-13509 -3270|-13509 3270!-13509 3270[-13509 3290 -13488 3290!-13488 3290|14470 3290!14470 3290[14491 3290 14491 3270!14491 3270|14491 -3270!14491 -3270[14491 -3290 14470
  -3290"/>
                   </edges>
                 </DOMShape>
+                <DOMDynamicText name="speechTextBox" selected="true" width="1351.9" height="309.95" isSelectable="false">
+                  <matrix>
+                    <Matrix tx="-649.95" ty="-154"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>two</characters>
+                      <textAttrs>
+                        <DOMTextAttrs aliasText="false" size="44" bitmapSize="880" face="TimesNewRomanPSMT" fillColor="#FF0000"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
               </elements>
             </DOMFrame>
           </frames>
