@@ -2,7 +2,7 @@
 {	
 	import flash.display.MovieClip;
 	/*GameController is the main driver of the game. */
-	public class GameController 
+	public class GameController extends MovieClip
 	{
 		//The default constructor should only be called for a new game
 		public function GameController() 

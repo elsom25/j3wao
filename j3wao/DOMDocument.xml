@@ -80,7 +80,7 @@ StartButton.addEventListener(MouseEvent.CLICK, handleStartClick);
 
 function handleStartClick(event:MouseEvent):void
 {
-	var gameController:GameController = GameController();
+	var gameController:GameController = new GameController();
 	gotoAndStop("MainBattleFrame");
 }]]></script>
                                    </Actionscript>
@@ -157,10 +157,7 @@ function A2Click(event:MouseEvent):void{
                               <DOMFrame index="2" name="StoryFrame" labelType="name" keyMode="9728">
                                    <Actionscript>
                                         <script><![CDATA[import flash.events.MouseEvent;
-// property change \\
-
-var storyEngine:StoryEngine = new StoryEngine();
-addChild(storyEngine)]]></script>
+// property change \\]]></script>
                                    </Actionscript>
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="Background" name="">
