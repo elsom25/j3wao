@@ -9,7 +9,9 @@
 		{
 			//Since it is a new game, let's start with the intro cinematic
 			var storyEngine:StoryEngine = new StoryEngine();
-			gotoAndStop("StoryFrame");
+			trace(currentFrame);
+			gotoAndStop(2);
+			trace(currentFrame);
 			storyEngine.startCutscene(0);
 			
 			//Now wait for an event saying the cutscene is over and start up the battle sequence

@@ -84,7 +84,7 @@
     <StreamUse8kSampleRate>0</StreamUse8kSampleRate>
     <EventUse8kSampleRate>0</EventUse8kSampleRate>
     <UseNetwork>0</UseNetwork>
-    <DocumentClass></DocumentClass>
+    <DocumentClass>GameController</DocumentClass>
     <AS3Strict>2</AS3Strict>
     <AS3Coach>4</AS3Coach>
     <AS3AutoDeclare>4096</AS3AutoDeclare>

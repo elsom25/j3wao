@@ -84,7 +84,7 @@ function handleStartClick(event:MouseEvent):void
 }]]></script>
                                    </Actionscript>
                                    <elements>
-                                        <DOMSymbolInstance libraryItemName="titlescreen.png" name="" selected="true" symbolType="graphic" loop="loop">
+                                        <DOMSymbolInstance libraryItemName="titlescreen.png" name="" symbolType="graphic" loop="loop">
                                              <matrix>
                                                   <Matrix tx="3.4" ty="-6.75"/>
                                              </matrix>
@@ -92,7 +92,7 @@ function handleStartClick(event:MouseEvent):void
                                                   <Point x="800" y="480"/>
                                              </transformationPoint>
                                         </DOMSymbolInstance>
-                                        <DOMSymbolInstance libraryItemName="StartButton" name="StartButton" selected="true" symbolType="button">
+                                        <DOMSymbolInstance libraryItemName="StartButton" name="StartButton" symbolType="button">
                                              <matrix>
                                                   <Matrix tx="762.65" ty="814.85"/>
                                              </matrix>
@@ -485,31 +485,31 @@ function A2Click(event:MouseEvent):void{
           <PD n="com.air.artemis.pubipa" v="false"/>
           <PD n="com.air.artemis.ipacertpath" v="C:/Users/Jesse McGinnis/Documents/School/1111 c3 Winter/Arts 304/j3wao.p12"/>
           <PD n="flash.swf.basename" v="j3wao"/>
-          <PD n="flash.fla.filepath" v="C:/Users/Oleksi/Documents/School/1111 - Winter 2011/ARTS 304/j3wao/j3wao/j3wao.xfl"/>
           <PD n="swf.folder.path" v="C:/Users/Oleksi/Documents/School/1111 - Winter 2011/ARTS 304/j3wao/"/>
+          <PD n="flash.fla.filepath" v="C:/Users/Oleksi/Documents/School/1111 - Winter 2011/ARTS 304/j3wao/j3wao/j3wao.xfl"/>
           <PD n="com.air.artemis.pubexe" v="false"/>
      </persistentData>
      <PrinterSettings/>
      <publishHistory>
+          <PublishItem publishSize="1236802" publishTime="1300403579" publishDebug="true"/>
+          <PublishItem publishSize="1236869" publishTime="1300401565" publishDebug="true"/>
+          <PublishItem publishSize="1236877" publishTime="1300401489" publishDebug="true"/>
+          <PublishItem publishSize="1237026" publishTime="1300400451" publishDebug="true"/>
+          <PublishItem publishSize="1237037" publishTime="1300400426" publishDebug="true"/>
+          <PublishItem publishSize="1237038" publishTime="1300400381" publishDebug="true"/>
+          <PublishItem publishSize="1237072" publishTime="1300400367" publishDebug="true"/>
+          <PublishItem publishSize="1237033" publishTime="1300400316" publishDebug="true"/>
+          <PublishItem publishSize="1237062" publishTime="1300398370" publishDebug="true"/>
+          <PublishItem publishSize="1237051" publishTime="1300398335" publishDebug="true"/>
+          <PublishItem publishSize="1237076" publishTime="1300398261" publishDebug="true"/>
+          <PublishItem publishSize="1236977" publishTime="1300398232" publishDebug="true"/>
+          <PublishItem publishSize="1237026" publishTime="1300398163" publishDebug="true"/>
+          <PublishItem publishSize="1237000" publishTime="1300398036" publishDebug="true"/>
           <PublishItem publishSize="1236998" publishTime="1300397996" publishDebug="true"/>
           <PublishItem publishSize="1236993" publishTime="1300397892" publishDebug="true"/>
           <PublishItem publishSize="1232222" publishTime="1300146772" publishDebug="true"/>
           <PublishItem publishSize="1232164" publishTime="1300146179" publishDebug="true"/>
           <PublishItem publishSize="1462725" publishTime="1299734238"/>
           <PublishItem publishSize="1462736" publishTime="1299734181"/>
-          <PublishItem publishSize="1462731" publishTime="1299734125"/>
-          <PublishItem publishSize="1462730" publishTime="1299734061"/>
-          <PublishItem publishSize="1462732" publishTime="1299734020"/>
-          <PublishItem publishSize="1264941" publishTime="1299733955"/>
-          <PublishItem publishSize="1235787" publishTime="1299733742"/>
-          <PublishItem publishSize="1235795" publishTime="1299733717"/>
-          <PublishItem publishSize="1232358" publishTime="1299733590"/>
-          <PublishItem publishSize="1228970" publishTime="1299733377"/>
-          <PublishItem publishSize="1254371" publishTime="1299732683"/>
-          <PublishItem publishSize="1254374" publishTime="1299732635"/>
-          <PublishItem publishSize="1254368" publishTime="1299732277"/>
-          <PublishItem publishSize="1254369" publishTime="1299732214"/>
-          <PublishItem publishSize="1254370" publishTime="1299732059"/>
-          <PublishItem publishSize="1254367" publishTime="1299732025"/>
      </publishHistory>
 </DOMDocument>
