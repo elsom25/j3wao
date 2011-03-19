@@ -1,9 +1,12 @@
 ﻿package  
 {	
+	import flash.text.TextField;
+	import flash.display.MovieClip;
+
 	/*
 	The StoryEngine module is responsible for defining important story elements and triggering them at the correct times.
 	*/
-	public class StoryEngine
+	public class StoryEngine extends MovieClip
 	{
 		var cutScenes:Array;
 		
@@ -24,6 +27,7 @@
 		
 		public function startCutscene(elementNumber:int):void {
 			PlotElement(cutScenes[elementNumber]).executePlot();
+			
 		}
 	}
 }

@@ -17,7 +17,6 @@
 			portrait = new Sprite();
 			posX = 100;
 			posY = 100;
-			posZ = 0;
 		}
 		
 		public function setSpeechText(newText:String):void {

@@ -1,22 +1,33 @@
 ﻿package  
 {	
 	import flash.display.MovieClip;
+	import flash.text.TextField;
+	
 	/*GameController is the main driver of the game. */
 	public class GameController extends MovieClip
 	{
+		//This variable stores the main Game Controller of the game
+		static var mainGameController:GameController;
 		//The default constructor should only be called for a new game
 		public function GameController() 
 		{
+			mainGameController = this;
 			//Since it is a new game, let's start with the intro cinematic
 			var storyEngine:StoryEngine = new StoryEngine();
-			trace(currentFrame);
-			gotoAndStop(2);
-			trace(currentFrame);
+			gotoAndStop(3);
 			storyEngine.startCutscene(0);
 			
 			//Now wait for an event saying the cutscene is over and start up the battle sequence
 			//TODO:
 			
+		}
+		
+		//Call this function to gain access to the document to add items to display
+		public static function getGameController():GameController {
+			if (mainGameController == null) {
+				mainGameController = new GameController();
+			}
+			return mainGameController;
 		}
 	}
 }
