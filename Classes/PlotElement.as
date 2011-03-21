@@ -7,9 +7,11 @@
 	public class PlotElement extends MovieClip{
 		
 		var speechBubbles:Array;
+		var dialogCounter:int;
 		
 		public function PlotElement() {
 			speechBubbles = new Array();
+			dialogCounter = 0;
 		}
 		
 		public function addDialog(dialog:SpeechBubble):void
@@ -20,9 +22,18 @@
 		public function executePlot():void {
 			//Show the first dialog, then wait for click before showing the rest
 			//When all dialogs are shown, send plot element completed event
-			var bubble:SpeechBubble = speechBubbles[0];
-			trace(bubble.speechTextBox.text);
-			GameController.getGameController().addChild(SpeechBubble(speechBubbles[0]));			
+			GameController.getGameController().addChild(SpeechBubble(speechBubbles[0]));
+			(SpeechBubble(speechBubbles[0])).addEventListener(MouseEvent.CLICK, nextDialog);
+		}
+		
+		public function nextDialog(event:MouseEvent):void {
+			trace(dialogCounter);
+			trace(speechBubbles.length);
+			dialogCounter++;
+			if (dialogCounter == speechBubbles.length) {
+				//We just finished with the last speech bubble - end cutscene
+				dispatchEvent(new Event(StoryEngine.CUTSCENE_FINISH));
+			}
 		}
 
 	}

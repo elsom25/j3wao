@@ -16,6 +16,8 @@
 		public var enemy:Array;
 		public var soundController:SoundController;
 		
+		public static const BATTLE_FINISH:String = "event_battle_finish";
+		
 		public function BattleController()
 		{
 			soundController = new SoundController(90);
@@ -56,7 +58,7 @@
 			else ( isEnemiesDead() )
 			{
 				trace("Enemies are DEAD!");
-				gotoAndStop("TitleFrame");				
+				dispatchEvent(new Event(BATTLE_FINISH));
 			}
 			var damage:int = int(Math.round(Math.random()*10));
 			player.takeDamage( damage );

@@ -1,5 +1,6 @@
-<DOMDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" width="1600" height="960" currentTimeline="1" xflVersion="2.0" creatorInfo="Adobe Flash Professional CS5" platform="Windows" versionInfo="Saved by Adobe Flash Windows 11.0 build 485" majorVersion="11" buildNumber="485" viewAngle3D="113.123432202458" nextSceneIdentifier="2" playOptionsPlayLoop="false" playOptionsPlayPages="false" playOptionsPlayFrameActions="false">
+<DOMDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" width="1600" height="960" currentTimeline="1" xflVersion="2.0" creatorInfo="Adobe Flash Professional CS5" platform="Windows" versionInfo="Saved by Adobe Flash Windows 11.0 build 485" majorVersion="11" buildNumber="485" objectsSnapTo="false" viewAngle3D="113.123432202458" nextSceneIdentifier="2" playOptionsPlayLoop="false" playOptionsPlayPages="false" playOptionsPlayFrameActions="false">
      <folders>
+          <DOMFolderItem name="Backgrounds" itemID="4d86dedc-00000238"/>
           <DOMFolderItem name="Fireworks Objects" itemID="4d6b27bd-000001dc"/>
           <DOMFolderItem name="Fireworks Objects/sand dunes.png" itemID="4d785af6-0000024b"/>
           <DOMFolderItem name="Fireworks Objects/sand dunes.png/Page 1" itemID="4d785af6-0000024c"/>
@@ -7,7 +8,8 @@
           <DOMFolderItem name="Fireworks Objects/startbutton.png/Page 1" itemID="4d6b27bd-000001de"/>
           <DOMFolderItem name="Fireworks Objects/titlescreen.png" itemID="4d6b27be-000001e7"/>
           <DOMFolderItem name="Fireworks Objects/titlescreen.png/Page 1" itemID="4d6b27be-000001e8"/>
-          <DOMFolderItem name="PlotItems" itemID="4d7e7ddb-0000021c" isExpanded="true"/>
+          <DOMFolderItem name="General Items" itemID="4d86de26-00000214" isExpanded="true"/>
+          <DOMFolderItem name="StoryFrame Items" itemID="4d86de2f-00000215" isExpanded="true"/>
      </folders>
      <fonts>
           <DOMFontItem name="CasualCharacters" itemID="4d86b829-00000217" font="TimesNewRomanPSMT" size="0" id="1" sourceLastImported="1300674601" embedRanges="1|2|3|4"/>
@@ -51,7 +53,7 @@
      <symbols>
           <Include href="Attack1.xml" itemIcon="0" loadImmediate="false"/>
           <Include href="Attack2.xml" itemIcon="0" loadImmediate="false"/>
-          <Include href="Background.xml"/>
+          <Include href="Backgrounds/sand dunes.png.xml" itemIcon="1" loadImmediate="false"/>
           <Include href="BattleMenu.xml"/>
           <Include href="Fireworks Objects/sand dunes.png/Page 1/Layer 2.xml" loadImmediate="false"/>
           <Include href="Fireworks Objects/sand dunes.png/Page 1/Page 1.xml" loadImmediate="false"/>
@@ -60,15 +62,15 @@
           <Include href="Fireworks Objects/titlescreen.png/Page 1/Page 1.xml" loadImmediate="false"/>
           <Include href="Fireworks Objects/titlescreen.png/Page 1/Shape 3.xml" itemIcon="1" loadImmediate="false"/>
           <Include href="Fireworks Objects/titlescreen.png/Page 1/Shape 3 1.xml" itemIcon="1" loadImmediate="false"/>
-          <Include href="PlotItems/SpeechBubble.xml"/>
-          <Include href="sand dunes.png.xml" itemIcon="1" loadImmediate="false"/>
+          <Include href="General Items/Background.xml"/>
           <Include href="StartButton.xml" itemIcon="0" loadImmediate="false"/>
           <Include href="startbutton.png.xml" itemIcon="1" loadImmediate="false"/>
+          <Include href="StoryFrame Items/SpeechBubble.xml"/>
           <Include href="TapAction.xml"/>
           <Include href="titlescreen.png.xml" itemIcon="1" loadImmediate="false"/>
      </symbols>
      <timelines>
-          <DOMTimeline name="Scene 1">
+          <DOMTimeline name="Scene 1" currentFrame="1">
                <layers>
                     <DOMLayer name="Layer 1" color="#4FFF4F" current="true" isSelected="true">
                          <frames>
@@ -87,7 +89,7 @@ function handleStartClick(event:MouseEvent):void
 }]]></script>
                                    </Actionscript>
                                    <elements>
-                                        <DOMSymbolInstance libraryItemName="titlescreen.png" name="" selected="true" symbolType="graphic" loop="loop">
+                                        <DOMSymbolInstance libraryItemName="titlescreen.png" name="" symbolType="graphic" loop="loop">
                                              <matrix>
                                                   <Matrix tx="3.4" ty="-6.75"/>
                                              </matrix>
@@ -95,7 +97,7 @@ function handleStartClick(event:MouseEvent):void
                                                   <Point x="800" y="480"/>
                                              </transformationPoint>
                                         </DOMSymbolInstance>
-                                        <DOMSymbolInstance libraryItemName="StartButton" name="StartButton" selected="true" symbolType="button">
+                                        <DOMSymbolInstance libraryItemName="StartButton" name="StartButton" symbolType="button">
                                              <matrix>
                                                   <Matrix tx="762.65" ty="814.85"/>
                                              </matrix>
@@ -110,9 +112,9 @@ function handleStartClick(event:MouseEvent):void
                                         <script><![CDATA[
 import flash.events.MouseEvent;
 // property change \\
-
-var battleController:BattleController = new BattleController();
-addChild(battleController)
+//
+//var battleController:BattleController = new BattleController();
+//addChild(battleController)
 
 /*Attack1.addEventListener(MouseEvent.CLICK, A1Click);
 Attack2.addEventListener(MouseEvent.CLICK, A2Click);
@@ -126,7 +128,7 @@ function A2Click(event:MouseEvent):void{
 }*/]]></script>
                                    </Actionscript>
                                    <elements>
-                                        <DOMSymbolInstance libraryItemName="sand dunes.png" name="" symbolType="graphic" loop="loop">
+                                        <DOMSymbolInstance libraryItemName="Backgrounds/sand dunes.png" name="" selected="true" symbolType="graphic" loop="loop">
                                              <matrix>
                                                   <Matrix tx="0.3" ty="-0.55"/>
                                              </matrix>
@@ -134,22 +136,22 @@ function A2Click(event:MouseEvent):void{
                                                   <Point x="951.5" y="481.5"/>
                                              </transformationPoint>
                                         </DOMSymbolInstance>
-                                        <DOMBitmapInstance name="" referenceID="" libraryItemName="plain character menu.png">
+                                        <DOMBitmapInstance name="" referenceID="" selected="true" libraryItemName="plain character menu.png">
                                              <matrix>
                                                   <Matrix tx="21.95" ty="10"/>
                                              </matrix>
                                         </DOMBitmapInstance>
-                                        <DOMBitmapInstance name="" referenceID="" libraryItemName="character menu hpmp bars.png">
+                                        <DOMBitmapInstance name="" referenceID="" selected="true" libraryItemName="character menu hpmp bars.png">
                                              <matrix>
                                                   <Matrix tx="185.95" ty="21.95"/>
                                              </matrix>
                                         </DOMBitmapInstance>
-                                        <DOMBitmapInstance name="" referenceID="" libraryItemName="character menu face.png">
+                                        <DOMBitmapInstance name="" referenceID="" selected="true" libraryItemName="character menu face.png">
                                              <matrix>
                                                   <Matrix tx="34.95" ty="33.95"/>
                                              </matrix>
                                         </DOMBitmapInstance>
-                                        <DOMBitmapInstance name="" referenceID="" libraryItemName="sandmonster.png">
+                                        <DOMBitmapInstance name="" referenceID="" selected="true" libraryItemName="sandmonster.png">
                                              <matrix>
                                                   <Matrix tx="189.95" ty="182.95"/>
                                              </matrix>
@@ -162,7 +164,7 @@ function A2Click(event:MouseEvent):void{
 // property change \\]]></script>
                                    </Actionscript>
                                    <elements>
-                                        <DOMSymbolInstance libraryItemName="Background" name="">
+                                        <DOMSymbolInstance libraryItemName="General Items/Background" name="">
                                              <matrix>
                                                   <Matrix tx="800" ty="480"/>
                                              </matrix>
@@ -494,6 +496,7 @@ function A2Click(event:MouseEvent):void{
      </persistentData>
      <PrinterSettings/>
      <publishHistory>
+          <PublishItem publishSize="1493828" publishTime="1300684519" publishDebug="true"/>
           <PublishItem publishSize="1493832" publishTime="1300675522" publishDebug="true"/>
           <PublishItem publishSize="1262885" publishTime="1300675485" publishDebug="true"/>
           <PublishItem publishSize="1262912" publishTime="1300675435" publishDebug="true"/>
@@ -513,6 +516,5 @@ function A2Click(event:MouseEvent):void{
           <PublishItem publishSize="1237001" publishTime="1300670253" publishDebug="true"/>
           <PublishItem publishSize="1236993" publishTime="1300670233" publishDebug="true"/>
           <PublishItem publishSize="1236952" publishTime="1300657856" publishDebug="true"/>
-          <PublishItem publishSize="1236953" publishTime="1300579206" publishDebug="true"/>
      </publishHistory>
 </DOMDocument>

@@ -14,7 +14,7 @@
 			portrait = new Sprite();
 		}
 		
-		public function setXY(posX:int, posY:int) {
+		public function setXY(posX:int, posY:int):void {
 			x = posX;
 			y = posY;
 		}
