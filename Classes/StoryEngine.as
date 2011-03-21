@@ -21,6 +21,7 @@
 			var intro:PlotElement = new PlotElement();
 			var dialog:SpeechBubble = new SpeechBubble();
 			dialog.setSpeechText("GAME TIME STARTED");
+			dialog.setXY(0, 0);
 			intro.addDialog(dialog);
 			cutScenes[0] = intro;
 		}

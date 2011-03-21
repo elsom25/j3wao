@@ -9,6 +9,9 @@
           <DOMFolderItem name="Fireworks Objects/titlescreen.png/Page 1" itemID="4d6b27be-000001e8"/>
           <DOMFolderItem name="PlotItems" itemID="4d7e7ddb-0000021c" isExpanded="true"/>
      </folders>
+     <fonts>
+          <DOMFontItem name="CasualCharacters" itemID="4d86b829-00000217" font="TimesNewRomanPSMT" size="0" id="1" sourceLastImported="1300674601" embedRanges="1|2|3|4"/>
+     </fonts>
      <media>
           <DOMBitmapItem name="attack menu button.png" itemID="4d785c53-00000288" sourceExternalFilepath=".\LIBRARY\attack menu button.png" sourceLastImported="1299732537" externalFileSize="54474" useImportedJPEGData="false" compressionType="lossless" originalCompressionType="lossless" quality="50" href="attack menu button.png" bitmapDataHRef="M 31 1299733470.dat" frameRight="6700" frameBottom="2120"/>
           <DOMBitmapItem name="Fireworks Objects/titlescreen.png/Page 1/Bitmap 10" itemID="4d6b27bf-000001f6" sourceLastImported="1298868159" originalCompressionType="lossless" quality="50" href="Fireworks Objects\titlescreen.png\Page 1\Bitmap 10" bitmapDataHRef="M 10 1298868159.dat" frameRight="8280" frameBottom="9520"/>
@@ -80,11 +83,11 @@ StartButton.addEventListener(MouseEvent.CLICK, handleStartClick);
 
 function handleStartClick(event:MouseEvent):void
 {
-	var gameController:GameController = new GameController();
+	GameController.getGameController().startNewGame();
 }]]></script>
                                    </Actionscript>
                                    <elements>
-                                        <DOMSymbolInstance libraryItemName="titlescreen.png" name="" symbolType="graphic" loop="loop">
+                                        <DOMSymbolInstance libraryItemName="titlescreen.png" name="" selected="true" symbolType="graphic" loop="loop">
                                              <matrix>
                                                   <Matrix tx="3.4" ty="-6.75"/>
                                              </matrix>
@@ -92,7 +95,7 @@ function handleStartClick(event:MouseEvent):void
                                                   <Point x="800" y="480"/>
                                              </transformationPoint>
                                         </DOMSymbolInstance>
-                                        <DOMSymbolInstance libraryItemName="StartButton" name="StartButton" symbolType="button">
+                                        <DOMSymbolInstance libraryItemName="StartButton" name="StartButton" selected="true" symbolType="button">
                                              <matrix>
                                                   <Matrix tx="762.65" ty="814.85"/>
                                              </matrix>
@@ -478,38 +481,38 @@ function A2Click(event:MouseEvent):void{
      </extendedSwatchLists>
      <persistentData>
           <PD n="com.air.artemis.ipadest" v="j3wao.ipa"/>
-          <PD n="com.air.artemis.airdest" v="j3wao.apk"/>
-          <PD n="DebugMovieChecked" v="ADLDesktop"/>
-          <PD n="TestMovieChecked" v="ADLDesktop"/>
+          <PD n="com.air.artemis.airdest" v="j3wao.apk.air"/>
+          <PD n="DebugMovieChecked" v="ADLMobile"/>
+          <PD n="TestMovieChecked" v="ADLMobile"/>
           <PD n="com.air.artemis.pubair" v="true"/>
           <PD n="com.air.artemis.pubipa" v="false"/>
           <PD n="com.air.artemis.ipacertpath" v="C:/Users/Jesse McGinnis/Documents/School/1111 c3 Winter/Arts 304/j3wao.p12"/>
           <PD n="flash.swf.basename" v="j3wao"/>
-          <PD n="swf.folder.path" v="C:/Users/Oleksi/Documents/School/1111 - Winter 2011/ARTS 304/j3wao/"/>
-          <PD n="flash.fla.filepath" v="C:/Users/Oleksi/Documents/School/1111 - Winter 2011/ARTS 304/j3wao/j3wao/j3wao.xfl"/>
+          <PD n="swf.folder.path" v="G:/Documents/School/Year 4/DAC 304 - Video Games and Simulation/j3wao/j3wao/"/>
+          <PD n="flash.fla.filepath" v="G:/Documents/School/Year 4/DAC 304 - Video Games and Simulation/j3wao/j3wao/j3wao/j3wao.xfl"/>
           <PD n="com.air.artemis.pubexe" v="false"/>
      </persistentData>
      <PrinterSettings/>
      <publishHistory>
-          <PublishItem publishSize="1236802" publishTime="1300403579" publishDebug="true"/>
-          <PublishItem publishSize="1236869" publishTime="1300401565" publishDebug="true"/>
-          <PublishItem publishSize="1236877" publishTime="1300401489" publishDebug="true"/>
-          <PublishItem publishSize="1237026" publishTime="1300400451" publishDebug="true"/>
-          <PublishItem publishSize="1237037" publishTime="1300400426" publishDebug="true"/>
-          <PublishItem publishSize="1237038" publishTime="1300400381" publishDebug="true"/>
-          <PublishItem publishSize="1237072" publishTime="1300400367" publishDebug="true"/>
-          <PublishItem publishSize="1237033" publishTime="1300400316" publishDebug="true"/>
-          <PublishItem publishSize="1237062" publishTime="1300398370" publishDebug="true"/>
-          <PublishItem publishSize="1237051" publishTime="1300398335" publishDebug="true"/>
-          <PublishItem publishSize="1237076" publishTime="1300398261" publishDebug="true"/>
-          <PublishItem publishSize="1236977" publishTime="1300398232" publishDebug="true"/>
-          <PublishItem publishSize="1237026" publishTime="1300398163" publishDebug="true"/>
-          <PublishItem publishSize="1237000" publishTime="1300398036" publishDebug="true"/>
-          <PublishItem publishSize="1236998" publishTime="1300397996" publishDebug="true"/>
-          <PublishItem publishSize="1236993" publishTime="1300397892" publishDebug="true"/>
-          <PublishItem publishSize="1232222" publishTime="1300146772" publishDebug="true"/>
-          <PublishItem publishSize="1232164" publishTime="1300146179" publishDebug="true"/>
-          <PublishItem publishSize="1462725" publishTime="1299734238"/>
-          <PublishItem publishSize="1462736" publishTime="1299734181"/>
+          <PublishItem publishSize="1493832" publishTime="1300675522" publishDebug="true"/>
+          <PublishItem publishSize="1262885" publishTime="1300675485" publishDebug="true"/>
+          <PublishItem publishSize="1262912" publishTime="1300675435" publishDebug="true"/>
+          <PublishItem publishSize="1493921" publishTime="1300675256" publishDebug="true"/>
+          <PublishItem publishSize="1493921" publishTime="1300675204" publishDebug="true"/>
+          <PublishItem publishSize="1493836" publishTime="1300675155" publishDebug="true"/>
+          <PublishItem publishSize="1493802" publishTime="1300674935" publishDebug="true"/>
+          <PublishItem publishSize="1236998" publishTime="1300674524"/>
+          <PublishItem publishSize="1236975" publishTime="1300674334" publishDebug="true"/>
+          <PublishItem publishSize="1236972" publishTime="1300674263" publishDebug="true"/>
+          <PublishItem publishSize="1236982" publishTime="1300673751" publishDebug="true"/>
+          <PublishItem publishSize="1236984" publishTime="1300672122" publishDebug="true"/>
+          <PublishItem publishSize="1236994" publishTime="1300670569" publishDebug="true"/>
+          <PublishItem publishSize="1236975" publishTime="1300670380" publishDebug="true"/>
+          <PublishItem publishSize="1236951" publishTime="1300670281" publishDebug="true"/>
+          <PublishItem publishSize="1236986" publishTime="1300670267" publishDebug="true"/>
+          <PublishItem publishSize="1237001" publishTime="1300670253" publishDebug="true"/>
+          <PublishItem publishSize="1236993" publishTime="1300670233" publishDebug="true"/>
+          <PublishItem publishSize="1236952" publishTime="1300657856" publishDebug="true"/>
+          <PublishItem publishSize="1236953" publishTime="1300579206" publishDebug="true"/>
      </publishHistory>
 </DOMDocument>

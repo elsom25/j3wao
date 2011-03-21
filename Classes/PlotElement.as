@@ -20,9 +20,9 @@
 		public function executePlot():void {
 			//Show the first dialog, then wait for click before showing the rest
 			//When all dialogs are shown, send plot element completed event
-			
-			GameController.getGameController().addChild(SpeechBubble(speechBubbles[0]));
-			
+			var bubble:SpeechBubble = speechBubbles[0];
+			trace(bubble.speechTextBox.text);
+			GameController.getGameController().addChild(SpeechBubble(speechBubbles[0]));			
 		}
 
 	}

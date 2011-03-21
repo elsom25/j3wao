@@ -8,15 +8,15 @@
 		
 		var speechText:String;
 		var portrait:Sprite;
-		var posX:Number;
-		var posY:Number;
-		var posZ:Number;
 		
 		public function SpeechBubble() {
 			speechText = "Blah.";
 			portrait = new Sprite();
-			posX = 100;
-			posY = 100;
+		}
+		
+		public function setXY(posX:int, posY:int) {
+			x = posX;
+			y = posY;
 		}
 		
 		public function setSpeechText(newText:String):void {
