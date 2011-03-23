@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="StoryFrame Items/SpeechBubble" itemID="4d7e7ddb-0000021a" linkageExportForAS="true" linkageClassName="SpeechBubble" sourceLibraryItemHRef="Symbol 1" lastModified="1300674618">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="StoryFrame Items/SpeechBubble" itemID="4d7e7ddb-0000021a" linkageExportForAS="true" linkageClassName="SpeechBubble" sourceLibraryItemHRef="Symbol 1" lastModified="1300746706">
   <timeline>
     <DOMTimeline name="SpeechBubble">
       <layers>
@@ -33,7 +33,7 @@
                     <Edge cubics="!27979 0(;27979,0 21,0 21,0q27979 0 21 0);"/>
                   </edges>
                 </DOMShape>
-                <DOMDynamicText name="speechTextBox" selected="true" width="1351.9" height="309.95" isSelectable="false">
+                <DOMDynamicText name="speechTextBox" selected="true" width="996" height="309.95" isSelectable="false">
                   <matrix>
                     <Matrix tx="24.05" ty="9.5"/>
                   </matrix>

@@ -3,6 +3,9 @@
 	import flash.text.TextField;
 	import flash.display.MovieClip;
 	import flash.events.Event;
+	import flash.display.Sprite;
+	import flash.display.Graphics;
+	import flash.display.Bitmap;
 
 	/*
 	The StoryEngine module is responsible for defining important story elements and triggering them at the correct times.
@@ -23,6 +26,7 @@
 			//HARDCODING BOO
 			//Introduction Sequence
 			var intro:PlotElement = new PlotElement();
+			intro.setBackgroundImage("sanddunes.png");
 			var dialog:SpeechBubble = new SpeechBubble();
 			dialog.setSpeechText("GAME TIME STARTED");
 			dialog.setXY(0, 0);

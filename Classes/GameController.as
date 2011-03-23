@@ -65,7 +65,7 @@
 			addChild(battleController);
 			//Implement function to start battles which takes in parameter for battle counter
 			//battleController.startBattle(battlePoint);
-			addEventListener(BattleController.BATTLE_FINISH, battleFinish);
+			battleController.addEventListener(BattleController.BATTLE_FINISH, battleFinish);
 		}
 		
 		//Start the next cutscene
