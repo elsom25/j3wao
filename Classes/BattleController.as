@@ -20,7 +20,9 @@
 		
 		public function BattleController()
 		{
-			soundController = new SoundController(90);
+			SoundRegistry.loadSounds();
+			
+			soundController = new SoundController(30);
 			soundController.beatTimer.addEventListener(TimerEvent.TIMER, launchWaitingAttack);
 			
 			target = 0;

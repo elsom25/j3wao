@@ -474,19 +474,26 @@ function A2Click(event:MouseEvent):void{
      </extendedSwatchLists>
      <persistentData>
           <PD n="com.air.artemis.ipadest" v="j3wao.ipa"/>
-          <PD n="com.air.artemis.airdest" v="j3wao.apk.air"/>
+          <PD n="com.air.artemis.airdest" v="j3wao.apk"/>
           <PD n="DebugMovieChecked" v="ADLMobile"/>
           <PD n="TestMovieChecked" v="ADLMobile"/>
           <PD n="com.air.artemis.pubair" v="true"/>
           <PD n="com.air.artemis.pubipa" v="false"/>
           <PD n="com.air.artemis.ipacertpath" v="C:/Users/Jesse McGinnis/Documents/School/1111 c3 Winter/Arts 304/j3wao.p12"/>
           <PD n="flash.swf.basename" v="j3wao"/>
-          <PD n="flash.fla.filepath" v="G:/Documents/School/Year 4/DAC 304 - Video Games and Simulation/j3wao/j3wao/j3wao/j3wao.xfl"/>
-          <PD n="swf.folder.path" v="G:/Documents/School/Year 4/DAC 304 - Video Games and Simulation/j3wao/j3wao/"/>
+          <PD n="flash.fla.filepath" v="C:/Users/Oleksi/Documents/School/1111 - Winter 2011/ARTS 304/j3wao/j3wao/j3wao.xfl"/>
+          <PD n="swf.folder.path" v="C:/Users/Oleksi/Documents/School/1111 - Winter 2011/ARTS 304/j3wao/"/>
           <PD n="com.air.artemis.pubexe" v="false"/>
      </persistentData>
      <PrinterSettings/>
      <publishHistory>
+          <PublishItem publishSize="666258" publishTime="1300924973"/>
+          <PublishItem publishSize="785168" publishTime="1300924933"/>
+          <PublishItem publishSize="785169" publishTime="1300924884"/>
+          <PublishItem publishSize="445394" publishTime="1300924864"/>
+          <PublishItem publishSize="666216" publishTime="1300924094"/>
+          <PublishItem publishSize="666228" publishTime="1300924049"/>
+          <PublishItem publishSize="785120" publishTime="1300923982"/>
           <PublishItem publishSize="1494508" publishTime="1300857156"/>
           <PublishItem publishSize="1494494" publishTime="1300857077" publishDebug="true"/>
           <PublishItem publishSize="1494487" publishTime="1300857050" publishDebug="true"/>
@@ -500,12 +507,5 @@ function A2Click(event:MouseEvent):void{
           <PublishItem publishSize="1262912" publishTime="1300675435" publishDebug="true"/>
           <PublishItem publishSize="1493921" publishTime="1300675256" publishDebug="true"/>
           <PublishItem publishSize="1493921" publishTime="1300675204" publishDebug="true"/>
-          <PublishItem publishSize="1493836" publishTime="1300675155" publishDebug="true"/>
-          <PublishItem publishSize="1493802" publishTime="1300674935" publishDebug="true"/>
-          <PublishItem publishSize="1236998" publishTime="1300674524"/>
-          <PublishItem publishSize="1236975" publishTime="1300674334" publishDebug="true"/>
-          <PublishItem publishSize="1236972" publishTime="1300674263" publishDebug="true"/>
-          <PublishItem publishSize="1236982" publishTime="1300673751" publishDebug="true"/>
-          <PublishItem publishSize="1236984" publishTime="1300672122" publishDebug="true"/>
      </publishHistory>
 </DOMDocument>
