@@ -29,8 +29,10 @@
 			player = new Player(0,0,50, 100);
 			enemy = new Array();
 			//NEED TO CHANGE TO ENEMY WHEN SPRITES ARE DECIDED
-			enemy[0] = new Entity(0,0,100, 1000);
-			enemy[1] = new Entity(0,0,50, 1000);
+			enemy[0] = new Entity(150,70,100, 1000);
+			enemy[1] = new Entity(300,70,50, 1000);
+			addChild(enemy[0]);
+			addChild(enemy[1]);
 			//TODO: SPRITES FOR ENEMIES ABOVE
 			menu = new BattleMenu();
 			addChild(menu);
@@ -65,7 +67,6 @@
 			var damage:int = int(Math.round(Math.random()*10));
 			player.takeDamage( damage );
 			trace(damage + " damage was given to player");
-			//launchFireball(Enemy[0], player);
 		}
 
 		public function launchFireball():Attack
