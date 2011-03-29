@@ -1,4 +1,5 @@
 ﻿package {
+	
 	import flash.display.MovieClip;
 	import flash.display.Sprite;
 	
@@ -13,6 +14,9 @@
 		protected var maxMP:int;
 		protected var curMP:int;
 		
+		//Entity name
+		public var enName:String;
+		
 		public function Entity(positionX:int, positionY:int, totalHP:int, totalMP:int) {
 			x = positionX;
 			y = positionY;
@@ -20,6 +24,9 @@
 			curHP = totalHP;
 			maxMP = totalMP;
 			curMP = totalMP;
+			
+			var b:StatusBar = new StatusBar(x, y, 24, false);
+			addChild(b);
 		}
 		
 		//Function that does damage to the entity and returns the modified HP value

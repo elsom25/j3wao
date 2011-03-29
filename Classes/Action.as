@@ -19,13 +19,13 @@
 	public class Action extends MovieClip
 	{
 		public static const MILLISECONDS_PER_SECOND:Number = 1000;
-		
+
 		public static const MISSED_ACTION:String = "missedaction";
-		
+
 		public static const HIT_ACTION:String = "hitaction";
 
 		/*Used to determine long this action is on screen. When this time ticks, we undraw the action*/
-		protected var actionTimer:Timer; 
+		protected var actionTimer:Timer;
 		/*The approachTime is an option that indicates how long it takes the approach circle to hit the outer edge of the 
 		actual tap circle.*/
 		protected var approachTime:Number;
@@ -43,7 +43,7 @@
 		/*This bufferToProcess is set when the user interacts with the action. It is the active region when the click was processed.
 		  It is set to "Miss" by default, so if no click occurs, this value will still hold "Miss"*/
 		private var bufferToProcess:ActionRegion;
-		
+
 		/*This is to return the result of an action to the attack for damage calculation*/
 		private var damageAccuracy:Number;
 		private var damageAmount:Number;
@@ -86,7 +86,7 @@
 
 			activeRegionIndex = 0;
 			bufferToProcess = bufferRegions[activeRegionIndex];
-			
+
 			bufferTimer = new Timer(bufferRegions[activeRegionIndex].getTimeBeforeNext(),1);
 			bufferTimer.addEventListener( TimerEvent.TIMER_COMPLETE, updateBufferRegion);
 		}
@@ -111,22 +111,22 @@
 			circle.graphics.lineStyle(5);
 			circle.graphics.drawCircle(0,0,260);
 			circle.graphics.endFill();
-			
+
 			circle.mouseEnabled = false;
-			
+
 			addChild(circle);
 
-			var heightTween:Tween = new Tween(circle, "scaleX", None.easeIn, 1, 0.5, approachTime, true);
-			var widthTween:Tween = new Tween(circle, "scaleY", None.easeIn, 1, 0.5, approachTime, true);
+			var heightTween:Tween = new Tween(circle,"scaleX",None.easeIn,1,0.5,approachTime,true);
+			var widthTween:Tween = new Tween(circle,"scaleY",None.easeIn,1,0.5,approachTime,true);
 			heightTween.start();
 			widthTween.start();
 		}
-		
+
 		public function remove():void
 		{
 			undraw();
 		}
-		
+
 		/*
 		Removes this action as a result of its time running out.
 		*/
@@ -140,14 +140,15 @@
 			super.visible = false;
 			actionTimer.stop();
 		}
-		
+
 		/*
 		Called whenever the user clicks an action or misses their chance to do so, and fires an event to
 		cancel the attack if necessary.
 		*/
 		private function processActiveBuffer():void
 		{
-			if (bufferToProcess.getModifier() == 0) {
+			if (bufferToProcess.getModifier() == 0)
+			{
 				dispatchEvent(new Event(MISSED_ACTION));
 			}
 			else
@@ -158,17 +159,18 @@
 			trace(bufferToProcess.getName() + " (modifier: " + bufferToProcess.getModifier() + ")");
 			undraw();
 		}
-		
+
 		public function returnHitDamage():Number
 		{
 			var answer:Number = -1;
-			if (damageAccuracy != -1){
+			if (damageAccuracy != -1)
+			{
 				answer = damageAccuracy * damageAmount;
 			}
-			trace ("Action damage is " + answer);
+			trace("Action damage is " + answer);
 			return answer;
 		}
-		
+
 		public function updateBufferRegion(timerEvent:TimerEvent):void
 		{
 			if (activeRegionIndex < bufferRegions.length - 1)
@@ -180,18 +182,11 @@
 				bufferTimer.start();
 			}
 		}
-		
+
 		public function handleClick(mouseEvent:MouseEvent):void
 		{
-			[Embed(source="../normal-hitnormal.mp3")]
-			var soundClass:Class;
-			var sound:Sound = new soundClass() as Sound;
-			sound.play();
-			/*
-			var mySound:Sound = new Sound();
-			mySound.load(new URLRequest("normal-hitnormal.mp3"));
-			mySound.play();
-			*/
+			SoundRegistry.normalHitClap.play();
+
 			bufferToProcess = bufferRegions[activeRegionIndex];
 			processActiveBuffer();
 		}
