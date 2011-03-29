@@ -170,6 +170,12 @@
 			trace("Action damage is " + answer);
 			return answer;
 		}
+		
+		private function displayDamage(event:Event):void
+		{
+			
+			
+		}
 
 		public function updateBufferRegion(timerEvent:TimerEvent):void
 		{

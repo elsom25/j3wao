@@ -72,9 +72,10 @@
 		
 		//Function to check if entity is dead
 		public function isDead():Boolean {
-			if (curHP < 0) {
+			if (curHP <= 0) {
 				return true;
 			}
+			
 			return false;
 		}
 		
