@@ -5,6 +5,9 @@
 	import flash.display.Sprite;
 	import flash.display.Loader;
 	import flash.net.URLRequest;
+	import flash.display.BitmapData;
+	import flash.display.Bitmap;
+	import flash.display.IBitmapDrawable;
 	
 	/* The Plot Element class is the container that holds a bunch of speech dialogs representing individual cutscenes*/
 	public class PlotElement extends MovieClip{
@@ -40,7 +43,8 @@
 			loader.load(url);			
 			GameController.getGameController().addChild(loader);
 			*/
-			
+			var bmpdata:BitmapData = new BitmapData(1600, 960, false, 0);
+			var bmp:Bitmap = new Bitmap(bmpdata, "auto", false);
 			
 			GameController.getGameController().addChild(SpeechBubble(speechBubbles[dialogCounter]));
 			(SpeechBubble(speechBubbles[dialogCounter])).addEventListener(MouseEvent.CLICK, nextDialog);

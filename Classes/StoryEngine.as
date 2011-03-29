@@ -29,7 +29,7 @@
 			intro.setBackgroundImage("sanddunes.png");
 			var dialog:SpeechBubble = new SpeechBubble();
 			dialog.setSpeechText("GAME TIME STARTED");
-			dialog.setXY(0, 0);
+			dialog.setXY(0, 700);
 			intro.addDialog(dialog);
 			cutScenes[0] = intro;
 		}

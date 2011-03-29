@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="StoryFrame Items/SpeechBubble" itemID="4d7e7ddb-0000021a" linkageExportForAS="true" linkageClassName="SpeechBubble" sourceLibraryItemHRef="Symbol 1" lastModified="1300746706">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="StoryFrame Items/SpeechBubble" itemID="4d7e7ddb-0000021a" linkageExportForAS="true" linkageClassName="SpeechBubble" sourceLibraryItemHRef="Symbol 1" lastModified="1301358894">
   <timeline>
     <DOMTimeline name="SpeechBubble">
       <layers>
@@ -22,18 +22,18 @@
                     </StrokeStyle>
                   </strokes>
                   <edges>
-                    <Edge fillStyle0="1" strokeStyle="1" edges="!27979 0|21 0!21 0[0 0 0 20!0 20|0 6560!0 6560[0 6580 21 6580!21 6580|27979 6580!27979 6580[28000 6580 28000 6560!28000 6560|28000 20!28000 20[28000 0 27979 0"/>
-                    <Edge cubics="!28000 20(;28000,7 27993,0 27979,0q28000 20Q28000 0q27979 0);"/>
-                    <Edge cubics="!27979 6580(;27993,6580 28000,6573 28000,6560q27979 6580Q28000 6580q28000 6560);"/>
-                    <Edge cubics="!28000 6560(;28000,6560 28000,20 28000,20q28000 6560 28000 20);"/>
-                    <Edge cubics="!21 0(;7,0 0,7 0,20q21 0Q0 0q0 20);"/>
-                    <Edge cubics="!0 6560(;0,6573 7,6580 21,6580q0 6560Q0 6580q21 6580);"/>
-                    <Edge cubics="!0 20(;0,20 0,6560 0,6560q0 20 0 6560);"/>
-                    <Edge cubics="!21 6580(;21,6580 27979,6580 27979,6580q21 6580 27979 6580);"/>
+                    <Edge fillStyle0="1" strokeStyle="1" edges="!27979 0|21 0!21 0[0 0 0 15!0 15|0 4985!0 4985[0 5000 21 5000!21 5000|27979 5000!27979 5000[28000 5000 28000 4985!28000 4985|28000 15!28000 15[28000 0 27979 0"/>
+                    <Edge cubics="!28000 15(;28000,5 27993,0 27979,0q28000 15Q28000 0q27979 0);"/>
+                    <Edge cubics="!27979 5000(;27993,5000 28000,4995 28000,4985q27979 5000Q28000 5000q28000 4985);"/>
+                    <Edge cubics="!28000 4985(;28000,4985 28000,15 28000,15q28000 4985 28000 15);"/>
+                    <Edge cubics="!21 0(;7,0 0,5 0,15q21 0Q0 0q0 15);"/>
+                    <Edge cubics="!0 4985(;0,4995 7,5000 21,5000q0 4985Q0 5000q21 5000);"/>
+                    <Edge cubics="!0 15(0,15;0,15 0,4985 0,4985q0 15 0 4985);"/>
                     <Edge cubics="!27979 0(;27979,0 21,0 21,0q27979 0 21 0);"/>
+                    <Edge cubics="!21 5000(;21,5000 27979,5000 27979,5000q21 5000 27979 5000);"/>
                   </edges>
                 </DOMShape>
-                <DOMDynamicText name="speechTextBox" selected="true" width="996" height="309.95" isSelectable="false">
+                <DOMDynamicText name="speechTextBox" width="996" height="234.55" isSelectable="false">
                   <matrix>
                     <Matrix tx="24.05" ty="9.5"/>
                   </matrix>
