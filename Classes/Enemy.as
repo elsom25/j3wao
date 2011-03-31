@@ -1,5 +1,7 @@
 ﻿package  {
 	
+	import flash.display.Sprite;
+	
 	public class Enemy extends Entity {
 		//The set of sprites for animation for this enemy
 		//Note - the last sprite in the array should be the enemy-death sprite
@@ -7,11 +9,13 @@
 		//Number to enumerate through the spriteSet
 		protected var curSprite:int;
 
-		public function Enemy(positionX:int, positionY:int, totalHP:int, totalMP:int {
+		public function Enemy(positionX:int, positionY:int, totalHP:int, totalMP:int) {
 			super(positionX, positionY, totalHP, totalMP);
+			//statusBar = new StatusBar(0, 0, totalHP, false);
+			//addChild(statusBar);
 		}
 		
-		public function takeDamage(damage:int):int
+		public override function takeDamage(damage:int):int
 		{
 			super.takeDamage(damage);
 			//If dead, set the sprite to be the entity-death sprite
