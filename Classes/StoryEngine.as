@@ -43,12 +43,42 @@
 			intro.addDialog(dialog);
 		
 			dialog = new SpeechBubble();
-			dialog.setSpeechText("Dancing to his own melody, the hero fought the demon king, and eventually managed to seal the demon king along with himself into a crystal pendant.");
+			dialog.setSpeechText("Dancing to his own melody, the hero fought the demon king, and eventually managed to seal the demon king into a crystal pendant at the cost of his own life.");
 			dialog.setXY(25, 700);
 			intro.addDialog(dialog);
 			
 			dialog = new SpeechBubble();
 			dialog.setSpeechText("After the war, the head priestess of Osiria prophesied that one day the demon king would return, and only the blood of the hero could defeat him.");
+			dialog.setXY(25, 700);
+			intro.addDialog(dialog);
+			
+			dialog = new SpeechBubble();
+			dialog.setSpeechText("As far as anyone in the kingdom knew, the hero was childless, and they called the priestess a fool and disregarded the prophecy.");
+			dialog.setXY(25, 700);
+			intro.addDialog(dialog);
+			
+			dialog = new SpeechBubble();
+			dialog.setSpeechText("It is now the year 801 in the New Age of Osiria, and the land has been at peace for many hundreds of years.");
+			dialog.setXY(25, 700);
+			intro.addDialog(dialog);
+			
+			dialog = new SpeechBubble();
+			dialog.setSpeechText("Recently, however, the wild monsters of Osiria have become more aggressive and numerous than ever before.");
+			dialog.setXY(25, 700);
+			intro.addDialog(dialog);
+			
+			dialog = new SpeechBubble();
+			dialog.setSpeechText("Hunters have seen the monsters gather in packs, and move purposefully, almost as if trying to accomplish some goal known only to them.");
+			dialog.setXY(25, 700);
+			intro.addDialog(dialog);
+			
+			dialog = new SpeechBubble();
+			dialog.setSpeechText("The current king, worried about this recent change, has sent out a call for warriors to stem the growing horde of monsters.");
+			dialog.setXY(25, 700);
+			intro.addDialog(dialog);
+			
+			dialog = new SpeechBubble();
+			dialog.setSpeechText("In a small village on the outskirts of the capital called Novea, a simple orphan boy wakes up, meaning to answer the king's call...");
 			dialog.setXY(25, 700);
 			intro.addDialog(dialog);
 			
