@@ -487,6 +487,8 @@ function A2Click(event:MouseEvent):void{
      </persistentData>
      <PrinterSettings/>
      <publishHistory>
+          <PublishItem publishSize="1491188" publishTime="1301547644" publishDebug="true"/>
+          <PublishItem publishSize="1491205" publishTime="1301547629" publishDebug="true"/>
           <PublishItem publishSize="1491192" publishTime="1301547504" publishDebug="true"/>
           <PublishItem publishSize="1491190" publishTime="1301547445" publishDebug="true"/>
           <PublishItem publishSize="1491176" publishTime="1301547189" publishDebug="true"/>
@@ -505,7 +507,5 @@ function A2Click(event:MouseEvent):void{
           <PublishItem publishSize="1492086" publishTime="1301545433" publishDebug="true"/>
           <PublishItem publishSize="1492081" publishTime="1301544736" publishDebug="true"/>
           <PublishItem publishSize="1458778" publishTime="1301544647" publishDebug="true"/>
-          <PublishItem publishSize="1506602" publishTime="1301544502" publishDebug="true"/>
-          <PublishItem publishSize="1488583" publishTime="1301544352" publishDebug="true"/>
      </publishHistory>
 </DOMDocument>
