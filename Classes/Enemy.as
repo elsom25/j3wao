@@ -11,8 +11,8 @@
 
 		public function Enemy(positionX:int, positionY:int, totalHP:int, totalMP:int) {
 			super(positionX, positionY, totalHP, totalMP);
-			//statusBar = new StatusBar(0, 0, totalHP, false);
-			//addChild(statusBar);
+			statusBar = new StatusBar(0, 0, totalHP, false);
+			addChild(statusBar);
 		}
 		
 		public override function takeDamage(damage:int):int
