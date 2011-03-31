@@ -2,6 +2,8 @@
 {	
 	import flash.display.MovieClip;
 	import flash.text.TextField;
+	import flash.utils.Timer;
+	import flash.events.TimerEvent;
 	import flash.events.Event;
 	import flash.net.URLRequest;
 	import flash.display.*;
@@ -17,6 +19,9 @@
 		//Variables to keep track of location in story and battles
 		var storyPoint:int;
 		var battlePoint:int;
+		private var endImage:Loader;
+		
+		protected var endBattleDelay:Timer;
 		
 		//The default constructor should only be called for a new game
 		public function GameController() 
@@ -54,6 +59,22 @@
 		
 		//The things that should happen when a battle is finished
 		public function battleFinish(event:Event):void {
+			endImage = new Loader();
+			endBattleDelay= new Timer(3000);
+			endBattleDelay.addEventListener(TimerEvent.TIMER, cleanupBattle);
+			endBattleDelay.start();
+			endImage.load(new URLRequest("Images/Fonts/winning.png"));
+			endImage.x = 586;
+			endImage.y = 363;
+			var top:int = getBattleController().numChildren - 1
+			
+			addChild(endImage);
+			//getBattleController().setChildIndex(endImage, top);
+		}
+		
+		private function cleanupBattle(event:Event):void {
+			endBattleDelay.stop();
+			removeChild(endImage);
 			removeChild(getBattleController());
 			battlePoint++;
 			startCutscene();
