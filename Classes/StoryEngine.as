@@ -90,8 +90,21 @@
 			wakeUp.setBackgroundImage("Images/Backgrounds/sand dunes.png");
 			
 			dialog = new SpeechBubble();
-			dialog.setSpeechText("LOL");
+			dialog.setSpeechText("Hey kid! Wake up! Didn't you say you were going to the capital today? How do you expect to fight at the king's side if you sleep in all the time?!");
 			dialog.setXY(25, 700);
+			dialog.setPortrait("Images/Characters/NPC/obaba_small.png");
+			wakeUp.addDialog(dialog);
+			
+			dialog = new SpeechBubble();
+			dialog.setSpeechText("Ready to go? About time. Alright, let's ... wait, did you hear that? Someone's in trouble!");
+			dialog.setXY(25, 700);
+			dialog.setPortrait("Images/Characters/NPC/obaba_small.png");
+			wakeUp.addDialog(dialog);
+			
+			dialog = new SpeechBubble();
+			dialog.setSpeechText("Oh no! A slime monster is attacking a helpless girl! This'll be a good warm up for you! Remember, strike in sync with your internal melody to do the most damage!");
+			dialog.setXY(25, 700);
+			dialog.setPortrait("Images/Characters/NPC/obaba_small.png");
 			wakeUp.addDialog(dialog);
 			
 			cutScenes.push(wakeUp);
@@ -101,7 +114,13 @@
 			afterBattle.setBackgroundImage("Images/Backgrounds/dunetocity.png");
 			
 			dialog = new SpeechBubble();
-			dialog.setSpeechText("YOU ARE WINNER");
+			dialog.setSpeechText("Good job! Now that the monster's been taken care of, let's head to the capital city...");
+			dialog.setXY(25, 700);
+			dialog.setPortrait("Images/Characters/NPC/obaba_small.png");
+			afterBattle.addDialog(dialog);
+			
+			dialog = new SpeechBubble();
+			dialog.setSpeechText("END OF DEMO! Thank you for playing!");
 			dialog.setXY(25, 700);
 			afterBattle.addDialog(dialog);
 			

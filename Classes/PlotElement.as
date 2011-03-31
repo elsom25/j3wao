@@ -46,11 +46,16 @@
 			trace(backgroundImage);
 			
 			GameController.getStoryEngine().addChild(SpeechBubble(speechBubbles[dialogCounter]));
+			//if speech bubble has a portrait, add it
+			addPortrait(SpeechBubble(speechBubbles[dialogCounter]), 1350, 640);
+			
 			(SpeechBubble(speechBubbles[dialogCounter])).addEventListener(MouseEvent.CLICK, nextDialog);
 		}
 		
 		public function nextDialog(event:MouseEvent):void {
 			GameController.getStoryEngine().removeChild(SpeechBubble(speechBubbles[dialogCounter]));
+			//if speech bubble had a portrait, remove it
+			removePortrait(SpeechBubble(speechBubbles[dialogCounter]));
 			dialogCounter++;
 			if (dialogCounter == speechBubbles.length) {
 				//We just finished with the last speech bubble - end cutscene
@@ -59,7 +64,26 @@
 			{
 				//Show next dialog box
 				GameController.getStoryEngine().addChild(SpeechBubble(speechBubbles[dialogCounter]));
+				addPortrait(SpeechBubble(speechBubbles[dialogCounter]), 1350, 640);
 				(SpeechBubble(speechBubbles[dialogCounter])).addEventListener(MouseEvent.CLICK, nextDialog);
+			}
+		}
+		
+		private function addPortrait(bubble:SpeechBubble, posX:int, posY:int):void {
+			var portrait = bubble.getPortrait();
+			trace(bubble.portrait);
+			if (portrait != null) {
+				portrait.x = posX;
+				portrait.y = posY;
+				portrait.z = 1;
+				GameController.getStoryEngine().addChild(portrait);
+				trace("added portrait");
+			}
+		}
+		
+		private function removePortrait(bubble:SpeechBubble):void {
+			if (bubble.getPortrait() != null) {
+				GameController.getStoryEngine().removeChild(bubble.getPortrait());
 			}
 		}
 
