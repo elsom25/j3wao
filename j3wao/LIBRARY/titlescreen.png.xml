@@ -6,7 +6,11 @@
           <frames>
             <DOMFrame index="0" name="titlescreen.pngPage 1" labelType="name" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="Fireworks Objects/titlescreen.png/Page 1/Page 1" name="" selected="true"/>
+                <DOMSymbolInstance libraryItemName="Fireworks Objects/titlescreen.png/Page 1/Page 1" name="" selected="true" centerPoint3DX="800" centerPoint3DY="480">
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
               </elements>
             </DOMFrame>
           </frames>

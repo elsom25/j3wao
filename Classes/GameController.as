@@ -3,6 +3,8 @@
 	import flash.display.MovieClip;
 	import flash.text.TextField;
 	import flash.events.Event;
+	import flash.net.URLRequest;
+	import flash.display.*;
 	
 	/*GameController is the main driver of the game. */
 	public class GameController extends MovieClip

@@ -14,6 +14,10 @@
 	import flash.net.URLRequest;
 	import flash.events.IOErrorEvent;
 	import flash.events.Event;
+	import flash.net.URLRequest;
+	import flash.display.*;
+
+
 
 	/*An Action is an abstract class representing a single interactive part of an attack (like a tap).*/
 	public class Action extends MovieClip
@@ -23,6 +27,8 @@
 		public static const MISSED_ACTION:String = "missedaction";
 
 		public static const HIT_ACTION:String = "hitaction";
+		
+		public static const DONE_MODIFIER_CALCULATION:String = "donemodifiercalculation";
 
 		/*Used to determine long this action is on screen. When this time ticks, we undraw the action*/
 		protected var actionTimer:Timer;
@@ -32,6 +38,8 @@
 		/*The bufferTime is the amount of time that clicks are accepted outside of the ideal moment of hitting.
 		The bufferTime is the time for only one end of the ideal moment(before or after the ideal hit time)*/
 		protected var bufferTime:Number;
+		
+		protected var resultDelay:Timer;
 
 		/*Using the bufferTime, we break the Action into several ActionRegions. These regions are used to determine how 
 		well the user interacted with this Action. Buffers closer to the ideal hit moment carry a higher damage modifer.*/
@@ -47,6 +55,7 @@
 		/*This is to return the result of an action to the attack for damage calculation*/
 		private var damageAccuracy:Number;
 		private var damageAmount:Number;
+		private var resultImage:Loader;
 
 		/*NOTE: The ideal hit time is at the exact moment when the approach circles close. This means that the ideal hit moment is
 		equal to approachTime milliseconds after the start of the Action*/
@@ -62,6 +71,8 @@
 			addEventListener(MouseEvent.CLICK, handleClick);
 			damageAccuracy = -1;
 			damageAmount = hitDamage;
+			resultImage = new Loader();
+			resultDelay = new Timer(800);
 		}
 
 		private function initializeActionTimer():void
@@ -77,12 +88,12 @@
 
 			bufferRegions = new Array();
 			bufferRegions.push(new ActionRegion("Miss", startOfClickableRegion, 0));
-			bufferRegions.push(new ActionRegion("Bad", bufferTime / 3, 0.3));
+			bufferRegions.push(new ActionRegion("Okay", bufferTime / 3, 0.3));
 			bufferRegions.push(new ActionRegion("Good", bufferTime / 3, 0.6));
 			bufferRegions.push(new ActionRegion("Excellent", bufferTime / 3, 1));
 			bufferRegions.push(new ActionRegion("Excellent", bufferTime / 3, 1));
 			bufferRegions.push(new ActionRegion("Good", bufferTime / 3, 0.6));
-			bufferRegions.push(new ActionRegion("Bad", bufferTime / 3, 0.3));
+			bufferRegions.push(new ActionRegion("Okay", bufferTime / 3, 0.3));
 
 			activeRegionIndex = 0;
 			bufferToProcess = bufferRegions[activeRegionIndex];
@@ -121,10 +132,10 @@
 			heightTween.start();
 			widthTween.start();
 		}
-
+		
 		public function remove():void
 		{
-			undraw();
+			undraw("Skip");
 		}
 
 		/*
@@ -134,10 +145,38 @@
 		{
 			processActiveBuffer();
 		}
-
-		private function undraw():void
+		
+		
+		private function showResult(Result:String):void
 		{
-			super.visible = false;
+			if (Result == "Skip") return;
+			else if (Result == "Miss") resultImage.load(new URLRequest("Images/Fonts/Miss_khmerui.png"));
+			else if (Result == "Okay") resultImage.load(new URLRequest("Images/Fonts/Okay_khmerui.png"));
+			else if (Result == "Good") resultImage.load(new URLRequest("Images/Fonts/Good_khmerui.png"));
+			else if (Result == "Excellent") resultImage.load(new URLRequest("Images/Fonts/excellent_khmerui.png"));
+			resultImage.x = super.x;
+			resultImage.y = super.y;
+			resultImage.z = 1000;
+			GameController.getBattleController().addChild(resultImage);
+		}
+		
+		private function eraseResult(E:Event):void
+		{
+			resultDelay.stop();
+			resultImage.visible = false;
+		}
+
+		private function undraw(actionResult:String):void
+		{
+			super.visible = false;			
+			showResult(actionResult);
+			if (actionResult != "")
+			{
+				resultDelay.addEventListener(TimerEvent.TIMER, eraseResult);
+				resultDelay.start();
+			}
+			
+			
 			actionTimer.stop();
 		}
 
@@ -156,8 +195,9 @@
 				damageAccuracy = bufferToProcess.getModifier();
 				dispatchEvent(new Event(HIT_ACTION));
 			}
+
 			trace(bufferToProcess.getName() + " (modifier: " + bufferToProcess.getModifier() + ")");
-			undraw();
+			undraw(bufferToProcess.getName());
 		}
 
 		public function returnHitDamage():Number
