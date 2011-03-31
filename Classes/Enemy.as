@@ -13,6 +13,7 @@
 			super(positionX, positionY, totalHP, totalMP);
 			statusBar = new StatusBar(0, 0, totalHP, false);
 			addChild(statusBar);
+			spriteSet = new Array();
 		}
 		
 		public override function takeDamage(damage:int):int

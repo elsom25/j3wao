@@ -57,6 +57,7 @@
           <Include href="Attack1.xml" itemIcon="0" loadImmediate="false"/>
           <Include href="Attack2.xml" itemIcon="0" loadImmediate="false"/>
           <Include href="BattleMenu.xml"/>
+          <Include href="Enemy.xml"/>
           <Include href="Fireworks Objects/sand dunes.png/Page 1/Layer 2.xml" loadImmediate="false"/>
           <Include href="Fireworks Objects/sand dunes.png/Page 1/Page 1.xml" loadImmediate="false"/>
           <Include href="Fireworks Objects/startbutton.png/Page 1/Page 1.xml" loadImmediate="false"/>
@@ -73,7 +74,7 @@
           <Include href="TapAction.xml"/>
      </symbols>
      <timelines>
-          <DOMTimeline name="Scene 1">
+          <DOMTimeline name="Scene 1" currentFrame="1">
                <layers>
                     <DOMLayer name="Layer 1" color="#4FFF4F" current="true" isSelected="true">
                          <frames>
@@ -149,11 +150,6 @@ function A2Click(event:MouseEvent):void{
                                         <DOMBitmapInstance name="" referenceID="" libraryItemName="character menu face.png">
                                              <matrix>
                                                   <Matrix tx="34.95" ty="33.95"/>
-                                             </matrix>
-                                        </DOMBitmapInstance>
-                                        <DOMBitmapInstance name="" referenceID="" libraryItemName="sandmonster.png">
-                                             <matrix>
-                                                  <Matrix tx="189.95" ty="182.95"/>
                                              </matrix>
                                         </DOMBitmapInstance>
                                    </elements>
@@ -481,12 +477,23 @@ function A2Click(event:MouseEvent):void{
           <PD n="com.air.artemis.pubipa" v="false"/>
           <PD n="com.air.artemis.ipacertpath" v="C:/Users/Jesse McGinnis/Documents/School/1111 c3 Winter/Arts 304/j3wao.p12"/>
           <PD n="flash.swf.basename" v="j3wao"/>
-          <PD n="swf.folder.path" v="G:/Documents/School/Year 4/DAC 304 - Video Games and Simulation/j3wao/j3wao/"/>
           <PD n="flash.fla.filepath" v="G:/Documents/School/Year 4/DAC 304 - Video Games and Simulation/j3wao/j3wao/j3wao/j3wao.xfl"/>
+          <PD n="swf.folder.path" v="G:/Documents/School/Year 4/DAC 304 - Video Games and Simulation/j3wao/j3wao/"/>
           <PD n="com.air.artemis.pubexe" v="false"/>
      </persistentData>
      <PrinterSettings/>
      <publishHistory>
+          <PublishItem publishSize="1491855" publishTime="1301550127"/>
+          <PublishItem publishSize="1491858" publishTime="1301550094"/>
+          <PublishItem publishSize="1491859" publishTime="1301550069"/>
+          <PublishItem publishSize="1491855" publishTime="1301550031"/>
+          <PublishItem publishSize="1491855" publishTime="1301550008"/>
+          <PublishItem publishSize="1491853" publishTime="1301549994"/>
+          <PublishItem publishSize="1491881" publishTime="1301549832"/>
+          <PublishItem publishSize="1491879" publishTime="1301549723"/>
+          <PublishItem publishSize="1491725" publishTime="1301549353"/>
+          <PublishItem publishSize="1491718" publishTime="1301549337"/>
+          <PublishItem publishSize="1491727" publishTime="1301548940"/>
           <PublishItem publishSize="1491188" publishTime="1301547644" publishDebug="true"/>
           <PublishItem publishSize="1491205" publishTime="1301547629" publishDebug="true"/>
           <PublishItem publishSize="1491192" publishTime="1301547504" publishDebug="true"/>
@@ -496,16 +503,5 @@ function A2Click(event:MouseEvent):void{
           <PublishItem publishSize="1492123" publishTime="1301546629" publishDebug="true"/>
           <PublishItem publishSize="1492156" publishTime="1301546560" publishDebug="true"/>
           <PublishItem publishSize="1492145" publishTime="1301546475" publishDebug="true"/>
-          <PublishItem publishSize="1492147" publishTime="1301546415" publishDebug="true"/>
-          <PublishItem publishSize="1492191" publishTime="1301546379" publishDebug="true"/>
-          <PublishItem publishSize="1492166" publishTime="1301546249" publishDebug="true"/>
-          <PublishItem publishSize="1492162" publishTime="1301546169" publishDebug="true"/>
-          <PublishItem publishSize="1492148" publishTime="1301546019" publishDebug="true"/>
-          <PublishItem publishSize="1492128" publishTime="1301545936" publishDebug="true"/>
-          <PublishItem publishSize="1492107" publishTime="1301545838" publishDebug="true"/>
-          <PublishItem publishSize="1492099" publishTime="1301545557" publishDebug="true"/>
-          <PublishItem publishSize="1492086" publishTime="1301545433" publishDebug="true"/>
-          <PublishItem publishSize="1492081" publishTime="1301544736" publishDebug="true"/>
-          <PublishItem publishSize="1458778" publishTime="1301544647" publishDebug="true"/>
      </publishHistory>
 </DOMDocument>

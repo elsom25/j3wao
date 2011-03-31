@@ -29,7 +29,7 @@
 			player = new Player(225,72,200, 100);
 			addChild(player);
 			enemy = new Array();
-			enemy[0] = new Enemy(250,250,100, 1000);
+			enemy[0] = new Enemy(720,170,100, 1000);
 			addChild(enemy[0]);
 			//TODO: SPRITES FOR ENEMIES ABOVE
 			menu = new BattleMenu();

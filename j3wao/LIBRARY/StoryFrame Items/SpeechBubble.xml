@@ -8,7 +8,7 @@
               <elements>
                 <DOMBitmapInstance name="" referenceID="" selected="true" libraryItemName="StoryFrame Items/speechright.png">
                   <matrix>
-                    <Matrix a="1.57197570800781" d="0.423019409179688" tx="-30"/>
+                    <Matrix a="1.57196044921875" d="0.423019409179688" tx="-30"/>
                   </matrix>
                 </DOMBitmapInstance>
                 <DOMDynamicText name="speechTextBox" width="1096" height="196" isSelectable="false" lineType="multiline">
