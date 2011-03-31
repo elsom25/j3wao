@@ -26,13 +26,11 @@
 			soundController.beatTimer.addEventListener(TimerEvent.TIMER, launchWaitingAttack);
 			
 			target = 0;
-			player = new Player(0,0,50, 100);
+			player = new Player(0,0,500, 100);
 			enemy = new Array();
 			//NEED TO CHANGE TO ENEMY WHEN SPRITES ARE DECIDED
 			enemy[0] = new Entity(150,70,100, 1000);
-			enemy[1] = new Entity(300,70,50, 1000);
 			addChild(enemy[0]);
-			addChild(enemy[1]);
 			//TODO: SPRITES FOR ENEMIES ABOVE
 			menu = new BattleMenu();
 			addChild(menu);
@@ -46,7 +44,9 @@
 			if ( player.isDead() )
 			{
 				trace("Player is DEAD!");
-				gotoAndStop("TitleFrame");				
+				soundController.beatTimer.stop();
+				undrawBattle();
+				dispatchEvent(new Event(BATTLE_FINISH));
 			}
 		}
 		
@@ -57,16 +57,23 @@
 			if ( player.isDead() )
 			{
 				trace("Player is DEAD!");
-				gotoAndStop("TitleFrame");
+				soundController.beatTimer.stop();
+				undrawBattle();
+				dispatchEvent(new Event(BATTLE_FINISH));
 			}
-			else ( isEnemiesDead() )
+			else if ( isEnemiesDead() )
 			{
 				trace("Enemies are DEAD!");
+				soundController.beatTimer.stop();				
+				undrawBattle();
 				dispatchEvent(new Event(BATTLE_FINISH));
 			}
 			var damage:int = int(Math.round(Math.random()*10));
 			player.takeDamage( damage );
 			trace(damage + " damage was given to player");
+			trace("Player health: " + player.takeDamage(0));
+			trace("ENEMY health: " + enemy[0].takeDamage(0));			
+			trace("==================END OF TURN=========")
 		}
 
 		public function launchFireball():Attack
@@ -134,6 +141,12 @@
 				}
 			}
 			return true;			
+		}
+		
+		public function undrawBattle():void
+		{			
+			super.visible = false;
+			menu.visible = false;
 		}
 	}
 }
