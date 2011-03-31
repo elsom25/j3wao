@@ -1,7 +1,7 @@
 <DOMDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" width="1600" height="960" currentTimeline="1" xflVersion="2.0" creatorInfo="Adobe Flash Professional CS5" platform="Windows" versionInfo="Saved by Adobe Flash Windows 11.0 build 485" majorVersion="11" buildNumber="485" objectsSnapTo="false" viewAngle3D="113.123432202458" nextSceneIdentifier="2" playOptionsPlayLoop="false" playOptionsPlayPages="false" playOptionsPlayFrameActions="false">
      <folders>
           <DOMFolderItem name="Backgrounds" itemID="4d86dedc-00000238" isExpanded="true"/>
-          <DOMFolderItem name="Fireworks Objects" itemID="4d6b27bd-000001dc"/>
+          <DOMFolderItem name="Fireworks Objects" itemID="4d6b27bd-000001dc" isExpanded="true"/>
           <DOMFolderItem name="Fireworks Objects/sand dunes.png" itemID="4d785af6-0000024b"/>
           <DOMFolderItem name="Fireworks Objects/sand dunes.png/Page 1" itemID="4d785af6-0000024c" isExpanded="true"/>
           <DOMFolderItem name="Fireworks Objects/startbutton.png" itemID="4d6b27bd-000001dd"/>
@@ -50,6 +50,8 @@
           <DOMBitmapItem name="plain character menu.png" itemID="4d785dbf-000002a0" sourceExternalFilepath=".\LIBRARY\plain character menu.png" sourceLastImported="1299732537" externalFileSize="154474" useImportedJPEGData="false" compressionType="lossless" originalCompressionType="lossless" quality="50" href="plain character menu.png" bitmapDataHRef="M 35 1299733878.dat" frameRight="13540" frameBottom="3820"/>
           <DOMBitmapItem name="sandmonster.png" itemID="4d785e00-000002a5" sourceExternalFilepath=".\LIBRARY\sandmonster.png" sourceLastImported="1299732537" externalFileSize="928864" originalCompressionType="lossless" quality="50" href="sandmonster.png" bitmapDataHRef="M 36 1299734000.dat" frameRight="27260" frameBottom="12500"/>
           <DOMBitmapItem name="StoryFrame Items/speechright.png" itemID="4d93f7c3-00000270" sourceExternalFilepath=".\LIBRARY\StoryFrame Items\speechright.png" sourceLastImported="1300083541" externalFileSize="68712" useImportedJPEGData="false" compressionType="lossless" originalCompressionType="lossless" quality="50" href="StoryFrame Items\speechright.png" bitmapDataHRef="M 36 1301542584.dat" frameRight="15940" frameBottom="10840"/>
+          <DOMBitmapItem name="startbutton.png" itemID="4d93fe30-0000028c" sourceExternalFilepath=".\LIBRARY\startbutton.png" sourceLastImported="1301544475" externalFileSize="135918" useImportedJPEGData="false" compressionType="lossless" originalCompressionType="lossless" quality="50" href="startbutton.png" bitmapDataHRef="M 39 1301544441.dat" frameRight="9360" frameBottom="3720"/>
+          <DOMBitmapItem name="title page_osiriascreenshot.jpg" itemID="4d93ff1c-0000029a" sourceExternalFilepath=".\LIBRARY\title page_osiriascreenshot.jpg" sourceLastImported="1301362006" externalFileSize="265840" quality="50" href="title page_osiriascreenshot.jpg" bitmapDataHRef="M 40 1301544674.dat" frameRight="32000" frameBottom="19200" isJPEG="true"/>
      </media>
      <symbols>
           <Include href="Attack1.xml" itemIcon="0" loadImmediate="false"/>
@@ -64,15 +66,13 @@
           <Include href="Fireworks Objects/titlescreen.png/Page 1/Shape 3 1.xml" itemIcon="1" loadImmediate="false"/>
           <Include href="sanddunes.png.xml" itemIcon="1" loadImmediate="false"/>
           <Include href="StartButton.xml" itemIcon="0" loadImmediate="false"/>
-          <Include href="startbutton.png.xml" itemIcon="1" loadImmediate="false"/>
           <Include href="StoryFrame Items/SpeechBubble.xml"/>
-          <Include href="Symbol 30.xml" itemIcon="1" loadImmediate="false"/>
           <Include href="Symbol 31.xml" itemIcon="1" loadImmediate="false"/>
+          <Include href="Symbol 34.xml" itemIcon="1" loadImmediate="false"/>
           <Include href="TapAction.xml"/>
-          <Include href="titlescreen.png.xml" itemIcon="1" loadImmediate="false"/>
      </symbols>
      <timelines>
-          <DOMTimeline name="Scene 1" currentFrame="2">
+          <DOMTimeline name="Scene 1">
                <layers>
                     <DOMLayer name="Layer 1" color="#4FFF4F" current="true" isSelected="true">
                          <frames>
@@ -91,17 +91,14 @@ function handleStartClick(event:MouseEvent):void
 }]]></script>
                                    </Actionscript>
                                    <elements>
-                                        <DOMSymbolInstance libraryItemName="titlescreen.png" name="" symbolType="graphic" loop="loop">
+                                        <DOMBitmapInstance name="" referenceID="" libraryItemName="title page_osiriascreenshot.jpg">
                                              <matrix>
                                                   <Matrix tx="3.4" ty="-6.75"/>
                                              </matrix>
-                                             <transformationPoint>
-                                                  <Point x="800" y="480"/>
-                                             </transformationPoint>
-                                        </DOMSymbolInstance>
-                                        <DOMSymbolInstance libraryItemName="StartButton" name="StartButton" symbolType="button">
+                                        </DOMBitmapInstance>
+                                        <DOMSymbolInstance libraryItemName="StartButton" name="StartButton" selected="true" symbolType="button">
                                              <matrix>
-                                                  <Matrix tx="761.65" ty="815.85"/>
+                                                  <Matrix tx="779.65" ty="661.85"/>
                                              </matrix>
                                              <transformationPoint>
                                                   <Point/>
@@ -489,25 +486,25 @@ function A2Click(event:MouseEvent):void{
      </persistentData>
      <PrinterSettings/>
      <publishHistory>
+          <PublishItem publishSize="1492081" publishTime="1301544736" publishDebug="true"/>
+          <PublishItem publishSize="1458778" publishTime="1301544647" publishDebug="true"/>
+          <PublishItem publishSize="1506602" publishTime="1301544502" publishDebug="true"/>
+          <PublishItem publishSize="1488583" publishTime="1301544352" publishDebug="true"/>
+          <PublishItem publishSize="1503112" publishTime="1301544164" publishDebug="true"/>
+          <PublishItem publishSize="1503105" publishTime="1301543820" publishDebug="true"/>
+          <PublishItem publishSize="1502731" publishTime="1301543467" publishDebug="true"/>
+          <PublishItem publishSize="1502729" publishTime="1301543276" publishDebug="true"/>
+          <PublishItem publishSize="1502731" publishTime="1301543237" publishDebug="true"/>
+          <PublishItem publishSize="1502792" publishTime="1301542959" publishDebug="true"/>
+          <PublishItem publishSize="1502784" publishTime="1301542945" publishDebug="true"/>
+          <PublishItem publishSize="1502778" publishTime="1301542928" publishDebug="true"/>
+          <PublishItem publishSize="1502781" publishTime="1301542914" publishDebug="true"/>
+          <PublishItem publishSize="1502833" publishTime="1301542887" publishDebug="true"/>
+          <PublishItem publishSize="1502835" publishTime="1301542856" publishDebug="true"/>
           <PublishItem publishSize="1497774" publishTime="1301542406" publishDebug="true"/>
           <PublishItem publishSize="1497770" publishTime="1301542316" publishDebug="true"/>
           <PublishItem publishSize="1497840" publishTime="1301542272" publishDebug="true"/>
           <PublishItem publishSize="1497668" publishTime="1301536372" publishDebug="true"/>
           <PublishItem publishSize="1497658" publishTime="1301536244" publishDebug="true"/>
-          <PublishItem publishSize="1497510" publishTime="1301533447" publishDebug="true"/>
-          <PublishItem publishSize="1497522" publishTime="1301532256" publishDebug="true"/>
-          <PublishItem publishSize="1497532" publishTime="1301532207" publishDebug="true"/>
-          <PublishItem publishSize="1497521" publishTime="1301532150" publishDebug="true"/>
-          <PublishItem publishSize="1497476" publishTime="1301532072" publishDebug="true"/>
-          <PublishItem publishSize="1497476" publishTime="1301532037" publishDebug="true"/>
-          <PublishItem publishSize="1497101" publishTime="1301530553" publishDebug="true"/>
-          <PublishItem publishSize="1496980" publishTime="1301530014" publishDebug="true"/>
-          <PublishItem publishSize="1496974" publishTime="1301362336" publishDebug="true"/>
-          <PublishItem publishSize="1481006" publishTime="1301361927" publishDebug="true"/>
-          <PublishItem publishSize="1496908" publishTime="1301361914" publishDebug="true"/>
-          <PublishItem publishSize="1478827" publishTime="1301361897" publishDebug="true"/>
-          <PublishItem publishSize="1478709" publishTime="1301361874" publishDebug="true"/>
-          <PublishItem publishSize="1478777" publishTime="1301361847" publishDebug="true"/>
-          <PublishItem publishSize="1478827" publishTime="1301361731" publishDebug="true"/>
      </publishHistory>
 </DOMDocument>

@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="StartButton" itemID="4d6b2808-00000239" sourceLibraryItemHRef="Symbol 1" symbolType="button" lastModified="1298868247">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="StartButton" itemID="4d6b2808-00000239" sourceLibraryItemHRef="Symbol 1" symbolType="button" lastModified="1301544494">
   <timeline>
     <DOMTimeline name="StartButton">
       <layers>
@@ -6,14 +6,11 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="startbutton.png" name="" selected="true" symbolType="graphic" loop="loop">
+                <DOMBitmapInstance name="" referenceID="" selected="true" libraryItemName="startbutton.png">
                   <matrix>
-                    <Matrix tx="-106.2" ty="-43.4"/>
+                    <Matrix tx="-234" ty="-93"/>
                   </matrix>
-                  <transformationPoint>
-                    <Point x="107.2" y="42.4"/>
-                  </transformationPoint>
-                </DOMSymbolInstance>
+                </DOMBitmapInstance>
               </elements>
             </DOMFrame>
           </frames>
