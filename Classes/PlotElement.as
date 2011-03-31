@@ -36,15 +36,12 @@
 			//When all dialogs are shown, send plot element completed event
 			
 			//Load the background image
-			//NOT WORKING
-			/*
 			var loader:Loader = new Loader();
 			var url:URLRequest = new URLRequest(backgroundImage);
-			loader.load(url);			
-			GameController.getGameController().addChild(loader);
-			*/
-			var bmpdata:BitmapData = new BitmapData(1600, 960, false, 0);
-			var bmp:Bitmap = new Bitmap(bmpdata, "auto", false);
+			loader.load(url);
+			loader.z = 1;
+			GameController.getStoryEngine().addChild(loader);
+			trace("blah");
 			
 			GameController.getStoryEngine().addChild(SpeechBubble(speechBubbles[dialogCounter]));
 			(SpeechBubble(speechBubbles[dialogCounter])).addEventListener(MouseEvent.CLICK, nextDialog);

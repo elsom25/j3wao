@@ -26,7 +26,7 @@
 			//HARDCODING BOO
 			//Introduction Sequence
 			var intro:PlotElement = new PlotElement();
-			//intro.setBackgroundImage("sanddunes.png");
+			intro.setBackgroundImage("Images/Backgrounds/blackintro1.png");
 			var dialog:SpeechBubble = new SpeechBubble();
 			dialog.setSpeechText("800 years ago, the land of Osiria was ravaged by war between humans and demons. The demons, with mightier armies and stronger magic, were winning.");
 			dialog.setXY(25, 700);
