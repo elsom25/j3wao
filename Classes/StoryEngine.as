@@ -15,7 +15,7 @@
 		var cutScenes:Array;
 		public static const CUTSCENE_FINISH:String = "event_cutscene_finish";
 		//The id for the ending (credits?)
-		public static const FINAL_STORY_ELEMENT_ID:int = 1;
+		public static const FINAL_STORY_ELEMENT_ID:int = 2;
 		
 		//The default constructor should be called when a new game is started
 		//TODO: Create another constructor to take in a parameter to start story somewhere else
@@ -52,8 +52,19 @@
 			dialog.setXY(25, 700);
 			intro.addDialog(dialog);
 			
+			intro.skipNextBattle = true;
+			
 			cutScenes.push(intro);
 			
+			var wakeUp:PlotElement = new PlotElement();
+			wakeUp.setBackgroundImage("Images/Backgrounds/sand dunes.png");
+			
+			dialog = new SpeechBubble();
+			dialog.setSpeechText("LOL");
+			dialog.setXY(25, 700);
+			wakeUp.addDialog(dialog);
+			
+			cutScenes.push(wakeUp);
 			
 			//After-battle scene
 			var afterBattle:PlotElement = new PlotElement();
@@ -74,6 +85,13 @@
 		
 		private function cutsceneFinish(event:Event):void {
 			dispatchEvent(new Event(CUTSCENE_FINISH));
+		}
+		
+		public function skipNextBattle(elementNumber:int):Boolean {
+			if (PlotElement(cutScenes[elementNumber]).skipNextBattle) {
+				return true;
+			}
+			return false;
 		}
 	}
 }

@@ -15,10 +15,12 @@
 		var speechBubbles:Array;
 		var dialogCounter:int;
 		var backgroundImage:String;
+		var skipNextBattle:Boolean;
 		
 		public function PlotElement() {
 			speechBubbles = new Array();
 			dialogCounter = 0;
+			skipNextBattle = false;
 		}
 		
 		public function addDialog(dialog:SpeechBubble):void
