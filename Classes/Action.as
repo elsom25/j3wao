@@ -14,7 +14,6 @@
 	import flash.net.URLRequest;
 	import flash.events.IOErrorEvent;
 	import flash.events.Event;
-	import flash.net.URLRequest;
 	import flash.display.*;
 
 
@@ -156,7 +155,6 @@
 			else if (Result == "Excellent") resultImage.load(new URLRequest("Images/Fonts/excellent_khmerui.png"));
 			resultImage.x = super.x;
 			resultImage.y = super.y;
-			resultImage.z = 1000;
 			GameController.getBattleController().addChild(resultImage);
 		}
 		
