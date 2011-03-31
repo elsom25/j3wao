@@ -50,6 +50,9 @@
 			//If it's the ending that just finished, go back to main menu
 			if (storyPoint == StoryEngine.FINAL_STORY_ELEMENT_ID) {
 				gotoAndStop(1);
+			} else if (getStoryEngine().skipNextBattle(storyPoint)) {
+				storyPoint++;
+				startCutscene();
 			} else {
 				//proceed the story counter
 				storyPoint++;

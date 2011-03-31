@@ -15,7 +15,7 @@
 		var cutScenes:Array;
 		public static const CUTSCENE_FINISH:String = "event_cutscene_finish";
 		//The id for the ending (credits?)
-		public static const FINAL_STORY_ELEMENT_ID:int = 1;
+		public static const FINAL_STORY_ELEMENT_ID:int = 2;
 		
 		//The default constructor should be called when a new game is started
 		//TODO: Create another constructor to take in a parameter to start story somewhere else
@@ -43,7 +43,7 @@
 			intro.addDialog(dialog);
 		
 			dialog = new SpeechBubble();
-			dialog.setSpeechText("Dancing to his own melody, the hero fought the demon king, and eventually managed to seal the demon king along with himself into a crystal pendant.");
+			dialog.setSpeechText("Dancing to his own melody, the hero fought the demon king, and eventually managed to seal the demon king into a crystal pendant at the cost of his own life.");
 			dialog.setXY(25, 700);
 			intro.addDialog(dialog);
 			
@@ -52,8 +52,49 @@
 			dialog.setXY(25, 700);
 			intro.addDialog(dialog);
 			
+			dialog = new SpeechBubble();
+			dialog.setSpeechText("As far as anyone in the kingdom knew, the hero was childless, and they called the priestess a fool and disregarded the prophecy.");
+			dialog.setXY(25, 700);
+			intro.addDialog(dialog);
+			
+			dialog = new SpeechBubble();
+			dialog.setSpeechText("It is now the year 801 in the New Age of Osiria, and the land has been at peace for many hundreds of years.");
+			dialog.setXY(25, 700);
+			intro.addDialog(dialog);
+			
+			dialog = new SpeechBubble();
+			dialog.setSpeechText("Recently, however, the wild monsters of Osiria have become more aggressive and numerous than ever before.");
+			dialog.setXY(25, 700);
+			intro.addDialog(dialog);
+			
+			dialog = new SpeechBubble();
+			dialog.setSpeechText("Hunters have seen the monsters gather in packs, and move purposefully, almost as if trying to accomplish some goal known only to them.");
+			dialog.setXY(25, 700);
+			intro.addDialog(dialog);
+			
+			dialog = new SpeechBubble();
+			dialog.setSpeechText("The current king, worried about this recent change, has sent out a call for warriors to stem the growing horde of monsters.");
+			dialog.setXY(25, 700);
+			intro.addDialog(dialog);
+			
+			dialog = new SpeechBubble();
+			dialog.setSpeechText("In a small village on the outskirts of the capital called Novea, a simple orphan boy wakes up, meaning to answer the king's call...");
+			dialog.setXY(25, 700);
+			intro.addDialog(dialog);
+			
+			intro.skipNextBattle = true;
+			
 			cutScenes.push(intro);
 			
+			var wakeUp:PlotElement = new PlotElement();
+			wakeUp.setBackgroundImage("Images/Backgrounds/sand dunes.png");
+			
+			dialog = new SpeechBubble();
+			dialog.setSpeechText("LOL");
+			dialog.setXY(25, 700);
+			wakeUp.addDialog(dialog);
+			
+			cutScenes.push(wakeUp);
 			
 			//After-battle scene
 			var afterBattle:PlotElement = new PlotElement();
@@ -74,6 +115,13 @@
 		
 		private function cutsceneFinish(event:Event):void {
 			dispatchEvent(new Event(CUTSCENE_FINISH));
+		}
+		
+		public function skipNextBattle(elementNumber:int):Boolean {
+			if (PlotElement(cutScenes[elementNumber]).skipNextBattle) {
+				return true;
+			}
+			return false;
 		}
 	}
 }
