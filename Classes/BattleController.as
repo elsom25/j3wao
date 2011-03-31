@@ -22,14 +22,14 @@
 		{
 			SoundRegistry.loadSounds();
 			
-			soundController = new SoundController(30);
+			soundController = new SoundController(60);
 			soundController.beatTimer.addEventListener(TimerEvent.TIMER, launchWaitingAttack);
 			
 			target = 0;
 			player = new Player(225,72,200, 100);
 			addChild(player);
 			enemy = new Array();
-			enemy[0] = new Enemy(150,70,100, 1000);
+			enemy[0] = new Enemy(250,250,100, 1000);
 			addChild(enemy[0]);
 			//TODO: SPRITES FOR ENEMIES ABOVE
 			menu = new BattleMenu();
@@ -106,6 +106,7 @@
 		{
 				var num:int = int(event.currentTarget.getDamage());
 				enemy[target].takeDamage( num );
+				enemy[target].updateHP();
 				trace("current target " + target + " is damaged " + num);
 				enemyTurn();
 		}
