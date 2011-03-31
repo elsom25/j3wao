@@ -73,8 +73,8 @@
 		//Start the next cutscene
 		public function startCutscene():void {
 			gotoAndStop(3);
-			storyPoint++;
 			addEventListener(StoryEngine.CUTSCENE_FINISH, cutsceneFinish);
+			getStoryEngine().startCutscene(storyPoint);
 		}
 		
 		

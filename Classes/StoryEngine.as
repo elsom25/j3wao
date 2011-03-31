@@ -15,7 +15,7 @@
 		var cutScenes:Array;
 		public static const CUTSCENE_FINISH:String = "event_cutscene_finish";
 		//The id for the ending (credits?)
-		public static const FINAL_STORY_ELEMENT_ID:int = 100;
+		public static const FINAL_STORY_ELEMENT_ID:int = 1;
 		
 		//The default constructor should be called when a new game is started
 		//TODO: Create another constructor to take in a parameter to start story somewhere else
@@ -33,7 +33,7 @@
 			intro.addDialog(dialog);
 			
 			dialog = new SpeechBubble();
-			dialog.setSpeechText("On the verge of defeat, a simple orphan boy came forward as a hero. Wielding magic of his own, he rallied the armies of men everywhere, and cut through to the heart of the demonic evil.");
+			dialog.setSpeechText("On the verge of defeat, a simple orphan boy came forward as a hero. Wielding his own magic, he rallied the armies of men everywhere, and cut to the heart of the demonic evil.");
 			dialog.setXY(25, 700);
 			intro.addDialog(dialog);
 			
@@ -43,11 +43,28 @@
 			intro.addDialog(dialog);
 		
 			dialog = new SpeechBubble();
-			dialog.setSpeechText("Dancing to his own melody, the hero fought the demon king, and eventually managed to seal the demon king along with himself into a crystal pendant. After the war, the head priestess of Osiria prophesied that one day the demon king would return, and only the blood of the hero could defeat him.");
+			dialog.setSpeechText("Dancing to his own melody, the hero fought the demon king, and eventually managed to seal the demon king along with himself into a crystal pendant.");
 			dialog.setXY(25, 700);
 			intro.addDialog(dialog);
 			
-			cutScenes[0] = intro;
+			dialog = new SpeechBubble();
+			dialog.setSpeechText("After the war, the head priestess of Osiria prophesied that one day the demon king would return, and only the blood of the hero could defeat him.");
+			dialog.setXY(25, 700);
+			intro.addDialog(dialog);
+			
+			cutScenes.push(intro);
+			
+			
+			//After-battle scene
+			var afterBattle:PlotElement = new PlotElement();
+			afterBattle.setBackgroundImage("Images/Backgrounds/dunetocity.png");
+			
+			dialog = new SpeechBubble();
+			dialog.setSpeechText("YOU ARE WINNER");
+			dialog.setXY(25, 700);
+			afterBattle.addDialog(dialog);
+			
+			cutScenes.push(afterBattle);
 		}
 		
 		public function startCutscene(elementNumber:int):void {
