@@ -8,6 +8,8 @@
 		//Initialize an player
 		public function Player(positionX:int, positionY:int, HP:int, MP:int) {
 			super(positionX, positionY, HP, MP);
+			statusBar = new StatusBar(0, 0, HP, true);
+			addChild(statusBar);
 		}
 		
 		
