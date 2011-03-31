@@ -49,7 +49,7 @@
           <DOMBitmapItem name="plain attack menu.png" itemID="4d785c53-00000289" sourceExternalFilepath=".\LIBRARY\plain attack menu.png" sourceLastImported="1299732537" externalFileSize="183934" useImportedJPEGData="false" compressionType="lossless" originalCompressionType="lossless" quality="50" href="plain attack menu.png" bitmapDataHRef="M 32 1299733470.dat" frameRight="16480" frameBottom="7020"/>
           <DOMBitmapItem name="plain character menu.png" itemID="4d785dbf-000002a0" sourceExternalFilepath=".\LIBRARY\plain character menu.png" sourceLastImported="1299732537" externalFileSize="154474" useImportedJPEGData="false" compressionType="lossless" originalCompressionType="lossless" quality="50" href="plain character menu.png" bitmapDataHRef="M 35 1299733878.dat" frameRight="13540" frameBottom="3820"/>
           <DOMBitmapItem name="sandmonster.png" itemID="4d785e00-000002a5" sourceExternalFilepath=".\LIBRARY\sandmonster.png" sourceLastImported="1299732537" externalFileSize="928864" originalCompressionType="lossless" quality="50" href="sandmonster.png" bitmapDataHRef="M 36 1299734000.dat" frameRight="27260" frameBottom="12500"/>
-          <DOMBitmapItem name="StoryFrame Items/speechright.png" itemID="4d93f7c3-00000270" sourceExternalFilepath=".\LIBRARY\StoryFrame Items\speechright.png" sourceLastImported="1300083541" externalFileSize="68712" useImportedJPEGData="false" compressionType="lossless" originalCompressionType="lossless" quality="50" href="StoryFrame Items\speechright.png" bitmapDataHRef="M 36 1301542584.dat" frameRight="15940" frameBottom="10840"/>
+          <DOMBitmapItem name="StoryFrame Items/speechright.png" itemID="4d940a13-000002a3" sourceExternalFilepath=".\LIBRARY\StoryFrame Items\speechright.png" sourceLastImported="1301544613" externalFileSize="60104" useImportedJPEGData="false" compressionType="lossless" originalCompressionType="lossless" quality="50" href="StoryFrame Items\speechright.png" bitmapDataHRef="M 41 1301546728.dat" frameRight="16540" frameBottom="11820"/>
           <DOMBitmapItem name="startbutton.png" itemID="4d93fe30-0000028c" sourceExternalFilepath=".\LIBRARY\startbutton.png" sourceLastImported="1301544475" externalFileSize="135918" useImportedJPEGData="false" compressionType="lossless" originalCompressionType="lossless" quality="50" href="startbutton.png" bitmapDataHRef="M 39 1301544441.dat" frameRight="9360" frameBottom="3720"/>
           <DOMBitmapItem name="title page_osiriascreenshot.jpg" itemID="4d93ff1c-0000029a" sourceExternalFilepath=".\LIBRARY\title page_osiriascreenshot.jpg" sourceLastImported="1301362006" externalFileSize="265840" quality="50" href="title page_osiriascreenshot.jpg" bitmapDataHRef="M 40 1301544674.dat" frameRight="32000" frameBottom="19200" isJPEG="true"/>
      </media>
@@ -69,6 +69,7 @@
           <Include href="StoryFrame Items/SpeechBubble.xml"/>
           <Include href="Symbol 31.xml" itemIcon="1" loadImmediate="false"/>
           <Include href="Symbol 34.xml" itemIcon="1" loadImmediate="false"/>
+          <Include href="Symbol 36.xml" itemIcon="1" loadImmediate="false"/>
           <Include href="TapAction.xml"/>
      </symbols>
      <timelines>
@@ -96,7 +97,7 @@ function handleStartClick(event:MouseEvent):void
                                                   <Matrix tx="3.4" ty="-6.75"/>
                                              </matrix>
                                         </DOMBitmapInstance>
-                                        <DOMSymbolInstance libraryItemName="StartButton" name="StartButton" selected="true" symbolType="button">
+                                        <DOMSymbolInstance libraryItemName="StartButton" name="StartButton" symbolType="button">
                                              <matrix>
                                                   <Matrix tx="779.65" ty="661.85"/>
                                              </matrix>
@@ -486,25 +487,25 @@ function A2Click(event:MouseEvent):void{
      </persistentData>
      <PrinterSettings/>
      <publishHistory>
+          <PublishItem publishSize="1491192" publishTime="1301547504" publishDebug="true"/>
+          <PublishItem publishSize="1491190" publishTime="1301547445" publishDebug="true"/>
+          <PublishItem publishSize="1491176" publishTime="1301547189" publishDebug="true"/>
+          <PublishItem publishSize="1490942" publishTime="1301546929" publishDebug="true"/>
+          <PublishItem publishSize="1492123" publishTime="1301546629" publishDebug="true"/>
+          <PublishItem publishSize="1492156" publishTime="1301546560" publishDebug="true"/>
+          <PublishItem publishSize="1492145" publishTime="1301546475" publishDebug="true"/>
+          <PublishItem publishSize="1492147" publishTime="1301546415" publishDebug="true"/>
+          <PublishItem publishSize="1492191" publishTime="1301546379" publishDebug="true"/>
+          <PublishItem publishSize="1492166" publishTime="1301546249" publishDebug="true"/>
+          <PublishItem publishSize="1492162" publishTime="1301546169" publishDebug="true"/>
+          <PublishItem publishSize="1492148" publishTime="1301546019" publishDebug="true"/>
+          <PublishItem publishSize="1492128" publishTime="1301545936" publishDebug="true"/>
+          <PublishItem publishSize="1492107" publishTime="1301545838" publishDebug="true"/>
+          <PublishItem publishSize="1492099" publishTime="1301545557" publishDebug="true"/>
+          <PublishItem publishSize="1492086" publishTime="1301545433" publishDebug="true"/>
           <PublishItem publishSize="1492081" publishTime="1301544736" publishDebug="true"/>
           <PublishItem publishSize="1458778" publishTime="1301544647" publishDebug="true"/>
           <PublishItem publishSize="1506602" publishTime="1301544502" publishDebug="true"/>
           <PublishItem publishSize="1488583" publishTime="1301544352" publishDebug="true"/>
-          <PublishItem publishSize="1503112" publishTime="1301544164" publishDebug="true"/>
-          <PublishItem publishSize="1503105" publishTime="1301543820" publishDebug="true"/>
-          <PublishItem publishSize="1502731" publishTime="1301543467" publishDebug="true"/>
-          <PublishItem publishSize="1502729" publishTime="1301543276" publishDebug="true"/>
-          <PublishItem publishSize="1502731" publishTime="1301543237" publishDebug="true"/>
-          <PublishItem publishSize="1502792" publishTime="1301542959" publishDebug="true"/>
-          <PublishItem publishSize="1502784" publishTime="1301542945" publishDebug="true"/>
-          <PublishItem publishSize="1502778" publishTime="1301542928" publishDebug="true"/>
-          <PublishItem publishSize="1502781" publishTime="1301542914" publishDebug="true"/>
-          <PublishItem publishSize="1502833" publishTime="1301542887" publishDebug="true"/>
-          <PublishItem publishSize="1502835" publishTime="1301542856" publishDebug="true"/>
-          <PublishItem publishSize="1497774" publishTime="1301542406" publishDebug="true"/>
-          <PublishItem publishSize="1497770" publishTime="1301542316" publishDebug="true"/>
-          <PublishItem publishSize="1497840" publishTime="1301542272" publishDebug="true"/>
-          <PublishItem publishSize="1497668" publishTime="1301536372" publishDebug="true"/>
-          <PublishItem publishSize="1497658" publishTime="1301536244" publishDebug="true"/>
      </publishHistory>
 </DOMDocument>

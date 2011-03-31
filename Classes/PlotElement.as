@@ -41,6 +41,7 @@
 			loader.load(url);
 			loader.z = 0;
 			GameController.getStoryEngine().addChild(loader);
+			trace(backgroundImage);
 			
 			GameController.getStoryEngine().addChild(SpeechBubble(speechBubbles[dialogCounter]));
 			(SpeechBubble(speechBubbles[dialogCounter])).addEventListener(MouseEvent.CLICK, nextDialog);
