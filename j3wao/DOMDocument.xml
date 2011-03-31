@@ -1,13 +1,13 @@
 <DOMDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" width="1600" height="960" currentTimeline="1" xflVersion="2.0" creatorInfo="Adobe Flash Professional CS5" platform="Windows" versionInfo="Saved by Adobe Flash Windows 11.0 build 485" majorVersion="11" buildNumber="485" objectsSnapTo="false" viewAngle3D="113.123432202458" nextSceneIdentifier="2" playOptionsPlayLoop="false" playOptionsPlayPages="false" playOptionsPlayFrameActions="false">
      <folders>
           <DOMFolderItem name="Backgrounds" itemID="4d86dedc-00000238" isExpanded="true"/>
-          <DOMFolderItem name="Fireworks Objects" itemID="4d6b27bd-000001dc"/>
-          <DOMFolderItem name="Fireworks Objects/sand dunes.png" itemID="4d785af6-0000024b"/>
-          <DOMFolderItem name="Fireworks Objects/sand dunes.png/Page 1" itemID="4d785af6-0000024c"/>
+          <DOMFolderItem name="Fireworks Objects" itemID="4d6b27bd-000001dc" isExpanded="true"/>
+          <DOMFolderItem name="Fireworks Objects/sand dunes.png" itemID="4d785af6-0000024b" isExpanded="true"/>
+          <DOMFolderItem name="Fireworks Objects/sand dunes.png/Page 1" itemID="4d785af6-0000024c" isExpanded="true"/>
           <DOMFolderItem name="Fireworks Objects/startbutton.png" itemID="4d6b27bd-000001dd" isExpanded="true"/>
-          <DOMFolderItem name="Fireworks Objects/startbutton.png/Page 1" itemID="4d6b27bd-000001de"/>
-          <DOMFolderItem name="Fireworks Objects/titlescreen.png" itemID="4d6b27be-000001e7"/>
-          <DOMFolderItem name="Fireworks Objects/titlescreen.png/Page 1" itemID="4d6b27be-000001e8"/>
+          <DOMFolderItem name="Fireworks Objects/startbutton.png/Page 1" itemID="4d6b27bd-000001de" isExpanded="true"/>
+          <DOMFolderItem name="Fireworks Objects/titlescreen.png" itemID="4d6b27be-000001e7" isExpanded="true"/>
+          <DOMFolderItem name="Fireworks Objects/titlescreen.png/Page 1" itemID="4d6b27be-000001e8" isExpanded="true"/>
           <DOMFolderItem name="General Items" itemID="4d86de26-00000214" isExpanded="true"/>
           <DOMFolderItem name="StoryFrame Items" itemID="4d86de2f-00000215" isExpanded="true"/>
      </folders>
@@ -96,7 +96,7 @@ function handleStartClick(event:MouseEvent):void
                                                   <Point x="800" y="480"/>
                                              </transformationPoint>
                                         </DOMSymbolInstance>
-                                        <DOMSymbolInstance libraryItemName="StartButton" name="StartButton" selected="true" symbolType="button">
+                                        <DOMSymbolInstance libraryItemName="StartButton" name="StartButton" symbolType="button">
                                              <matrix>
                                                   <Matrix tx="761.65" ty="815.85"/>
                                              </matrix>
@@ -486,12 +486,19 @@ function A2Click(event:MouseEvent):void{
           <PD n="com.air.artemis.pubipa" v="false"/>
           <PD n="com.air.artemis.ipacertpath" v="C:/Users/Jesse McGinnis/Documents/School/1111 c3 Winter/Arts 304/j3wao.p12"/>
           <PD n="flash.swf.basename" v="j3wao"/>
-          <PD n="swf.folder.path" v="G:/Documents/School/Year 4/DAC 304 - Video Games and Simulation/j3wao/j3wao/"/>
           <PD n="flash.fla.filepath" v="G:/Documents/School/Year 4/DAC 304 - Video Games and Simulation/j3wao/j3wao/j3wao/j3wao.xfl"/>
+          <PD n="swf.folder.path" v="G:/Documents/School/Year 4/DAC 304 - Video Games and Simulation/j3wao/j3wao/"/>
           <PD n="com.air.artemis.pubexe" v="false"/>
      </persistentData>
      <PrinterSettings/>
      <publishHistory>
+          <PublishItem publishSize="1496974" publishTime="1301362336" publishDebug="true"/>
+          <PublishItem publishSize="1481006" publishTime="1301361927" publishDebug="true"/>
+          <PublishItem publishSize="1496908" publishTime="1301361914" publishDebug="true"/>
+          <PublishItem publishSize="1478827" publishTime="1301361897" publishDebug="true"/>
+          <PublishItem publishSize="1478709" publishTime="1301361874" publishDebug="true"/>
+          <PublishItem publishSize="1478777" publishTime="1301361847" publishDebug="true"/>
+          <PublishItem publishSize="1478827" publishTime="1301361731" publishDebug="true"/>
           <PublishItem publishSize="1494462" publishTime="1301359021" publishDebug="true"/>
           <PublishItem publishSize="1494462" publishTime="1301358990" publishDebug="true"/>
           <PublishItem publishSize="1494462" publishTime="1301358414" publishDebug="true"/>
@@ -505,12 +512,5 @@ function A2Click(event:MouseEvent):void{
           <PublishItem publishSize="1494526" publishTime="1300857315" publishDebug="true"/>
           <PublishItem publishSize="1494534" publishTime="1300857280" publishDebug="true"/>
           <PublishItem publishSize="1494532" publishTime="1300857250" publishDebug="true"/>
-          <PublishItem publishSize="1494516" publishTime="1300857179" publishDebug="true"/>
-          <PublishItem publishSize="1494508" publishTime="1300857156"/>
-          <PublishItem publishSize="1494494" publishTime="1300857077" publishDebug="true"/>
-          <PublishItem publishSize="1494487" publishTime="1300857050" publishDebug="true"/>
-          <PublishItem publishSize="1494495" publishTime="1300857024" publishDebug="true"/>
-          <PublishItem publishSize="1494494" publishTime="1300856989" publishDebug="true"/>
-          <PublishItem publishSize="1494416" publishTime="1300752960" publishDebug="true"/>
      </publishHistory>
 </DOMDocument>

@@ -23,6 +23,13 @@
 			speechText = newText;
 			speechTextBox.text = speechText;
 		}
+		
+		//Don't know if this works
+		/*
+		public function setSpeechFont(newFont:String):void {
+			speechTextBox.font = newFont;
+		}
+		*/
 	}
 	
 }
