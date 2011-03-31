@@ -29,8 +29,24 @@
 			//intro.setBackgroundImage("sanddunes.png");
 			var dialog:SpeechBubble = new SpeechBubble();
 			dialog.setSpeechText("800 years ago, the land of Osiria was ravaged by war between humans and demons. The demons, with mightier armies and stronger magic, were winning.");
-			dialog.setXY(0, 700);
+			dialog.setXY(25, 700);
 			intro.addDialog(dialog);
+			
+			dialog = new SpeechBubble();
+			dialog.setSpeechText("On the verge of defeat, a simple orphan boy came forward as a hero. Wielding magic of his own, he rallied the armies of men everywhere, and cut through to the heart of the demonic evil.");
+			dialog.setXY(25, 700);
+			intro.addDialog(dialog);
+			
+			dialog = new SpeechBubble();
+			dialog.setSpeechText("When he fought, men nearby would swear that his attacks made the most melodious music they had ever heard, with every thrust and parry sounding its own specific note.");
+			dialog.setXY(25, 700);
+			intro.addDialog(dialog);
+		
+			dialog = new SpeechBubble();
+			dialog.setSpeechText("Dancing to his own melody, the hero fought the demon king, and eventually managed to seal the demon king along with himself into a crystal pendant. After the war, the head priestess of Osiria prophesied that one day the demon king would return, and only the blood of the hero could defeat him.");
+			dialog.setXY(25, 700);
+			intro.addDialog(dialog);
+			
 			cutScenes[0] = intro;
 		}
 		

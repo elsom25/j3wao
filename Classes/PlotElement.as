@@ -46,12 +46,12 @@
 			var bmpdata:BitmapData = new BitmapData(1600, 960, false, 0);
 			var bmp:Bitmap = new Bitmap(bmpdata, "auto", false);
 			
-			GameController.getGameController().addChild(SpeechBubble(speechBubbles[dialogCounter]));
+			GameController.getStoryEngine().addChild(SpeechBubble(speechBubbles[dialogCounter]));
 			(SpeechBubble(speechBubbles[dialogCounter])).addEventListener(MouseEvent.CLICK, nextDialog);
 		}
 		
 		public function nextDialog(event:MouseEvent):void {
-			GameController.getGameController().removeChild(SpeechBubble(speechBubbles[dialogCounter]));
+			GameController.getStoryEngine().removeChild(SpeechBubble(speechBubbles[dialogCounter]));
 			dialogCounter++;
 			if (dialogCounter == speechBubbles.length) {
 				//We just finished with the last speech bubble - end cutscene
@@ -59,7 +59,8 @@
 			} else
 			{
 				//Show next dialog box
-				GameController.getGameController().addChild(SpeechBubble(speechBubbles[dialogCounter]));
+				GameController.getStoryEngine().addChild(SpeechBubble(speechBubbles[dialogCounter]));
+				(SpeechBubble(speechBubbles[dialogCounter])).addEventListener(MouseEvent.CLICK, nextDialog);
 			}
 		}
 
